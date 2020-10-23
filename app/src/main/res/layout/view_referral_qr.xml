@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_view_gradient"
+    android:clickable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_dialog">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/referralTitleText"
+            style="@style/MediumTitle"
+            android:layout_width="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/referralLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/referral_message" />
+
+        <LinearLayout
+            android:id="@+id/referralLayout"
+            style="@style/InputTextLayout"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:paddingLeft="19dp"
+            app:layout_constraintBottom_toTopOf="@+id/qrBorderView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/referralTitleText">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/referralTextView"
+                style="@style/InputEditText"
+                android:paddingEnd="4dp"
+                android:textColor="@color/colorWhite" />
+
+            <ImageView
+                android:id="@+id/copyImageView"
+                style="@style/InputTextButton"
+                android:src="@drawable/ic_copy" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/qrBorderView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_qr_border"
+            app:layout_constraintBottom_toTopOf="@+id/shareLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/referralLayout" />
+
+        <ImageView
+            android:id="@+id/qrImageView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            app:layout_constraintBottom_toBottomOf="@+id/qrBorderView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/qrBorderView" />
+
+        <LinearLayout
+            android:id="@+id/shareLayout"
+            style="@style/ButtonLayoutMargins"
+            android:layout_marginTop="22dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qrBorderView">
+
+            <ImageView
+                android:id="@+id/shareImage"
+                style="@style/ButtonIcon"
+                android:src="@drawable/ic_share" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/shareText"
+                style="@style/SmallColoredText"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="@string/share_qr"
+                android:textColor="@color/colorTextWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/rejectLabel"
+                app:layout_constraintTop_toTopOf="@+id/rejectLabel" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

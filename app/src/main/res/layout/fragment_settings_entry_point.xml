@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SettingsRootLayout">
+
+    <include layout="@layout/partial_toolbar_settings" />
+
+    <LinearLayout style="@style/SettingsTabLayout">
+
+        <include layout="@layout/partial_toolbar_settings_submenu" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/entryPointText"
+            style="@style/SimpleInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="19dp"
+            android:background="@drawable/border_stroke_small_corners"
+            android:paddingStart="19dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/saveButton"
+            style="@style/ButtonLayoutMargins"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/save_url" />
+    </LinearLayout>
+</LinearLayout>

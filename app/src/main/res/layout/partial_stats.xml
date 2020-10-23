@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/topLineDataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/StatInfoLayout">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/poaNodesTitleText"
+                style="@style/StatsLabelText"
+                android:layout_width="match_parent"
+                android:text="@string/poa_nodes" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/poaNodesValueText"
+                style="@style/StatsValueText"
+                tools:text="99" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StatInfoLayout">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/powNodesTitleText"
+                style="@style/StatsLabelText"
+                android:layout_width="match_parent"
+                android:text="@string/pow_nodes" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/powNodesValueText"
+                style="@style/StatsValueText"
+                tools:text="99" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StatInfoLayout">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/posNodesTitleText"
+                style="@style/StatsLabelText"
+                android:layout_width="match_parent"
+                android:text="@string/pos_nodes" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/posNodesValueText"
+                style="@style/StatsValueText"
+                tools:text="99" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLineDataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/StatInfoLayout">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/accountsTitleText"
+                style="@style/StatsLabelText"
+                android:layout_width="match_parent"
+                android:text="@string/accounts" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/accountsValueText"
+                style="@style/StatsValueText"
+                tools:text="99" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StatInfoLayout">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tpsTitleText"
+                style="@style/StatsLabelText"
+                android:layout_width="match_parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tpsValueText"
+                style="@style/StatsValueText"
+                tools:text="99" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StatInfoLayout">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/blocksTitleText"
+                style="@style/StatsLabelText"
+                android:layout_width="match_parent"
+                android:text="@string/stats_last_block" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/blocksValueText"
+                style="@style/StatsValueText"
+                tools:text="99" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

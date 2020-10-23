@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_view_gradient"
+    android:paddingBottom="@dimen/bottom_tabs_height"
+    tools:context=".vvm.host.MainActivity">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/partial_toolbar" />
+
+    <com.enecuum.app.vvm.main.BalanceInfoView
+        android:id="@+id/balanceInfoView"
+        style="@style/BalanceInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarLayout" />
+
+    <RelativeLayout
+        android:id="@+id/tokenChooserLayout"
+        style="@style/FlatInputTextLayout"
+        android:layout_marginHorizontal="9dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toBottomOf="@id/balanceInfoView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tokenBalanceLabel"
+            style="@style/SecondaryXSmallText"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="9dp"
+            android:text="@string/token" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tokenBalanceTextLabel"
+            style="@style/SmallRegularWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="9dp"
+            android:layout_toStartOf="@+id/tokenMiningTickerLabel"
+            android:layout_toEndOf="@+id/tokenBalanceLabel"
+            android:gravity="end"
+            tools:text="25" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tokenMiningTickerLabel"
+            style="@style/LargeTickerText"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_toStartOf="@+id/dropdownArrowView"
+            tools:text="BIT" />
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/dropdownIconView"-->
+        <!--            style="@style/InputTextButton"-->
+        <!--            android:layout_toStartOf="@id/dropdownArrowView"-->
+        <!--            android:src="@drawable/logo" />-->
+
+        <ImageView
+            android:id="@+id/dropdownArrowView"
+            style="@style/InputTextButton"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="12dp"
+            android:src="@drawable/ic_dropdown" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/stars"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/stars"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tokenChooserLayout"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <ImageView
+        android:id="@+id/planets"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="38dp"
+        android:alpha="0.5"
+        android:src="@drawable/planets"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/mainButtonStroke"
+        app:layout_constraintStart_toStartOf="@+id/mainButtonStroke"
+        app:layout_constraintTop_toBottomOf="@id/balanceInfoView"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <View
+        android:id="@+id/mainButtonStroke"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/main_button_stroke"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balanceInfoView"
+        app:layout_constraintWidth_percent="0.52" />
+
+    <Button
+        android:id="@+id/mainButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/selector_main_button_background"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif"
+        android:padding="8dp"
+        android:stateListAnimator="@null"
+        android:text="@string/start_activity"
+        android:textAllCaps="true"
+        android:textColor="@drawable/selector_main_button_text_color"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mainButtonStroke"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/mainButtonStroke"
+        app:layout_constraintStart_toStartOf="@+id/mainButtonStroke"
+        app:layout_constraintTop_toTopOf="@+id/mainButtonStroke" />
+
+    <com.enecuum.app.vvm.buy.BuyLayout
+        android:id="@+id/buyLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balanceInfoView" />
+
+    <com.enecuum.app.vvm.main.ReferralQrView
+        android:id="@+id/referralQrView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_dialog"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLayout" />
+
+    <com.enecuum.app.vvm.main.SideQrView
+        android:id="@+id/qrSideView"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balanceInfoView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

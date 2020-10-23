@@ -1,0 +1,240 @@
+<resources>
+
+    <!--currency strings-->
+    <string name="balance_enq">الرصيد: %s %s</string>
+    <string name="welcome_to_enq">مرحبًا بكم في شبكة %s</string>
+    <string name="no_enq">لا يوجد %s بعد …</string>
+    <string name="enq_address_to_send">عنوان %s للإرسال</string>
+
+
+    <!--main-->
+    <string name="balance_with_colon">الرصيد:</string>
+    <string name="balance">الرصيد</string>
+    <string name="start_activity">بدء النشاط</string>
+    <string name="stop_activity">وقف النشاط</string>
+    <string name="connecting_btn">توصيل</string>
+
+
+    <!--auth-->
+    <string name="your_address">عنوانك</string>
+    <string name="your_private_key">مفتاحك الخاص</string>
+    <string name="copied_private_key">تم نسخ المفتاح الخاص إلى الحافظة</string>
+    <string name="copied_address">تم نسخ العنوان إلى الحافظة</string>
+    <string name="copy">نسخ</string>
+
+    <string name="start_using_wallet">ابدأ في استخدام المحفظة</string>
+
+    <string name="private_key_import_title">استيراد المفتاح الخاص</string>
+    <string name="private_key">المفتاح الخاص</string>
+    <string name="private_key_import_hint">أدخل مفتاحك الخاص للاستيراد</string>
+    <string name="private_key_hint">أدخل مفتاحك الخاص</string>
+    <string name="signin">تسجيل الدخول</string>
+
+    <string name="create_new_wallet">إنشاء محفظة جديدة</string>
+    <string name="import_wallet">استيراد محفظة</string>
+
+
+    <!--menu-->
+    <string name="settings">الإعدادات</string>
+    <string name="about">حول التطبيق</string>
+    <string name="my_address">عنواني</string>
+    <string name="community">المجتمع</string>
+    <string name="entry_point">نقطة الدخول</string>
+    <string name="entry_point_url">عنوان URL لنقطة الدخول</string>
+    <string name="save_url">حفظ الرابط</string>
+
+    <!--about-->
+    <string name="about_app_title">تطبيق المحمول Enecuum\nEnecuum HK Limited.</string>
+    <string name="about_white_paper">الورقة البيضاء</string>
+    <string name="about_version">الإصدار: %s نسخة البروتوكول الثلاثي: %d.0.0</string>
+    <string name="about_tech">الورقة التقنية</string>
+    <string name="about_terms">الشروط والأحكام</string>
+    <string name="about_privacy">سياسة الخصوصية</string>
+
+
+    <!--import key-->
+    <string name="import_key_warning_title">تحذير!</string>
+    <string name="import_key_warning">سيتم حذف المفتاح الخاص الحالي من ذاكرة الجهاز بعد استيراد المفتاح الجديد.\nيرجى التأكد من أن لديك نسخة احتياطية</string>
+
+
+    <!--faq-->
+    <string name="faq">الأسئلة الشائعة</string>
+    <string name="faq_battery_title">عمر البطارية</string>
+    <string name="faq_battery">فيما يتعلق باستخدام СPU/GPU، لا تنفذ عقدة PoA عملية التعدين بالطريقة العادية لإثبات العمل، ولكن تقوم عقدة Enecuum PoA  للهاتف المحمول بالتحقق من صحة التوقيعات التشفيرية التي تشبه العملية التي تتم أثناء فتح موقع ويب عبر https (اتصال آمن). ونتيجة لذلك، فإن استخدام البطارية من قبل تطبيق Enecuum للهاتف المحمول يشبه متصفح المحمول أو أعمال الدردشة. أنت لا تفكر أبداً في عمر البطارية عند اختيار محادثة آمنة أو موقع آمن على الإنترنت، أليس كذلك؟</string>
+    <string name="faq_network_title">استخدام الشبكة</string>
+    <string name="faq_network">القياس على المتصفح يستمر عند الحديث عن استخدام حركة مرور الإنترنت من خلال تطبيق Enecuum. أنت على الأرجح لا تشاهد YouTube أو تقوم بتنزيل الأفلام عبر شبكة المحمولـ لذا باستخدام Enecuum - نوصي ببدء نشاط PoA المتصل بنقطة واي فاي إذا كانت لديك خطة بيانات محدودة أو مستحقة الدفع. يعتمد حجم حركة المرور الفعلية المستهلكة على حمل الشبكة وعدد المشاركين في PoA ويهدف إلى أن يكون خفيفًا في الشبكة الرئيسية المستقبلية التي يمكن تحقيقها عن طريق تحفيز المكافآت / الرسوم. ولكن خلال أنشطة اختبار الشبمة، لا يُضمَن أن يكون حجم حركة المرور ثابتًا وقابلاً للتنبؤ.</string>
+    <string name="faq_airdrop_title">Airdrop</string>
+    <string name="faq_airdrop">بدأت Enecuum برنامج Airdrop 2.0 جديدًا (\"Gold Rush\") والذي سيكافئ المشاركين بمفاتيح %s ERC-20. تطلق Enecuum Gold Rush مع تطبيق الهاتف المحمول (&lt;u&gt;&lt;a href=\"https://app.enecuum.com\"&gt;https://app.enecuum.com&lt;/a&gt;&lt;/u&gt;)، مستكشف البلوك تشين  (&lt;u&gt;&lt;a href=\"https://neuro.enecuum.com\"&gt;https://neuro.enecuum.com&lt;/a&gt;&lt;/u&gt;) ومحفظة ويب (&lt;u&gt;&lt;a href=\"https://wallet.enecuum.com\"&gt;https://wallet.enecuum.com&lt;/a&gt;&lt;/u&gt;) تسمح للمستخدمين بالاحتفاظ بعملات %s وسحبها وتحويلها إلى رموز %s ERC-20 . سيتم مكافأة المشاركين في برنامج Airdrop عند تنزيل التطبيق والتعدين باستخدام عملات %s. سيكون لدى Gold Rush مراحل قليلة يقوم خلالها فريق Enecuum الفني بفحص إعدادات Neuro وسهولة استخدامه. يمكن العثور على المزيد من المعلومات هنا.</string>
+    <string name="faq_support_title">الدعم</string>
+    <string name="faq_support">لا تتردد في طلب المساعدة في &lt;u&gt;&lt;a href=https://t.me/Enecuum_EN&gt;مجموعة Telegram&lt;/a&gt;&lt;/u&gt;</string>
+    <string name="disclaimer">يستخدم المفتاح الخاص لفتح محفظتك التي توفر إدارة الأموال بما في ذلك المشاركة في برنامج Mining.\n يرجى التأكد من حفظ المفتاح الخاص وحمايته من السرقة. Enecuum لا تخزن مفتاحك الخاص. في حالة فقدان المفتاح الخاص، لن نتمكن من استعادته. Enecuum ليست مسؤولة عن أي مشكلات تنتج عن فقدان المفتاح الخاص.</string>
+
+
+    <!--common-->
+    <string name="loading_balance">جارٍ تحميل الرصيد …</string>
+    <string name="connecting">جارِ التوصيل…</string>
+    <string name="continue_mining">♔ حافظ على الهدوء واستمر في التعدين</string>
+
+    <string name="no_internet">لا يوجد إنترنت</string>
+    <string name="import_new_private_key">استيراد مفتاح خاص جديد</string>
+    <string name="empty_private_key">مفتاح خاص فارغ!</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+
+    <string name="cancel">إلغاء</string>
+    <string name="are_you_sure">هل أنت متأكد؟</string>
+    <string name="language">اللغة</string>
+    <string name="send">إرسال</string>
+    <string name="receive">استلام</string>
+    <string name="swap">مبادلة</string>
+    <string name="send_confirmation">إرسال تأكيد</string>
+    <string name="amount">المبلغ</string>
+    <string name="reject">رفض</string>
+    <string name="confirm">تأكيد</string>
+    <string name="share_qr">شارك رمز الاستجابة السريعة</string>
+    <string name="to">إلى</string>
+    <string name="max">الحد الأقصى</string>
+    <string name="wrong_format">القيمة غير صحيحة</string>
+    <string name="transaction_result">نتيجة المعاملة</string>
+    <string name="success">نجاح</string>
+    <string name="error">خطأ</string>
+    <string name="zero_amount">المبلغ صفر</string>
+    <string name="amount_too_big">الكثير لرصيدك</string>
+    <string name="wrong_secret_key_format">يجب أن تكون سلسلة سداسية عشرية طولها عن 64 حرفًا</string>
+    <string name="zero_balance">الرصيد صفر</string>
+    <string name="update">تحديث</string>
+    <string name="there_are_new_ver">هناك إصدار جديد من تطبيق Enecuum</string>
+    <string name="next">التالي</string>
+    <string name="skip">تخطي</string>
+    <string name="save">حفظ</string>
+    <string name="qr_saved">تم حفظ رمز الاستجابة السريعة في المعرض</string>
+
+    <!--update-->
+    <string name="update_now">تحديث الآن</string>
+    <string name="update_required">مطلوب التحديث</string>
+    <string name="critical_update_description">مطلوب تحديث لبرنامج Enecuum للمتابعة</string>
+
+
+    <!--stats-->
+    <string name="pos_nodes">عُقَد PoS</string>
+    <string name="pow_nodes">عُقَد PoW</string>
+    <string name="poa_nodes">عُقَد PoA</string>
+    <string name="max_tps">الحد الأقصى لـTPS</string>
+    <string name="curr_tps">TPS الحالي</string>
+    <string name="accounts">الحسابات</string>
+    <string name="open_in_browser">فتح في المتصفح</string>
+    <string name="stats_last_block">الكتلة الأخيرة</string>
+    <string name="stats_rewards">المكافآت في الـ 24 ساعة الماضية</string>
+    <string name="stats_coindata">بيانات العملة</string>
+    <string name="stats_coindata_circ_supply">تدوير الإمداد:</string>
+    <string name="stats_coindata_max_supply">أقصى إمداد:</string>
+    <string name="stats_total_nodes">إجمالي العُقَد:</string>
+
+
+    <!--referral-->
+    <string name="referral_buy_title">برنامج الإحالة</string>
+    <string name="referral_buy_message">بمجرد كسب %s %s، ستتمكن من مشاركة رمز إحالة الوكيل. يمكن استخدام الرمز من قبل المستخدمين الآخرين للحصول على المزيد من %s مما يوفر لك دخلًا سلبيًا.</string>
+    <string name="referral_title">تهانينا!</string>
+    <string name="referral_message">لقد قمت بإلغاء تأمين رمز إحالة الوكيل الشخصي الخاص بك!</string>
+    <string name="share_code">شارك الرمز</string>
+    <string name="referral_not_enough">لا يوجد ما يكفي من %s في الحساب المشار إليه</string>
+    <string name="referral_skip_message">مع رمز الإحالة سوف تكسب المزيد من الرموز!</string>
+    <string name="referral_next_message">سيتم عرض أرباح برنامج الإحالة الخاص بك في \"مستكشف البلوك تشين\"</string>
+    <string name="referral_same_address">يجب أن يكون العنوان المحال  مختلفًا عن عنوانك</string>
+    <string name="referral_program">برنامج الإحالة</string>
+
+
+    <!--roi-->
+    <string name="roi_daily">يوميًا</string>
+    <string name="roi_weekly">أسبوعيًا</string>
+    <string name="roi_monthly">شهريًا</string>
+    <string name="roi_annual">سنويًا</string>
+    <string name="min_stake_dialog_title">الحصة الدنيا هي %s %s</string>
+    <string name="roi_alert">حاسبة معدل العائد آخر 24 ساعة</string>
+    <string name="max_roi">أقصى عائد استثمار: %s %% على %s حصة %s</string>
+
+
+    <!--buy-->
+    <string name="pay_by_card">الدفع عن طريق البطاقة</string>
+    <string name="buy_on_exchange">الشراء عند التبادل</string>
+
+
+    <!--bottom tabs-->
+    <string name="tab_transfer">إرسال/استلام</string>
+    <string name="create_new_token">إنشاء رمز جديد</string>
+    <string name="manage_my_tokens">إدارة بلدي الرموز</string>
+    <string name="mint">للقضية</string>
+    <string name="burn">حرق</string>
+    <string name="referral_copied">كود الإحالة نسخها إلى الحافظة</string>
+    <string name="operation">عملية</string>
+    <string name="back">عودة</string>
+    <string name="token">رمز</string>
+    <string name="token_balance">توازن رمزي</string>
+    <string name="mine">الخاص بي</string>
+    <string name="delegate">مندوب</string>
+    <string name="token_issue">قضية رمزية</string>
+    <string name="token_name">اسم رمزي</string>
+    <string name="token_ticker">مؤشر رمزي</string>
+    <string name="token_supply">العرض رمزية</string>
+    <string name="token_users_tx_fee">رسوم تكساس للمستخدمين</string>
+    <string name="token_type_non_reissuable">غير reissuable</string>
+    <string name="token_type_reissuable">Reissuable</string>
+    <string name="token_issue_emmissions_tip">لا يمكن تغيير الانبعاثات.</string>
+    <string name="token_issue_emmissions_amount">الانبعاثات الحد الأقصى هو1844674407</string>
+    <string name="token_decimals">الكسور العشرية:</string>
+    <string name="token_owner">صاحب رمزي</string>
+    <string name="token_issue_fee">رسوم القضية</string>
+    <string name="token_fee">رسوم</string>
+    <string name="token_min_fee">رسوم الحد الأدنى</string>
+    <string name="token_choose">اختيار رمز</string>
+    <string name="check_detail">الاختيار التفاصيل</string>
+    <string name="reward">مكافأة</string>
+    <string name="available">متاح</string>
+    <string name="delegated">المفوض</string>
+    <string name="transit">عبور</string>
+    <string name="please_check_the_address">يرجى التحقق من عنوان</string>
+    <string name="all_stake_providers">جميع مقدمي حصة</string>
+    <string name="my_validators">بلدي المصادقون</string>
+    <string name="total_stake">مجموع حصة المفعلة:</string>
+    <string name="annual_reward">مكافأة سنوية:</string>
+    <string name="stake_power">السلطة حصة</string>
+    <string name="provider_page">الصفحة مزود</string>
+    <string name="enter_delegate_amount">أدخل المبلغ تفويض</string>
+    <string name="enter_undelegate_amount">أدخل المبلغ إلغاء التفويض</string>
+    <string name="max_available">ماكس متاح</string>
+    <string name="check_delegation_detail">التحقق من التفاصيل الوفد</string>
+    <string name="validator_page">الصفحة المدقق</string>
+    <string name="delegated_amount">كمية المنتدب</string>
+    <string name="undelegated_amount">كمية Undelegated</string>
+    <string name="reward_amount">مبلغ المكافأة</string>
+    <string name="transit_amount">كمية العابر</string>
+    <string name="available_for_delegate">متوفرة للمندوب:٪ 1 $ d من٪ 2 $ الصورة</string>
+    <string name="undelegate">إلغاء التفويض</string>
+    <string name="transfer_to_wallet">نقل إلى محفظة</string>
+    <string name="check_undelegation_detail">التحقق من التفاصيل undelegation</string>
+    <string name="from">من عند</string>
+    <string name="check_transfer_back_detail">الاختيار نقل التفاصيل</string>
+    <string name="amount_to_transfer">المبلغ لنقل</string>
+    <string name="delegation_fee">رسوم الوفد</string>
+    <string name="undelegation_fee">رسوم Undelegation</string>
+    <string name="transfer_back_fee">رسوم التحويل</string>
+    <string name="total_fee">مجموع الرسوم</string>
+    <string name="claim_reward">مكافأة المطالبة</string>
+    <string name="reinvest">تعيد الاستثمار</string>
+    <string name="provider_fee">رسوم مزود</string>
+    <string name="check_claim_reward_detail">التحقق من التفاصيل المطالبة</string>
+    <string name="claim_reward_fee">رسوم مطالبة</string>
+    <string name="active">نشيط</string>
+    <string name="inactive">غير نشط</string>
+    <string name="node_map">خريطة العقدة</string>
+    <string name="network_stats">احصائيات شبكة</string>
+    <string name="coins_on_poa">النقود راهن على برنامج العمل</string>
+    <string name="coins_on_pos">النقود راهن على نقاط البيع</string>
+    <string name="difficulty">صعوبة</string>
+    <string name="powRewards">المكافآت 24H أسرى الحرب</string>
+    <string name="posRewards">المكافآت نقاط البيع 24H</string>
+    <string name="poaRewards">المكافآت 24H برنامج العمل</string>
+    <string name="buy">يشترى</string>
+    <string name="faq_guides_title">أدلة المستخدم</string>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+
+    <!--currency strings-->
+    <string name="buy_enq">Получить %s</string>
+
+    <!--    <string name="min_stake_dialog_message">Чтобы начать майнинг, необходимо внести минимум %s %s.</string>-->
+    <string name="min_stake_dialog_message">Вы можете получить %s на <a href="https://faucet-bit.enecuum.com\">faucet-bit.enecuum.com</a>.</string>
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/background">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/coinsOnPoaLabel"
+        style="@style/balanceLabel"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/coins_on_poa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/coinsOnPoaValueText"
+        style="@style/balanceValueText"
+        app:layout_constraintBaseline_toBaselineOf="@id/coinsOnPoaLabel"
+        app:layout_constraintEnd_toStartOf="@+id/coinsOnPoaCurrency"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/coinsOnPoaLabel"
+        tools:text="25" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/coinsOnPoaCurrency"
+        style="@style/ticker"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/coinsOnPoaLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="ENQ" />
+
+    <View
+        android:id="@+id/separator1"
+        style="@style/lineSeparator"
+        app:layout_constraintEnd_toEndOf="@+id/coinsOnPoaCurrency"
+        app:layout_constraintStart_toStartOf="@+id/coinsOnPoaLabel"
+        app:layout_constraintTop_toBottomOf="@+id/coinsOnPoaLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/coinsOnPosLabel"
+        style="@style/balanceLabel"
+        android:layout_marginTop="8dp"
+        android:text="@string/coins_on_pos"
+        app:layout_constraintStart_toStartOf="@+id/separator1"
+        app:layout_constraintTop_toBottomOf="@+id/separator1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/coinsOnPosValueText"
+        style="@style/balanceValueText"
+        app:layout_constraintBaseline_toBaselineOf="@id/coinsOnPosLabel"
+        app:layout_constraintEnd_toStartOf="@+id/coinsOnPosCurrency"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/coinsOnPosLabel"
+        tools:text="25" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/coinsOnPosCurrency"
+        style="@style/ticker"
+        app:layout_constraintBaseline_toBaselineOf="@id/coinsOnPosLabel"
+        app:layout_constraintEnd_toEndOf="@+id/separator3"
+        tools:text="ENQ" />
+
+    <View
+        android:id="@+id/separator2"
+        style="@style/lineSeparator"
+        app:layout_constraintEnd_toEndOf="@+id/coinsOnPoaCurrency"
+        app:layout_constraintStart_toStartOf="@+id/coinsOnPoaLabel"
+        app:layout_constraintTop_toBottomOf="@+id/coinsOnPosLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/difficultyLabel"
+        style="@style/balanceLabel"
+        android:layout_marginTop="8dp"
+        android:text="@string/difficulty"
+        app:layout_constraintStart_toStartOf="@+id/separator2"
+        app:layout_constraintTop_toBottomOf="@+id/separator2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/difficultyValueText"
+        style="@style/balanceValueText"
+        app:layout_constraintBaseline_toBaselineOf="@id/difficultyLabel"
+        app:layout_constraintEnd_toStartOf="@+id/difficultyCurrency"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/difficultyLabel"
+        tools:text="25" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/difficultyCurrency"
+        style="@style/ticker"
+        app:layout_constraintBaseline_toBaselineOf="@id/difficultyLabel"
+        app:layout_constraintEnd_toEndOf="@+id/separator3"
+        app:layout_constraintTop_toBottomOf="@+id/separator3"
+        tools:text="ENQ" />
+
+    <View
+        android:id="@+id/separator3"
+        style="@style/lineSeparator"
+        app:layout_constraintEnd_toEndOf="@+id/separator1"
+        app:layout_constraintStart_toStartOf="@+id/separator1"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/powRewardsLabel"
+        style="@style/balanceLabel"
+        android:layout_marginTop="8dp"
+        android:text="@string/powRewards"
+        app:layout_constraintStart_toStartOf="@+id/separator3"
+        app:layout_constraintTop_toBottomOf="@+id/separator3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/powRewardsValueText"
+        style="@style/balanceValueText"
+        app:layout_constraintBaseline_toBaselineOf="@id/powRewardsLabel"
+        app:layout_constraintEnd_toStartOf="@+id/powRewardsCurrency"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/powRewardsLabel"
+        tools:text="25" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/powRewardsCurrency"
+        style="@style/ticker"
+        app:layout_constraintBaseline_toBaselineOf="@id/powRewardsLabel"
+        app:layout_constraintEnd_toEndOf="@+id/separator3"
+        app:layout_constraintTop_toBottomOf="@+id/separator3"
+        tools:text="ENQ" />
+
+    <View
+        android:id="@+id/separator4"
+        style="@style/lineSeparator"
+        app:layout_constraintEnd_toEndOf="@+id/coinsOnPoaCurrency"
+        app:layout_constraintStart_toStartOf="@+id/powRewardsLabel"
+        app:layout_constraintTop_toBottomOf="@+id/powRewardsLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/posRewardsLabel"
+        style="@style/balanceLabel"
+        android:layout_marginTop="8dp"
+        android:text="@string/posRewards"
+        app:layout_constraintStart_toStartOf="@+id/separator4"
+        app:layout_constraintTop_toBottomOf="@+id/separator4" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/posRewardsValueText"
+        style="@style/balanceValueText"
+        app:layout_constraintBaseline_toBaselineOf="@id/posRewardsLabel"
+        app:layout_constraintEnd_toStartOf="@+id/posRewardsCurrency"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/posRewardsLabel"
+        tools:text="25" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/posRewardsCurrency"
+        style="@style/ticker"
+        app:layout_constraintBaseline_toBaselineOf="@id/posRewardsLabel"
+        app:layout_constraintEnd_toEndOf="@+id/separator4"
+        app:layout_constraintTop_toBottomOf="@+id/separator4"
+        tools:text="ENQ" />
+
+    <View
+        android:id="@+id/separator5"
+        style="@style/lineSeparator"
+        app:layout_constraintEnd_toEndOf="@+id/posRewardsCurrency"
+        app:layout_constraintStart_toStartOf="@+id/posRewardsLabel"
+        app:layout_constraintTop_toBottomOf="@+id/posRewardsLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/poaRewardsLabel"
+        style="@style/balanceLabel"
+        android:layout_marginTop="8dp"
+        android:text="@string/poaRewards"
+        app:layout_constraintStart_toStartOf="@+id/separator5"
+        app:layout_constraintTop_toBottomOf="@+id/separator5" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/poaRewardsValueText"
+        style="@style/balanceValueText"
+        app:layout_constraintBaseline_toBaselineOf="@id/poaRewardsLabel"
+        app:layout_constraintEnd_toStartOf="@+id/poaRewardsCurrency"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/poaRewardsLabel"
+        tools:text="25" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/poaRewardsCurrency"
+        style="@style/ticker"
+        app:layout_constraintBaseline_toBaselineOf="@id/poaRewardsLabel"
+        app:layout_constraintEnd_toEndOf="@+id/separator5"
+        app:layout_constraintTop_toBottomOf="@+id/separator5"
+        tools:text="ENQ" />
+</androidx.constraintlayout.widget.ConstraintLayout>

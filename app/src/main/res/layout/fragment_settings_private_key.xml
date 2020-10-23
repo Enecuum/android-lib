@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SettingsRootLayout">
+
+    <include layout="@layout/partial_toolbar_settings" />
+
+    <LinearLayout style="@style/SettingsTabLayout">
+
+        <include layout="@layout/partial_toolbar_settings_submenu" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/privateKeyLayout"
+                    style="@style/InputTextLayout"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="19dp"
+                    android:paddingStart="19dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/privateKeyInputText"
+                        style="@style/InputEditText"
+                        android:paddingEnd="4dp" />
+
+                    <ImageView
+                        android:id="@+id/copyImageView"
+                        style="@style/InputTextButton"
+                        android:src="@drawable/ic_copy" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/importWalletButton"
+                    style="@style/ButtonLayoutMargins"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/import_wallet" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/hintLabel"
+                    style="@style/MediumWhiteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="19dp"
+                    android:text="@string/private_key_import_hint"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/inputLayout"
+                    style="@style/InputTextLayout"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="19dp"
+                    android:paddingStart="19dp"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/keyInputText"
+                        style="@style/InputEditText"
+                        android:digits="abcdefghABCDEFGH1234567890"
+                        android:paddingEnd="4dp" />
+
+                    <ImageView
+                        android:id="@+id/pasteImageView"
+                        style="@style/InputTextButton"
+                        android:src="@drawable/ic_copy" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/signInButton"
+                    style="@style/ButtonLayoutMargins"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/signin"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/warningLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="19dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/exclamationView"
+                        style="@style/ExclamationIcon"
+                        android:layout_marginStart="0dp"
+                        android:src="@drawable/ic_exclamation" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/warningTitleText"
+                            style="@style/Disclaimer"
+                            android:layout_width="match_parent"
+                            android:layout_marginEnd="0dp"
+                            android:fontFamily="sans-serif"
+                            android:paddingBottom="4dp"
+                            android:text="@string/import_key_warning_title"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/warningText"
+                            style="@style/Disclaimer"
+                            android:layout_width="match_parent"
+                            android:layout_marginEnd="0dp"
+                            android:text="@string/import_key_warning" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

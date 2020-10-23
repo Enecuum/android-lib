@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="26dp"
+    tools:background="@color/background">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/minLabel"
+        style="@style/SecondaryXSmallText"
+        android:layout_gravity="start|top"
+        android:text="min"
+        android:textSize="12sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/maxLabel"
+        style="@style/SecondaryXSmallText"
+        android:layout_gravity="end|top"
+        android:text="max"
+        android:textSize="12sp" />
+
+    <SeekBar
+        android:id="@+id/amountSeekBar"
+        style="@style/FlatSeekBar"
+        android:layout_gravity="bottom"
+        android:paddingStart="6dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="6dp" />
+</FrameLayout>

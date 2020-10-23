@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SettingsRootLayout">
+
+    <include layout="@layout/partial_toolbar_settings" />
+
+    <LinearLayout style="@style/SettingsTabLayout">
+
+        <include layout="@layout/partial_toolbar_settings_submenu" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/socials_icon_height"
+            android:layout_marginTop="16dp"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp">
+
+            <ImageView
+                android:id="@+id/telegram"
+                style="@style/SocialsButton"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/logo_telegram" />
+
+            <ImageView
+                android:id="@+id/facebook"
+                style="@style/SocialsButton"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo_facebook" />
+
+            <ImageView
+                android:id="@+id/twitter"
+                style="@style/SocialsButton"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/logo_twitter" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/socials_icon_height"
+            android:layout_marginTop="18dp"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp">
+
+            <ImageView
+                android:id="@+id/meduim"
+                style="@style/SocialsButton"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/logo_medium" />
+
+            <ImageView
+                android:id="@+id/github"
+                style="@style/SocialsButton"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo_github" />
+
+            <ImageView
+                android:id="@+id/forklog"
+                style="@style/SocialsButton"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/logo_forklog" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/socials_icon_height"
+            android:layout_marginTop="18dp"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp">
+
+            <ImageView
+                android:id="@+id/bitcointalk"
+                style="@style/SocialsButton"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/logo_bitcointalk" />
+
+            <ImageView
+                android:id="@+id/linkedin"
+                style="@style/SocialsButton"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo_linkedin" />
+
+            <ImageView
+                android:id="@+id/youtube"
+                style="@style/SocialsButton"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/logo_youtube" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

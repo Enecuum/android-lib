@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "696785268753",
+    "firebase_url": "https://enecuum-bit.firebaseio.com",
+    "project_id": "enecuum-bit",
+    "storage_bucket": "enecuum-bit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696785268753:android:14aa68c33325382d9741b0",
+        "android_client_info": {
+          "package_name": "com.enecuum.slim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696785268753-3n648ggsq23gt4ta35jvjh36ahbrf362.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChawk97GZFotDIdL_CcA_PnxsxJ6BOoW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696785268753-3n648ggsq23gt4ta35jvjh36ahbrf362.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

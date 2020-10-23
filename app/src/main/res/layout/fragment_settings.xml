@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SettingsRootLayout">
+
+    <include layout="@layout/partial_toolbar_settings" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="9dp"
+        android:paddingTop="8dp"
+        android:paddingRight="9dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/aboutLayout"
+                style="@style/MenuButton">
+
+                <ImageView
+                    style="@style/MenuIcon"
+                    android:src="@drawable/ic_enecuum" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/MenuLabel"
+                    android:text="@string/about" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addressLayout"
+                style="@style/MenuButton"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    style="@style/MenuIcon"
+                    android:src="@drawable/ic_address" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/MenuLabel"
+                    android:text="@string/my_address" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/privateKeyLayout"
+                style="@style/MenuButton"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    style="@style/MenuIcon"
+                    android:src="@drawable/ic_key" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/MenuLabel"
+                    android:text="@string/private_key" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/communityLayout"
+                style="@style/MenuButton"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    style="@style/MenuIcon"
+                    android:src="@drawable/ic_community" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/MenuLabel"
+                    android:text="@string/community" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/faqLayout"
+                style="@style/MenuButton"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    style="@style/MenuIcon"
+                    android:src="@drawable/ic_faq" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/MenuLabel"
+                    android:text="@string/faq" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/languageLayout"
+                style="@style/MenuButton"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    style="@style/MenuIcon"
+                    android:src="@drawable/ic_language" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/MenuLabel"
+                    android:text="@string/language" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/entryPointLayout"
+                style="@style/MenuButton"
+                android:layout_marginTop="4dp"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/MenuIcon"
+                    android:src="@drawable/ic_entry" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/MenuLabel"
+                    android:text="@string/entry_point" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/referralLayout"
+                style="@style/MenuButton"
+                android:layout_marginTop="4dp"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/MenuIcon"
+                    android:src="@drawable/ic_community" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/MenuLabel"
+                    android:text="@string/referral_program" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

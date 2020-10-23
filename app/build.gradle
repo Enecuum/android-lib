@@ -1,0 +1,212 @@
+import java.util.regex.Matcher
+import java.util.regex.Pattern
+
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+ext {
+    versionMajor = 0
+    versionMinor = 13
+    versionPatch = 5
+    versionBuild = getBuildNumber()
+    minimumSdkVersion = 19
+}
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.enecuum.app"
+        minSdkVersion project.ext.minimumSdkVersion
+        targetSdkVersion 30
+        versionCode generateVersionCode()
+        versionName generateVersionName()
+        buildConfigField "int", "BUILD_NUMBER", "${versionBuild}"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+//        DEV
+//        buildConfigField "String", "DEBUG_IP", "\"95.216.246.246\""
+//        PROD
+//        buildConfigField "String", "DEBUG_IP", "\"95.216.68.221\""
+//        BIT
+        buildConfigField "String", "DEBUG_IP", "\"95.216.246.116\""
+
+        buildConfigField "String", "DEBUG_DOMAIN", "\"bit-dev.enecuum.com\""
+    }
+    signingConfigs {
+        release {
+//            storeFile file(System.getenv("RELEASE_STORE_FILE"))
+//            storePassword System.getenv("RELEASE_STORE_PASSWORD")
+//            keyAlias System.getenv("RELEASE_KEY_ALIAS")
+//            keyPassword System.getenv("RELEASE_KEY_PASSWORD")
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        android.applicationVariants.all { variant ->
+            variant.outputs.all {
+                outputFileName = "enq-${variant.name}-v.${variant.versionName}+${versionBuild}.apk"
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    flavorDimensions "version"
+    productFlavors {
+        slim {
+            applicationId "com.enecuum.slim"
+            buildConfigField "String", "PROD_IP", "\"95.216.246.116\""
+            buildConfigField "String", "PROD_DOMAIN", "\"bit.enecuum.com\""
+            buildConfigField "String", "TICKER", "\"BIT\""
+            buildConfigField "String", "TOKEN", "\"0000000000000000000000000000000000000000000000000000000000000000\""
+            buildConfigField "String", "DEFAULT_REFERRAL", "\"\""
+            buildConfigField "boolean", "SHOW_PURCHASE_SCREEN", "Boolean.parseBoolean(\"false\")"
+            buildConfigField "int", "TRINITY_VERSION", "4"
+            buildConfigField "boolean", "SKIP_VERIFICATION", "Boolean.parseBoolean(\"false\")"
+        }
+//        demo {
+//            buildConfigField "String", "PROD_IP", "\"0.0.0.0\""
+//            buildConfigField "String", "PROD_DOMAIN", "\"pulse.enecuum.com\""
+//            buildConfigField "String", "TICKER", "\"ENQ\""
+//            buildConfigField "String", "TOKEN", "\"0000000000000000000000000000000000000000000000000000000000000000\""
+//            buildConfigField "String", "DEFAULT_REFERRAL", "\"${System.env.default_referrer_code}\""
+//            buildConfigField "boolean", "SHOW_PURCHASE_SCREEN", "Boolean.parseBoolean(\"true\")"
+//            buildConfigField "int", "TRINITY_VERSION", "4"
+//            buildConfigField "boolean", "SKIP_VERIFICATION", "Boolean.parseBoolean(\"true\")"
+//        }
+    }
+
+    bundle {
+        language {
+            enableSplit = false
+        }
+        density {
+            enableSplit = false
+        }
+    }
+}
+
+private Integer generateVersionCode() {
+    return ext.minimumSdkVersion * 1000000 + ext.versionMajor * 10000 + ext.versionMinor * 100 + ext.versionPatch * 10 + ext.versionBuild
+}
+
+private String generateVersionName() {
+    return "${ext.versionMajor}.${ext.versionMinor}.${ext.versionPatch}"
+}
+
+private static Integer getBuildNumber() {
+    def ciNumber = System.env.CI_PIPELINE_IID
+    if (ciNumber == null) {
+        return 0
+    }
+    return Integer.parseInt(ciNumber)
+}
+
+dependencies {
+    def nav_version = "2.2.1"
+    def firebase_version = "17.2.2"
+
+    def koin_version = "1.0.2"
+
+    //okhttp > 3.12.x doesn't support Android 4.x
+    def okhttp_version = "3.12.3"
+    //retrofit > 2.5.x doesn't support Android 4.x
+    def retrofit_version = "2.5.0"
+    def paging_version = "2.1.2"
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //prefs
+    implementation 'com.pixplicity.easyprefs:library:1.9.0'
+    //ui android
+    implementation 'androidx.appcompat:appcompat:1.2.0-alpha03'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta4'
+    //nav
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    //koin
+    implementation "org.koin:koin-core:$koin_version"
+    implementation "org.koin:koin-android-viewmodel:$koin_version"
+    //retrofit & gson
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    //qr
+    implementation 'me.dm7.barcodescanner:zxing:1.9.13'
+    implementation 'com.ablanco.imageprovider:imageprovider:0.1.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //firebase crashlytics
+    implementation "com.google.firebase:firebase-analytics:$firebase_version"
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    //firebase dynamic links
+    implementation 'com.google.firebase:firebase-dynamic-links:19.0.0'
+
+    //computer vision
+    implementation 'com.google.android.gms:play-services-vision:19.0.0'
+
+    //root
+    implementation 'com.scottyab:rootbeer-lib:0.0.7'
+
+    //paging
+    implementation "androidx.paging:paging-runtime:$paging_version"
+}
+
+tasks.whenTaskAdded { task ->
+    Pattern pattern = Pattern.compile("bundle(\\w+)(Release|Debug)\$")
+    Matcher matcher = pattern.matcher(task.name)
+    if (matcher.find()) {
+        def flavorType = task.name.substring("bundle".length()).uncapitalize()
+        if (flavorType == null || flavorType.length() == 0) {
+            return
+        }
+
+        def type = "debug"
+        if (flavorType.endsWith("Release")) {
+            type = "release"
+        }
+        def flavor = flavorType.substring(0, flavorType.length() - type.length())
+
+        def renameTaskName = "rename${task.name.capitalize()}Aab"
+        tasks.create(renameTaskName, Copy) {
+            def path = "${buildDir}/outputs/bundle/${flavorType}/"
+            if (flavorType.endsWith("Release")) {
+                path = "${rootDir}/app/${flavor}/${type}/"
+            }
+
+            from(path)
+            include "app-${flavor}-${type}.aab"
+            destinationDir file(path)
+            rename "app-${flavor}-${type}.aab", "enq-${flavorType}-v.${project.android.defaultConfig.versionName}+${project.ext.versionBuild}.aab"
+        }
+
+        task.finalizedBy(renameTaskName)
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:src="@drawable/ic_dot"
+        app:layout_constraintBottom_toBottomOf="@+id/dismissButton"
+        app:layout_constraintEnd_toStartOf="@+id/dismissButton"
+        app:layout_constraintTop_toTopOf="@+id/dismissButton" />
+
+    <ImageView
+        android:id="@+id/dismissButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/ic_round_arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:orientation="vertical"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        app:layout_constraintTop_toBottomOf="@id/dismissButton">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleText"
+            style="@style/LargeTitle"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:text="@string/welcome_to_enq"
+            app:layout_constraintBottom_toTopOf="@+id/updateButton"
+            app:layout_constraintTop_toBottomOf="@id/navigationViewStub"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/secretKeyText"
+            style="@style/AuthSecondaryColorText"
+            android:layout_width="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/your_private_key" />
+
+        <LinearLayout
+            android:id="@+id/inputLayout"
+            style="@style/InputTextLayout"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="6dp">
+
+            <com.enecuum.app.vvm.login.GradientEditText
+                android:id="@+id/privateKeyInputText"
+                style="@style/AuthInputEditText"
+                android:layout_weight="1"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/private_key_hint"
+                android:paddingStart="10dp"
+                android:paddingEnd="2dp" />
+
+            <ImageView
+                android:id="@+id/publicKeyPasteButton"
+                style="@style/InputTextButton"
+                android:src="@drawable/ic_copy" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/inputErrorText"
+            style="@style/ErrorText"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="16dp"
+            android:lines="3"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/signInButton"
+        style="@style/OvalGradientButton"
+        android:layout_marginTop="8dp"
+        android:text="@string/signin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintWidth_percent="0.73" />
+
+    <ImageView
+        android:id="@+id/exclamationView"
+        style="@style/ExclamationIcon"
+        android:src="@drawable/ic_exclamation"
+        app:layout_constraintEnd_toStartOf="@+id/disclaimerText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/disclaimerText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/disclaimerText"
+        style="@style/Disclaimer"
+        android:text="@string/disclaimer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/exclamationView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

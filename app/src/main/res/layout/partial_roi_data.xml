@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="28dp"
+    android:paddingRight="28dp"
+    android:id="@+id/roiLayout"
+    tools:showIn="@layout/fragment_roi">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/titleLabel"
+        style="@style/MediumTitle"
+        android:layout_marginTop="28dp"
+        android:text="@string/roi_alert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/minLabel"
+        style="@style/SmallColoredText"
+        android:layout_marginTop="8dp"
+        android:text="@string/min_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/maxLabel"
+        style="@style/SmallColoredText"
+        android:layout_marginTop="8dp"
+        android:text="@string/max_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleLabel" />
+
+    <SeekBar
+        android:id="@+id/stakeSeekBar"
+        style="@style/FlatSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/minLabel" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/stakeText"
+        style="@style/LargeTitle"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:lines="1"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stakeSeekBar" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorBorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stakeText" />
+
+    <CheckBox
+        android:id="@+id/referralCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:buttonTint="@color/colorWhite"
+        android:fontFamily="sans-serif"
+        android:paddingRight="8dp"
+        android:text="@string/referral_tick"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/roiLabel"
+        style="@style/MediumTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/roi"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/referralCheckBox" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/roiLabel">
+
+        <LinearLayout
+            android:id="@+id/labelsLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:clipChildren="false"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/roiDailyLabel"
+                style="@style/RoiLabel"
+                android:text="@string/roi_daily" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/roiWeeklyLabel"
+                style="@style/RoiLabel"
+                android:text="@string/roi_weekly" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/roiMonthlyLabel"
+                style="@style/RoiLabel"
+                android:text="@string/roi_monthly" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/roiAnnualText"
+                style="@style/RoiLabel"
+                android:text="@string/roi_annual" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/percentsLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiDailyPercentText"
+                    style="@style/RoiLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="0" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiDailyPercentCurrency"
+                    style="@style/RoiAccentLabel"
+                    android:layout_marginStart="2dp"
+                    android:text="@string/percent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiWeeklyPercentText"
+                    style="@style/RoiLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="0" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiWeeklyPercentCurrency"
+                    style="@style/RoiAccentLabel"
+                    android:layout_marginStart="2dp"
+                    android:text="@string/percent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiMonthlyPercentText"
+                    style="@style/RoiLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="0" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiMonthlyPercentCurrency"
+                    style="@style/RoiAccentLabel"
+                    android:layout_marginStart="2dp"
+                    android:text="@string/percent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiAnnualPercentText"
+                    style="@style/RoiLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="0" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiAnnualPercentCurrency"
+                    style="@style/RoiAccentLabel"
+                    android:layout_marginStart="2dp"
+                    android:text="@string/percent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/valuesLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiDailyValueText"
+                    style="@style/RoiLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="0" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiDailyValueCurrency"
+                    style="@style/RoiAccentLabel"
+                    android:layout_marginStart="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiWeeklyValueText"
+                    style="@style/RoiLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="0" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiWeeklyValueCurrency"
+                    style="@style/RoiAccentLabel"
+                    android:layout_marginStart="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiMonthlyValueText"
+                    style="@style/RoiLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="0" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiMonthlyValueCurrency"
+                    style="@style/RoiAccentLabel"
+                    android:layout_marginStart="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiAnnualValueText"
+                    style="@style/RoiLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="0" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/roiAnnualValueCurrency"
+                    style="@style/RoiAccentLabel"
+                    android:layout_marginStart="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

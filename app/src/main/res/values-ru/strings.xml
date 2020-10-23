@@ -1,0 +1,267 @@
+<resources>
+
+    <!--currency strings-->
+    <string name="balance_enq">Баланс: %s %s</string>
+    <string name="welcome_to_enq">Добро пожаловать в %s</string>
+    <string name="no_enq">Пока нет %s…</string>
+
+
+    <!--main-->
+    <string name="miner_app_download">Скачать мобильную мастерноду Enecuum</string>
+    <string name="balance_with_colon">Баланс:</string>
+    <string name="balance">Баланс</string>
+    <string name="start_activity">начать работу</string>
+    <string name="stop_activity">остановить работу</string>
+    <string name="connecting_btn">соединение</string>
+
+
+    <!--auth-->
+    <string name="your_address">Ваш адрес</string>
+    <string name="your_private_key">Ваш приватный ключ</string>
+    <string name="copied_private_key">Приватный ключ скопирован в буфер обмена</string>
+    <string name="copied_address">Адрес скопирован в буфер обмена</string>
+    <string name="copy">Копировать</string>
+
+    <string name="start_using_wallet">Начать использование</string>
+
+    <string name="private_key_import_title">Импорт приватного ключа</string>
+    <string name="private_key">Приватный ключ</string>
+    <string name="private_key_import_hint">Введите ваш приватный ключ для импорта</string>
+    <string name="private_key_hint">Введите ваш приватный ключ </string>
+    <string name="signin">Войти</string>
+
+    <string name="create_new_wallet">Создать новый кошелек</string>
+    <string name="import_wallet">Импортировать кошелек</string>
+
+
+    <!--menu-->
+    <string name="settings">Настройки</string>
+    <string name="about">О приложении</string>
+    <string name="my_address">Мой адрес</string>
+    <string name="community">Сообщество</string>
+    <string name="entry_point">Точка входа</string>
+    <string name="entry_point_url">URL точки входа</string>
+    <string name="save_url">Сохранить URL</string>
+
+
+    <!--about-->
+    <string name="about_app_title">Мобильное приложение Enecuum\nEnecuum HK Limited.</string>
+    <string name="about_white_paper">Официальный документ</string>
+    <string name="about_version">Версия приложения: %s\nВерсия протокола Trinity: %d.0.0</string>
+    <string name="about_tech">Технический документ</string>
+    <string name="about_terms">Условия использования</string>
+    <string name="about_privacy">Политика конфиденциальности</string>
+
+    <!--import key-->
+    <string name="import_key_warning_title">Предупреждение!</string>
+    <string name="import_key_warning">Ваш текущий приватный ключ будет удален из памяти устройства после импорта нового ключа.\nУбедитесь, что у вас есть резервная копия.</string>
+
+
+    <!--faq-->
+    <string name="faq_battery_title">Заряд батареи</string>
+    <string name="faq_battery">С точки зрения использования CPU / GPU, PoA-узел не выполняет майнинг обычным способом Proof-of-Work. Вместо этого мобильный узел Enecuum PoA выполняет криптографические проверки и подписи, что аналогично процессу при открытии веб-сайта через https (безопасное соединение). В результате использование батареи мобильным приложением Enecuum сравнимо с работой мобильного браузера или чата. Вы никогда не задумываетесь о времени автономной работы, выбирая безопасный чат или веб-сайт вместо незащищенного, верно?</string>
+    <string name="faq_network_title">Использование сети</string>
+    <string name="faq_network">Говоря об использовании интернет-трафика приложением Enecuum, можно продолжить аналогию с браузером. Возможно, вы не смотрите YouTube и не скачиваете фильмы через мобильную сеть, если у вас ограниченный или платный тарифный план. Так и с Enecuum: мы рекомендуем запускать PoA-активность, подключившись к точке доступа WiFi, в подобных случаях. Фактический объем потребляемого трафика зависит от загруженности сети и количества онлайн-участников PoA и рассчитан быть легким в будущей основной сети, за счет стимулирования вознаграждениями/комиссиями. Но во время работы тестовой сети не гарантируется постоянный и предсказуемый объем трафика.</string>
+    <string name="faq_airdrop_title">Airdrop</string>
+    <string name="faq_airdrop"><![CDATA[
+    Enecuum запускает новую стадию Airdrop 2.0 ("Золотая Лихорадка"), во время которой участники сети будут награждены ERC-20 токенами %s. Enecuum начинает Золотую Лихорадку вместе с мобильным приложением (<u><a href=\"https://app.enecuum.com\">https://app.enecuum.com</a></u>), блокчейн эксплорером (<u><a href=\"https://neuro.enecuum.com\">https://neuro.enecuum.com</a></u>) и интернет-кошельком (<u><a href=\"https://wallet.enecuum.com\">https://wallet.enecuum.com</a></u>), который позволит пользователям хранить %s монеты, выводить и обменивать свои %s монеты на токены ERC-20. Участники Airdrop будут награждаться за установку и майнинг с помощью монет %s. Золотая Лихорадка делится на несколько стадий, во время которых команда разработчиков Enecuum будет работать над улучшением работоспособности и практичности Нейро.
+    ]]></string>
+    <string name="faq_support_title">Поддержка</string>
+    <string name="faq_support"><![CDATA[Обращайтесь за помощью в <u><a href="https://t.me/Enecuum">группу Telegram</a></u>]]></string>
+    <string name="disclaimer">Приватный ключ необходим для разблокировки Вашего кошелька, который обеспечивает управление средствами.\n
+         Пожалуйста, сохраните свой приватный ключ и предотвратите его кражу. Enecuum не хранит копии вашего приватного ключа. В случае потери приватного ключа мы не сможем его восстановить. Enecuum не несет ответственности за любые неудобства, вызванные потерей приватного ключа.</string>
+
+
+    <!--common-->
+    <string name="loading_balance">Загружаем баланс…</string>
+    <string name="connecting">Соединение…</string>
+    <string name="continue_mining">♔ Сохраняйте Спокойствие и Продолжайте Майнинг</string>
+
+    <string name="no_internet">Нет интернета</string>
+    <string name="are_you_sure">Вы уверены?</string>
+    <string name="import_new_private_key">Импортировать новый Приватный Ключ</string>
+    <string name="empty_private_key">Пустой Приватный Ключ!</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+    <string name="qr_saved">QR код сохранён в Галерею</string>
+
+    <string name="language">Язык</string>
+    <string name="receive">Получить</string>
+    <string name="reject">Отклонить</string>
+    <string name="enq_address_to_send">Адрес %s для отправки</string>
+    <string name="error">Ошибка</string>
+    <string name="send">Отправить</string>
+    <string name="send_confirmation">Подтверждение Отправки</string>
+    <string name="success">Успешно</string>
+    <string name="swap">Обмен</string>
+    <string name="to">Кому</string>
+    <string name="wrong_format">Неверное значение </string>
+    <string name="wrong_secret_key_format">Ключ должен быть шестнадцатеричной строкой длиной 64 символа</string>
+    <string name="amount">Количество</string>
+    <string name="amount_too_big">Слишком много для вашего баланса</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="cancel">Отменить</string>
+    <string name="max">Max</string>
+    <string name="update">Обновление</string>
+    <string name="transaction_result">Результат транзакции </string>
+    <string name="there_are_new_ver">Доступна новая версия приложения Enecuum </string>
+    <string name="share_qr">Поделиться QR-кодом </string>
+    <string name="zero_amount">Нулевое количество </string>
+    <string name="zero_balance">Нулевой баланс</string>
+    <string name="next">Далее</string>
+    <string name="share_code">Поделиться кодом</string>
+    <string name="skip">Пропустить</string>
+
+
+    <!--update-->
+    <string name="update_now">Обновить сейчас</string>
+    <string name="update_required">Требуется обновление</string>
+    <string name="critical_update_description"> Для продолжения требуется обновление приложения Enecuum</string>
+    <string name="faq">FAQ</string>
+
+
+    <!--stats-->
+    <string name="pos_nodes">узлы PoS</string>
+    <string name="pow_nodes">узлы PoW</string>
+    <string name="poa_nodes">узлы PoA</string>
+    <string name="max_tps">Макс. TPS</string>
+    <string name="curr_tps">Текущее TPS</string>
+    <string name="accounts">Счета </string>
+    <string name="open_in_browser">Открыть в браузере</string>
+    <string name="stats_last_block">Последний блок</string>
+    <string name="stats_rewards">Награды за 24ч</string>
+    <string name="stats_coindata">Данные монеты</string>
+    <string name="stats_coindata_circ_supply">Circ. Supply:</string>
+    <string name="stats_coindata_max_supply">Max Supply:</string>
+    <string name="stats_total_nodes">Всего нод:</string>
+
+
+    <!--roi-->
+    <string name="roi_annual">В год</string>
+    <string name="roi_daily">В день</string>
+    <string name="roi_monthly">В месяц</string>
+    <string name="roi_weekly">В неделю</string>
+    <string name="roi_alert">Калькулятор доходности за последние 24 часа</string>
+    <string name="max_roi">Max ROI: %s %% при стейке %s %s </string>
+    <string name="min_stake_dialog_title">Минимальный стейк %S %s</string>
+
+
+    <!--referral-->
+    <string name="referral_tick">Я реферал</string>
+    <string name="referral_title">Поздравляем!</string>
+    <string name="referral_skip_message">С реферальным кодом вы заработаете больше токенов!</string>
+    <string name="referral_same_address">Реферальный адрес должен отличаться от вашего</string>
+    <string name="referral_program">Реферальная программа</string>
+    <string name="referral_buy_title">Реферальная программа</string>
+    <string name="referral_not_enough">Недостаточно %s на реферальном кошельке</string>
+    <string name="referral_next_message">Ваши доходы от реферальной программы будут показаны в Блокчейн эксплорере</string>
+    <string name="referral_message">Вы открыли Ваш личный реферальный код агента!</string>
+    <string name="referral_buy_message">Как только вы заработаете %s %s, Вы сможете разблокировать свой реферальный код агента. Этот код может быть использован другими пользователями, чтобы получать больше %s, предоставляя вам пассивный доход.</string>
+
+
+    <!--buy-->
+    <string name="buy_tab_native">Картой</string>
+    <string name="buy_tab_erc_20">На биржах</string>
+    <string name="buy_native_title_link">Купите нативные %s монеты</string>
+    <string name="buy_native_title">на сайте нашего партнёра, чтобы сразу начать майнинг. Для покупки криптовалюты банковской картой необходимо пройти процедуру идентификации KYC.</string>
+    <string name="buy_erc_20_title"><![CDATA[Купите ERC-20 токен на перечисленных биржах и <a href="https://guides.enecuum.com/ru/enq/how-to-swap.html">произведите своп (конвертацию) в мобильную мастерноду,</a> чтобы начать майнинг. Для свопа ERC-20 токенов в нативные монеты необходимо иметь монеты и кошелёк Ethereum.]]></string>
+    <string name="buy_on_exchange">Купить на бирже</string>
+    <string name="pay_by_card">Оплатить картой</string>
+
+    <!--urls-->
+    <string name="community_telegram_link">https://t.me/Enecuum">https://t.me/Enecuum</string>
+
+
+    <!--bottom tabs-->
+    <string name="tab_transfer">Отправить/Получить</string>
+    <string name="tab_home">Домой</string>
+    <string name="tab_mining">Майнинг</string>
+    <string name="tab_token_issue">Выпуск токена</string>
+    <string name="token_balance">Баланс токенов</string>
+    <string name="mine">Майнинг</string>
+    <string name="delegate">Делегировать</string>
+    <string name="token_issue">Выпуск токена</string>
+    <string name="token_name">Имя токена</string>
+    <string name="token_ticker">Тикер</string>
+    <string name="token_supply">Эмиссия токенов</string>
+    <string name="token_users_tx_fee">Комиссия по токену</string>
+    <string name="token_type_non_reissuable">С фикс. эмиссией</string>
+    <string name="token_issue_emmissions_tip">Эмиссия не может быть изменена.</string>
+    <string name="token_issue_emmissions_amount">Максимальная эмиссия 1 844 674 407</string>
+    <string name="token_decimals">Дробных десятичных знаков:</string>
+    <string name="token_owner">Владелец токена</string>
+    <string name="token_issue_fee">Комиссия за выпуск</string>
+    <string name="token_fee">Комиссия</string>
+    <string name="token_min_fee">Минимальная комиссия</string>
+    <string name="token_choose">Выберите токен</string>
+    <string name="check_detail">Проверьте данные</string>
+    <string name="reward">Награда</string>
+    <string name="available">Доступно</string>
+    <string name="delegated">Делегировано</string>
+    <string name="undelegated">Отозвано</string>
+    <string name="transit">В пересылке</string>
+    <string name="token">Токен</string>
+
+    <!--smart staking-->
+    <string name="all_stake_providers">Все стейк провайдеры</string>
+    <string name="my_validators">Мои валидаторы</string>
+    <string name="tab_sum_number_format" translatable="false">(%d)</string>
+    <string name="total_stake">Суммарный стейк:</string>
+    <string name="annual_reward">Награда за год:</string>
+    <string name="stake_power">Доля в стейке</string>
+    <string name="provider_page">Страница стейк провайдера</string>
+    <string name="enter_delegate_amount">Введите сумму для делегированя</string>
+    <string name="enter_undelegate_amount">Введите сумму для отзыва</string>
+    <string name="max_available">Максимум</string>
+    <string name="check_delegation_detail">Проверьте параметры операции</string>
+    <string name="validator_page">Страница валидатора</string>
+    <string name="delegated_amount">Делегировано</string>
+    <string name="undelegated_amount">Отозвано</string>
+    <string name="reward_amount">Награда</string>
+    <string name="transit_amount">В пересылке</string>
+    <string name="available_for_delegate">Available for delegate: %1$d %2$s</string>
+    <string name="undelegate">Отозвать</string>
+    <string name="transfer_to_wallet">Трансфер на кошелек</string>
+    <string name="check_undelegation_detail">Проверьте параметры операции</string>
+    <string name="from">От кого</string>
+    <string name="check_transfer_back_detail">Проверьте параметры операции</string>
+    <string name="amount_to_transfer">Сумма трансфера</string>
+    <string name="delegation_fee">Комиссия за делегирование</string>
+    <string name="undelegation_fee">Комиссия за отзыв</string>
+    <string name="transfer_back_fee">Transfer fee</string>
+    <string name="total_fee">Суммарная комиссия</string>
+    <string name="claim_reward">Забрать награду</string>
+    <string name="reinvest">Реинвестировать</string>
+
+    <string name="provider_fee">Комиссия стейк провайдера</string>
+
+    <string name="check_claim_reward_detail">Проверьте параметры операции</string>
+    <string name="claim_reward_fee">Комиссия за получение</string>
+
+    <string name="active">Активно</string>
+    <string name="inactive">Оффлайн</string>
+    <string name="performance">В работе %1$s%%</string>
+    <string name="create_new_token">Создание токенов</string>
+    <string name="manage_my_tokens">Управление токенами</string>
+    <string name="mint">Выпустить</string>
+    <string name="burn">Сжечь</string>
+    <string name="referral_copied">Реферальный код скопирован в буфер обмена</string>
+    <string name="back">Назад</string>
+    <string name="please_check_the_address">Пожалуйста, проверьте адрес</string>
+    <string name="node_map">Карта узлов</string>
+    <string name="network_stats">Статистика сети</string>
+    <string name="difficulty">Сложность</string>
+    <string name="powRewards">Награды PoW за 24ч</string>
+    <string name="posRewards">Награды PoS за 24ч</string>
+    <string name="poaRewards">Награды PoA за 24ч</string>
+    <string name="buy">Купить</string>
+    <string name="coins_on_poa">Общий стейк PoA</string>
+    <string name="coins_on_pos">Общий стейк PoS</string>
+    <string name="token_type_reissuable">Перевыпускаемый</string>
+    <string name="faq_guides"><![CDATA[Чтобы узнать больше, перейдите в раздел <u><a href="https://guides.enecuum.com/ru/faq.html">часто задаваемых вопросов</a></u> на сайте руководств по сети Enecuum.]]></string>
+    <string name="faq_guides_title">Руководства</string>
+    <string name="save">Сохранить</string>
+    <string name="operation">Операция</string>
+
+</resources>

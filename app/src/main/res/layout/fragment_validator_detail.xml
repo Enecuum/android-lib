@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/partial_toolbar_submenu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/background_dark_rounded"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title"
+                style="@style/XXSmallWhiteText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="18dp"
+                android:ellipsize="end"
+                app:layout_constraintBottom_toBottomOf="@+id/icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon"
+                app:layout_constraintTop_toTopOf="@+id/icon"
+                tools:text="SubZero" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="22dp"
+                android:background="@color/secondary_color"
+                app:layout_constraintTop_toBottomOf="@+id/icon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/availableAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_view"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/separator"
+                tools:text=" Available for delegate: 2,000.00 ENQ" />
+
+            <LinearLayout
+                android:id="@+id/delegatedLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="18dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/availableAmount">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/delegatedLabel"
+                    style="@style/flatCommonLabel"
+                    android:text="@string/delegated_amount"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/delegatedValue"
+                    style="@style/flatCommonLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:paddingEnd="2dp"
+                    android:text="0"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <com.enecuum.app.vvm.common.TextButton
+                android:id="@+id/delegateButton"
+                style="@style/ButtonSmall"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toStartOf="@+id/undelegateButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/delegatedLayout" />
+
+            <com.enecuum.app.vvm.common.TextButton
+                android:id="@+id/undelegateButton"
+                style="@style/ButtonSmall"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="18dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/delegateButton"
+                app:layout_constraintTop_toTopOf="@+id/delegateButton" />
+
+            <View
+                android:id="@+id/separator2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="18dp"
+                android:background="@color/secondary_color"
+                app:layout_constraintTop_toBottomOf="@+id/delegateButton" />
+
+            <LinearLayout
+                android:id="@+id/rewardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="18dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/separator2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/rewardLabel"
+                    style="@style/flatCommonLabel"
+                    android:text="@string/reward_amount"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/rewardValue"
+                    style="@style/flatCommonLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:paddingEnd="2dp"
+                    android:text="0"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <com.enecuum.app.vvm.common.TextButton
+                android:id="@+id/claimButton"
+                style="@style/ButtonSmall"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="18dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rewardLayout" />
+
+            <View
+                android:id="@+id/separator4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="18dp"
+                android:background="@color/secondary_color"
+                app:layout_constraintTop_toBottomOf="@+id/claimButton" />
+
+            <LinearLayout
+                android:id="@+id/transitLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/separator4">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/transitLabel"
+                    style="@style/flatCommonLabel"
+                    android:text="@string/transit_amount"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/transitValue"
+                    style="@style/flatCommonLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:paddingEnd="2dp"
+                    android:text="0"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separator3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="18dp"
+                android:background="@color/secondary_color"
+                app:layout_constraintTop_toBottomOf="@+id/transitLayout" />
+
+            <LinearLayout
+                android:id="@+id/undelegatedLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="18dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/separator3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/undelegatedLabel"
+                    style="@style/flatCommonLabel"
+                    android:text="@string/undelegated_amount"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/undelegatedValue"
+                    style="@style/flatCommonLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:paddingEnd="2dp"
+                    android:text="0"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <com.enecuum.app.vvm.common.TextButton
+                android:id="@+id/transferToWalletButton"
+                style="@style/ButtonSmall"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="33dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/undelegatedLayout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

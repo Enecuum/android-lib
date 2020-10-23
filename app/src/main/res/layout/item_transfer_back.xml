@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="28dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/amountLabel"
+        style="@style/flatCommonLabel"
+        android:layout_width="match_parent"
+        android:text="@string/amount_to_transfer" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/amountTextView"
+        style="@style/FlatInputEditText"
+        android:layout_marginTop="6dp"
+        android:maxLength="40"
+        android:padding="10dp"
+        android:text="0" />
+
+    <com.enecuum.app.vvm.common.TextButton
+        android:id="@+id/transferToWalletButton"
+        style="@style/ButtonSmall"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="12dp" />
+</LinearLayout>

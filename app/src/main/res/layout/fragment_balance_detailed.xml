@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark">
+
+    <com.enecuum.app.vvm.main.BalanceInfoView
+        android:id="@+id/balanceInfoView"
+        style="@style/BalanceInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/availableLabel"
+        style="@style/balanceLabel"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/available"
+        app:layout_constraintStart_toStartOf="@+id/balanceInfoView"
+        app:layout_constraintTop_toBottomOf="@+id/balanceInfoView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/availableValueText"
+        style="@style/balanceValueText"
+        app:layout_constraintBaseline_toBaselineOf="@id/availableLabel"
+        app:layout_constraintEnd_toStartOf="@+id/availableCurrency"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/availableLabel"
+        tools:text="25" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/availableCurrency"
+        style="@style/ticker"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/availableLabel"
+        app:layout_constraintEnd_toEndOf="@+id/balanceInfoView"
+        tools:text="ENQ" />
+
+    <View
+        android:id="@+id/separator1"
+        style="@style/lineSeparator"
+        app:layout_constraintEnd_toEndOf="@+id/availableCurrency"
+        app:layout_constraintStart_toStartOf="@+id/availableLabel"
+        app:layout_constraintTop_toBottomOf="@+id/availableLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/delegatedLabel"
+        style="@style/balanceLabel"
+        android:layout_marginTop="8dp"
+        android:text="@string/delegated"
+        app:layout_constraintStart_toStartOf="@+id/separator1"
+        app:layout_constraintTop_toBottomOf="@+id/separator1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/delegatedValueText"
+        style="@style/balanceValueText"
+        app:layout_constraintBaseline_toBaselineOf="@id/delegatedLabel"
+        app:layout_constraintEnd_toStartOf="@+id/delegatedCurrency"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/delegatedLabel"
+        tools:text="25" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/delegatedCurrency"
+        style="@style/ticker"
+        app:layout_constraintBaseline_toBaselineOf="@id/delegatedLabel"
+        app:layout_constraintEnd_toEndOf="@+id/separator3"
+        tools:text="ENQ" />
+
+    <View
+        android:id="@+id/separator2"
+        style="@style/lineSeparator"
+        app:layout_constraintEnd_toEndOf="@+id/availableCurrency"
+        app:layout_constraintStart_toStartOf="@+id/availableLabel"
+        app:layout_constraintTop_toBottomOf="@+id/delegatedLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/rewardLabel"
+        style="@style/balanceLabel"
+        android:layout_marginTop="8dp"
+        android:text="@string/reward"
+        app:layout_constraintStart_toStartOf="@+id/separator2"
+        app:layout_constraintTop_toBottomOf="@+id/separator2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/rewardValueText"
+        style="@style/balanceValueText"
+        app:layout_constraintBaseline_toBaselineOf="@id/rewardLabel"
+        app:layout_constraintEnd_toStartOf="@+id/rewardCurrency"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/rewardLabel"
+        tools:text="25" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/rewardCurrency"
+        style="@style/ticker"
+        app:layout_constraintBaseline_toBaselineOf="@id/rewardLabel"
+        app:layout_constraintEnd_toEndOf="@+id/separator3"
+        app:layout_constraintTop_toBottomOf="@+id/balanceInfoView"
+        tools:text="ENQ" />
+
+    <View
+        android:id="@+id/separator3"
+        style="@style/lineSeparator"
+        app:layout_constraintEnd_toEndOf="@+id/separator1"
+        app:layout_constraintStart_toStartOf="@+id/separator1"
+        app:layout_constraintTop_toBottomOf="@+id/rewardLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/transitLabel"
+        style="@style/balanceLabel"
+        android:layout_marginTop="8dp"
+        android:text="@string/transit"
+        app:layout_constraintStart_toStartOf="@+id/separator3"
+        app:layout_constraintTop_toBottomOf="@+id/separator3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/transitValueText"
+        style="@style/balanceValueText"
+        app:layout_constraintBaseline_toBaselineOf="@id/transitLabel"
+        app:layout_constraintEnd_toStartOf="@+id/transitCurrency"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/transitLabel"
+        tools:text="25" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/transitCurrency"
+        style="@style/ticker"
+        app:layout_constraintBaseline_toBaselineOf="@id/transitLabel"
+        app:layout_constraintEnd_toEndOf="@+id/separator3"
+        app:layout_constraintTop_toBottomOf="@+id/separator3"
+        tools:text="ENQ" />
+
+    <View
+        android:id="@+id/separator4"
+        style="@style/lineSeparator"
+        app:layout_constraintEnd_toEndOf="@+id/availableCurrency"
+        app:layout_constraintStart_toStartOf="@+id/transitLabel"
+        app:layout_constraintTop_toBottomOf="@+id/transitLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/undelegatedLabel"
+        style="@style/balanceLabel"
+        android:layout_marginTop="8dp"
+        android:text="@string/undelegated"
+        app:layout_constraintStart_toStartOf="@+id/separator4"
+        app:layout_constraintTop_toBottomOf="@+id/separator4" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/undelegatedValueText"
+        style="@style/balanceValueText"
+        app:layout_constraintBaseline_toBaselineOf="@id/undelegatedLabel"
+        app:layout_constraintEnd_toStartOf="@+id/undelegatedCurrency"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/undelegatedLabel"
+        tools:text="25" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/undelegatedCurrency"
+        style="@style/ticker"
+        app:layout_constraintBaseline_toBaselineOf="@id/undelegatedLabel"
+        app:layout_constraintEnd_toEndOf="@+id/separator4"
+        app:layout_constraintTop_toBottomOf="@+id/separator4"
+        tools:text="ENQ" />
+</androidx.constraintlayout.widget.ConstraintLayout>

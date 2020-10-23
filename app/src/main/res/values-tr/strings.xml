@@ -1,0 +1,252 @@
+<resources>
+
+    <!--currency strings-->
+    <string name="balance_enq">Bakiye: %s %s</string>
+    <string name="welcome_to_enq">%s ağına hoş geldiniz</string>
+    <string name="no_enq">Henüz %s yok…</string>
+
+
+    <!--main-->
+    <string name="balance_with_colon">Bakiye:</string>
+    <string name="balance">Bakiye</string>
+    <string name="start_activity">aktiviteyi başlat</string>
+    <string name="stop_activity">aktiviteyi durdur</string>
+    <string name="connecting_btn">bağlanıyor</string>
+
+
+    <!--auth-->
+    <string name="your_address">Adresiniz</string>
+    <string name="your_private_key">Özel anahtarınız</string>
+    <string name="copied_private_key">Özel anahtar panoya kopyalandı</string>
+    <string name="copied_address">Adres panoya kopyalandı</string>
+    <string name="copy">Kopyala</string>
+
+    <string name="start_using_wallet">Cüzdanı kullanmaya başlayın</string>
+
+    <string name="private_key_import_title">Özel anahtar içe aktar</string>
+    <string name="private_key">Özel anahtar</string>
+    <string name="private_key_import_hint">İçe aktarmak Için özel anahtarınızı girin</string>
+    <string name="private_key_hint">Özel anahtarınızı girin</string>
+    <string name="signin">Oturum aç</string>
+
+    <string name="create_new_wallet">Yeni cüzdan oluştur</string>
+    <string name="import_wallet">Cüzdanı içe aktar</string>
+
+
+    <!--menu-->
+    <string name="settings">Ayarlar</string>
+    <string name="about">Uygulama hakkında</string>
+    <string name="my_address">Adresim</string>
+    <string name="community">Topluluk</string>
+    <string name="entry_point">Giriş noktası</string>
+    <string name="entry_point_url">Giriş noktası URL\'si</string>
+    <string name="save_url">URL\'yi kaydet</string>
+
+
+    <!--about-->
+    <string name="about_app_title">Enecuum mobil uygulaması\nEnecuum HK Limited.</string>
+    <string name="about_white_paper">Tanıtım belgesi</string>
+    <string name="about_version">Sürüm: %s\nTrinity Protokolü sürümü: %d.0.0</string>
+    <string name="about_tech">Teknik makale</string>
+    <string name="about_terms">Hüküm ve koşullar</string>
+    <string name="about_privacy">Gizlilik politikası</string>
+
+
+    <!--import key-->
+    <string name="import_key_warning_title">Uyarı!</string>
+    <string name="import_key_warning">Mevcut Özel Anahtarınız yenisini aldıktan sonra cihaz hafızasından silinecektir.\nLütfen bir yedek kopyaya sahip olduğunuzdan emin olun.</string>
+
+
+    <!--faq-->
+    <string name="faq">SSS</string>
+    <string name="faq_battery_title">Pil ömrü</string>
+    <string name="faq_battery">СPU/GPU kullanımı açısından PoA düğümü, normal Proof-of-Work (İş İspatı) içinde madencilik yapmaz. Bunun yerine Enecuum PoA mobil düğümü, https (güvenli bağlantı) aracılığıyla bir web sitesinin açılması sırasında işleme benzer kriptografik onaylamalar ve imzalar gerçekleştirir. Sonuç olarak, Enecuum mobil uygulamasının pil kullanımı, mobil tarayıcı veya sohbet çalışmasıyla karşılaştırılabilir. Pil ömrünü asla güvenli bir sohbet veya güvenli bir web sitesi seçerek düşünmezsiniz, değil mi?</string>
+    <string name="faq_network_title">Ağ kullanımı</string>
+    <string name="faq_network">Tarayıcılı analoji, Enecuum uygulaması tarafından İnternet trafiği kullanımından bahsetmeye devam ediyor. Enecuum ile muhtemelen YouTube izlemiyor veya mobil ağ üzerinden film indirmiyorsunuz - sınırlı veya ücretli bir veri planınız varsa, bir WiFi noktasına bağlı PoA etkinliğini başlatmanızı öneririz. Gerçek tüketilen trafik hacmi, ağ yüküne ve çevrimiçi PoA katılımcılarının sayısına bağlı olup gelecek ana ağda, ödül/ücret uyarımı ile ulaşılabilecek kadar hafif olması amaçlanır. Ancak testnet aktiviteleri sırasında trafik hacminin kalıcı ve öngörülebilir olması garanti edilmez.</string>
+    <string name="faq_airdrop_title">Airdrop</string>
+    <string name="faq_airdrop">Enecuum, katılımcılarını %s ERC-20 token\'leriyle ödüllendirecek yeni bir Airdrop 2.0 (“Gold Rush”) başlatıyor. Enecuum, mobil uygulama ile birlikte bir Gold Rush\'ı kullanıma sunuyor (&lt;u&gt;&lt;a href=\"https://app.enecuum.com\"&gt;https://app.enecuum.com&lt;/a&gt;&lt;/u&gt;), blockchain explorer (&lt;u&gt;&lt;a href=\"https://neuro.enecuum.com\"&gt;https://neuro.enecuum.com&lt;/a&gt;&lt;/u&gt;) ve bir web cüzdanı (&lt;u&gt;&lt;a href=\"https://wallet.enecuum.com\"&gt;https://wallet.enecuum.com&lt;/a&gt;&lt;/u&gt;), kullanıcıların %s paralarını saklamalarını, çekmelerini ve %s ERC-20 token\'lerine dönüştürmelerini sağlar. Uygulamayı indirmek ve %s paraları ile madencilik yapmak için Airdrop katılımcıları ödüllendirilecektir. Gold Rush, Enecuum teknik ekibinin Neuro\'nun ayarlarını ve kullanılabilirliğini kontrol edeceği birkaç aşaması olacak. Daha fazla bilgiyi BURADA bulabilirsiniz</string>
+    <string name="faq_support_title">Destek</string>
+    <string name="faq_support">&lt;u&gt;&lt;a href=https://t.me/Enecuum_EN&gt;Telegram grubu&lt;/a&gt;&lt;/u&gt; içinde yardım istemekten çekinmeyin</string>
+    <string name="disclaimer">Özel Anahtar, Mining Airdrop programına katılım da dahil olmak üzere fon yönetimi sağlayan cüzdanınızın kilidini açmak için kullanılır. Lütfen özel anahtarınızı kaydettiğinizden ve çalınmasını önlediğinizden emin olun. Enecuum özel anahtarınızı saklamaz. Özel anahtar kaybı durumunda onu kurtaramayız. Enecuum, özel anahtar kaybından kaynaklanan rahatsızlıklardan sorumlu değildir.</string>
+
+
+    <!--common-->
+    <string name="loading_balance">Bakiye yükleniyor…</string>
+    <string name="connecting">Bağlanıyor…</string>
+    <string name="continue_mining">♔ Sakin Ol ve Madenciliğe Devam Et</string>
+
+    <string name="no_internet">İnternet yok</string>
+    <string name="import_new_private_key">Yeni Özel Anahtar Aktar</string>
+    <string name="empty_private_key">Boş Özel Anahtar!</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+
+    <string name="cancel">İptal et</string>
+    <string name="are_you_sure">Emin misiniz?</string>
+    <string name="language">Dil</string>
+    <string name="send">Gönder</string>
+    <string name="receive">Al</string>
+    <string name="swap">Deği̇şti̇r</string>
+    <string name="send_confirmation">Onay Gönder</string>
+    <string name="amount">Miktar</string>
+    <string name="enq_address_to_send">Gönderilecek %s adresi</string>
+    <string name="reject">Reddet</string>
+    <string name="confirm">Onayla</string>
+    <string name="share_qr">QR Kodunu Paylaş</string>
+    <string name="to">Ki̇me</string>
+    <string name="max">Maks</string>
+    <string name="wrong_format">Yanlış değer</string>
+    <string name="transaction_result">İşlem sonucu</string>
+    <string name="success">Başarı</string>
+    <string name="error">Hata</string>
+    <string name="zero_amount">Sıfır miktarı</string>
+    <string name="amount_too_big">Bakiyeniz için çok fazla</string>
+    <string name="wrong_secret_key_format">64 karakter uzunluğunda onaltılık dize olmalı</string>
+    <string name="zero_balance">Sıfır bakiye</string>
+    <string name="update">Güncelle</string>
+    <string name="there_are_new_ver">Enecuum uygulamasının yeni bir sürümü var</string>
+    <string name="next">Sonraki</string>
+    <string name="skip">Atla</string>
+    <string name="save">Kaydet</string>
+    <string name="qr_saved">QRCode Galeri’ye kaydedildi</string>
+
+
+    <!--update-->
+    <string name="update_now">Şimdi güncelle</string>
+    <string name="update_required">Güncelleme gerekli</string>
+    <string name="critical_update_description">Devam etmek için Enecuum’a güncelleme yapılması gerekiyor</string>
+
+
+    <!--stats-->
+    <string name="pos_nodes">PoS düğümleri</string>
+    <string name="pow_nodes">PoW düğümleri</string>
+    <string name="poa_nodes">PoA düğümleri</string>
+    <string name="max_tps">Maks TPS</string>
+    <string name="curr_tps">Geçerli TPS</string>
+    <string name="accounts">Hesaplar</string>
+    <string name="open_in_browser">Tarayıcıda aç</string>
+    <string name="stats_last_block">Son blok</string>
+    <string name="stats_rewards">Son 24 saatteki ödüller</string>
+    <string name="stats_coindata">Para Verileri</string>
+    <string name="stats_coindata_circ_supply">Dolaş. Arz:</string>
+    <string name="stats_coindata_max_supply">Max Supply:</string>
+    <string name="stats_total_nodes">Toplam Düğüm:</string>
+
+
+    <!--referral-->
+    <string name="referral_buy_title">Referans programı</string>
+    <string name="referral_buy_message">%s %s kazandıktan sonra, acente referans kodunuzu paylaşabileceksiniz. Bu kod, size pasif gelir sağlayacak daha fazla %s elde etmek için diğer kullanıcılar tarafından kullanılabilir.</string>
+    <string name="referral_title">Tebrikler!</string>
+    <string name="referral_message">Kişisel acente referans kodunuzun kilidini açtınız!</string>
+    <string name="share_code">Kodu paylaş</string>
+    <string name="referral_not_enough">Referans verilen hesapta yeterli %s yok</string>
+    <string name="referral_skip_message">Referans koduyla daha fazla token kazanacaksınız!</string>
+    <string name="referral_next_message">Referans program kazançlarınız Blockchain Explorer\'da gösterilecek</string>
+    <string name="referral_same_address">Referans verilen adres sizinkinden farklı olmalıdır</string>
+    <string name="referral_program">Referans programı</string>
+
+
+    <!--roi-->
+    <string name="roi_daily">Günlük</string>
+    <string name="roi_weekly">Haftalık</string>
+    <string name="roi_monthly">Aylık</string>
+    <string name="roi_annual">Yıllık</string>
+    <string name="min_stake_dialog_title">Minimum hisse %s %s</string>
+    <string name="roi_alert">Son 24 saat iade oranı hesaplayıcısı</string>
+    <string name="max_roi">Maksimum YG: %% %s  - %s %s hissesinde</string>
+
+    <!--buy-->
+    <string name="pay_by_card">Kartla öde</string>
+    <string name="buy_on_exchange">Borsada al</string>
+
+
+    <!--bottom tabs-->
+    <string name="tab_transfer">Gönder/Al</string>
+
+    <!-- - - - - - - - - - - -->
+    <!--flat design iteration-->
+    <!-- - - - - - - - - - - -->
+
+    <string name="back">Geri</string>
+
+    <!--token-->
+    <string name="reward">Ödül</string>
+    <string name="available">Mevcut</string>
+    <string name="delegated">Yetki</string>
+    <string name="transit">Taşıma</string>
+    <string name="undelegated">Undelegated</string>
+    <string name="create_new_token">Yeni Simge Oluştur</string>
+    <string name="manage_my_tokens">Benim Simgelerinizi yönetme</string>
+    <string name="mint">konuya</string>
+    <string name="burn">Yanmak</string>
+    <string name="operation">Operasyon</string>
+    <string name="referral_copied">panoya kopyalanan Yönlendirme kodu</string>
+    <string name="token">Jeton</string>
+    <string name="token_balance">Jeton denge</string>
+    <string name="mine">Benim</string>
+    <string name="delegate">Temsilci</string>
+    <string name="token_issue">Jeton oluşturma</string>
+    <string name="token_name">ad</string>
+    <string name="token_ticker">cesaret</string>
+    <string name="token_supply">Arz</string>
+    <string name="token_users_tx_fee">kullanıcıları için Tx ücreti</string>
+    <string name="token_type_non_reissuable">Sigara reissuable</string>
+    <string name="token_type_reissuable">Reissuable</string>
+    <string name="token_issue_emmissions_tip">Emisyonları değiştirilemez.</string>
+    <string name="token_issue_emmissions_amount">Maksimum emisyon 1 844 674 407 olduğu</string>
+    <string name="token_decimals">Basamaklı:</string>
+    <string name="token_owner">Jeton sahibi</string>
+    <string name="token_issue_fee">Sayı ücreti</string>
+    <string name="token_fee">ücret</string>
+    <string name="token_min_fee">Minimum ücret</string>
+    <string name="token_choose">jetonu seç</string>
+    <string name="check_detail">Kontrol detay</string>
+    <string name="please_check_the_address">adresini kontrol edin</string>
+    <string name="all_stake_providers">Tüm kazık sağlayıcıları</string>
+    <string name="my_validators">Benim doğrulayıcılar</string>
+    <string name="total_stake">Toplam aktif hissesini:</string>
+    <string name="annual_reward">Yıllık ödül:</string>
+    <string name="stake_power">Bahis güç</string>
+    <string name="provider_page">Sağlayıcı sayfası</string>
+    <string name="enter_delegate_amount">devretmek tutarı girin</string>
+    <string name="enter_undelegate_amount">undelegate tutarı girin</string>
+    <string name="max_available">mevcut Max</string>
+    <string name="check_delegation_detail">heyeti ayrıntıları kontrol edin</string>
+    <string name="validator_page">Doğrulayıcı sayfa</string>
+    <string name="delegated_amount">Yetki tutarı</string>
+    <string name="undelegated_amount">Undelegated tutar</string>
+    <string name="reward_amount">Ödül miktarı</string>
+    <string name="transit_amount">Transit tutarı</string>
+    <string name="available_for_delegate">yetki verilen kişi için Uygun: %1$d %2$s</string>
+    <string name="undelegate">Undelegate</string>
+    <string name="transfer_to_wallet">cüzdan aktarın</string>
+    <string name="check_undelegation_detail">undelegation ayrıntılarını kontrol</string>
+    <string name="from">itibaren</string>
+    <string name="check_transfer_back_detail">Kontrol transferi detay</string>
+    <string name="amount_to_transfer">transfer Tutar</string>
+    <string name="delegation_fee">Delegasyon ücreti</string>
+    <string name="undelegation_fee">Undelegation ücreti</string>
+    <string name="transfer_back_fee">Transfer ücreti</string>
+    <string name="total_fee">Toplam ücret</string>
+    <string name="claim_reward">ödül talep</string>
+    <string name="reinvest">yeniden yatırım</string>
+    <string name="provider_fee">Sağlayıcı ücreti</string>
+    <string name="check_claim_reward_detail">Hak talebi ayrıntıları kontrol edin</string>
+    <string name="claim_reward_fee">İddia ücreti</string>
+    <string name="active">Aktif</string>
+    <string name="inactive">pasif</string>
+    <string name="performance">Verim %1$s%%</string>
+    <string name="node_map">Düğüm haritası</string>
+    <string name="network_stats">Ağ istatistikleri</string>
+    <string name="coins_on_poa">Paralar PoA üzerine bahis</string>
+    <string name="coins_on_pos">Paraları PoS üzerine bahis</string>
+    <string name="difficulty">zorluk</string>
+    <string name="powRewards">24s PoW ödülleri</string>
+    <string name="posRewards">24s POS ödülleri</string>
+    <string name="poaRewards">24s PoA ödülleri</string>
+    <string name="buy">Satın</string>
+    <string name="faq_guides_title">Kullanım kılavuzları</string>
+    <string name="faq_guides"><![CDATA[Daha fazla bilgi için, <u> <a href="https://guides.enecuum.com/faq.html"> SSS bölümünü okuyunuz </a> </ u> Enecuum Kullanıcı Rehberler.]]></string>
+    <string name="buy_erc_20_title"><![CDATA[Aşağıdaki Borsası Satın ERC-20 Token ve Mobil masternode <u><a href="https://guides.enecuum.com/enq/how-to-swap.html"> Takas madencilik başlatmak için</a></u>. Ethereum cüzdan ve para birimi doğal madeni para içine değiştirilebilir ERC-20 jeton için gereklidir.]]></string>
+
+</resources>

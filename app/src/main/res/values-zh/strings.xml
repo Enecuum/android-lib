@@ -1,0 +1,246 @@
+<resources>
+
+    <!--currency strings-->
+    <string name="balance_enq">余额：%s %s</string>
+    <string name="welcome_to_enq">欢迎来到%s网络</string>
+    <string name="no_enq">还没有%s……</string>
+
+
+    <!--main-->
+    <string name="balance_with_colon">余额：</string>
+    <string name="balance">余额</string>
+    <string name="start_activity">开始运行</string>
+    <string name="stop_activity">停止运行</string>
+    <string name="connecting_btn">连接</string>
+
+
+    <!--auth-->
+    <string name="your_address">您的地址</string>
+    <string name="your_private_key">您的私钥</string>
+    <string name="copied_private_key">私钥已复制到剪贴板</string>
+    <string name="copied_address">地址已复制到剪贴板</string>
+    <string name="copy">复制</string>
+
+    <string name="start_using_wallet">开始使用电子钱包</string>
+
+    <string name="private_key_import_title">私钥导入</string>
+    <string name="private_key">私钥</string>
+    <string name="private_key_import_hint">输入要导入的私钥</string>
+    <string name="private_key_hint">输入您的私钥</string>
+    <string name="signin">登入</string>
+
+    <string name="create_new_wallet">创建新的钱包</string>
+    <string name="import_wallet">导入钱包</string>
+
+
+    <!--menu-->
+    <string name="settings">设置</string>
+    <string name="about">关于App</string>
+    <string name="my_address">我的地址</string>
+    <string name="community">社区</string>
+    <string name="entry_point">入口点</string>
+    <string name="entry_point_url">入口点网址</string>
+    <string name="save_url">保存网址</string>
+
+
+    <!--about-->
+    <string name="about_app_title">Enecuum移动应用程序\n香港Enecuum有限公司。</string>
+    <string name="about_white_paper">白皮书</string>
+    <string name="about_version">版本：%s\nTrinity协议版本：%d.0.0</string>
+    <string name="about_tech">技术论文</string>
+    <string name="about_terms">条款和条件</string>
+    <string name="about_privacy">隐私政策</string>
+
+
+    <!--import key-->
+    <string name="import_key_warning_title">警告！</string>
+    <string name="import_key_warning">导入新的私钥后，当前私钥将从设备内存中删除。\n请务必备份</string>
+
+
+    <!--faq-->
+    <string name="faq">常见问题</string>
+    <string name="faq_battery_title">电池寿命</string>
+    <string name="faq_battery">就СPU/GPU使用而言，PoA节点不以普通的工作量证明方式进行挖矿。相反，Enecuum PoA移动节点执行加密验证和签名，这类似于通过https（安全连接）打开网站期间的过程。因此，Enecuum移动应用程序的电池使用量与移动浏览器或聊天进程相当。您从不会因为电池寿命的原因而选择聊天工具或网站，对吧？</string>
+    <string name="faq_network_title">网络使用</string>
+    <string name="faq_network">关于Enecuum应用程序的网络流量使用，可以继续与浏览器类比。您可能不会通过移动网络观看YouTube或下载电影，使用Enecuum时也最好如此 - 如果您是有限或付费的流量计划，我们建议您连接到WiFi热点然后启动PoA活动。实际消耗的流量取决于网络负载和在线PoA参与者的数量，在未来主网中将通过奖励/费用刺激实现轻流量消耗。但是在测试网络活动期间，不能保证流量稳定及可预测。</string>
+    <string name="faq_airdrop_title">空投</string>
+    <string name="faq_airdrop">Enecuum正在启动新的空投2.0（“淘金热”），%s ERC-20代币的参与者。Enecuum与淘金热同时推出的，还有移动应用程序（&lt;u&gt;&lt;a href=\"https://app.enecuum.com\"&gt;https://app.enecuum.com&lt;/a&gt;&lt;/u&gt;）、区块链资源管理器（&lt;u&gt;&lt;a href=\"https://neuro.enecuum.com\"&gt;https://neuro.enecuum.com&lt;/a&gt;&lt;/u&gt;）和用于保存、提取%s币及将其转换为%s ERC-20代币的网络钱包（&lt;u&gt;&lt;a href=\"https://wallet.enecuum.com\"&gt;https://wallet.enecuum.com&lt;/a&gt;&lt;/u&gt;）。空投参与者将因下载应用程序和挖掘%s币而获得奖励。淘金热将有几个阶段，在此期间，Enecuum技术团队将检查Neuro的设置和可用性。更多信息可以在这里找到</string>
+    <string name="faq_support_title">支持</string>
+    <string name="faq_support">请随时在&lt;u&gt;&lt;a href=https://t.me/Enecuum_EN&gt;Telegram群组&lt;/a&gt;&lt;/u&gt;寻求帮助</string>
+    <string name="disclaimer">私钥用于解锁您的钱包，提供资金管理。\n 请妥善保存您的私钥并防止被盗。Enecuum不会存储您的私钥。如果私钥丢失，我们将无法恢复。对于因私钥丢失而造成的任何不便，Enecuum概不负责。</string>
+
+
+    <!--common-->
+    <string name="loading_balance">加载余额……</string>
+    <string name="connecting">连接……</string>
+    <string name="continue_mining">♔ 保持冷静并继续挖矿</string>
+
+    <string name="no_internet">没有网络</string>
+    <string name="import_new_private_key">导入新的私钥</string>
+    <string name="empty_private_key">空私钥！</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+
+    <string name="cancel">取消</string>
+    <string name="are_you_sure">确定？</string>
+    <string name="language">语言</string>
+    <string name="send">发送</string>
+    <string name="receive">接收</string>
+    <string name="swap">兑换</string>
+    <string name="send_confirmation">发送确认</string>
+    <string name="amount">数量</string>
+    <string name="enq_address_to_send">要发送的%s地址</string>
+    <string name="reject">拒绝</string>
+    <string name="confirm">确认</string>
+    <string name="share_qr">分享二维码</string>
+    <string name="to">至</string>
+    <string name="max">最大</string>
+    <string name="wrong_format">数值不正确</string>
+    <string name="transaction_result">交易结果</string>
+    <string name="success">成功</string>
+    <string name="error">错误</string>
+    <string name="zero_amount">零数量</string>
+    <string name="amount_too_big">您的余额不足</string>
+    <string name="wrong_secret_key_format">应为长度64个字符的十六进制字符串</string>
+    <string name="zero_balance">零余额</string>
+    <string name="update">更新</string>
+    <string name="there_are_new_ver">有一个Enecuum应用程序新版本</string>
+    <string name="next">下一个</string>
+    <string name="skip">跳过</string>
+
+
+    <!--update-->
+    <string name="update_now">现在更新</string>
+    <string name="update_required">需要更新</string>
+    <string name="critical_update_description">需要更新Enecuum以继续</string>
+
+
+    <!--stats-->
+    <string name="pos_nodes">PoS节点</string>
+    <string name="pow_nodes">PoW节点</string>
+    <string name="poa_nodes">PoA节点</string>
+    <string name="max_tps">最大TPS</string>
+    <string name="curr_tps">当前TPS</string>
+    <string name="accounts">账号</string>
+    <string name="open_in_browser">在浏览器中打开</string>
+    <string name="stats_last_block">最新区块</string>
+    <string name="stats_rewards">前24小时奖励</string>
+    <string name="stats_coindata">货币数据</string>
+    <string name="stats_coindata_circ_supply">流通供应：</string>
+    <string name="stats_coindata_max_supply">最大供应量：</string>
+    <string name="stats_total_nodes">总节点：</string>
+
+
+    <!--referral-->
+    <string name="referral_buy_title">推荐计划</string>
+    <string name="referral_buy_message">一旦您获得%s %s，您就可以分享您的代理人推荐代码。该代码可以被其他用户使用，以获取更多%s，为您带来被动收入。</string>
+    <string name="referral_title">恭喜！</string>
+    <string name="referral_message">您已经解锁了您的个人代理人推荐代码！</string>
+    <string name="share_code">分享代码</string>
+    <string name="referral_not_enough">推荐帐户的%s不足</string>
+    <string name="referral_skip_message">使用推荐代码，您将获得更多代币！</string>
+    <string name="referral_next_message">您的推荐计划收入将显示在区块链资源管理器中</string>
+    <string name="referral_same_address">推荐地址应与您的不同</string>
+    <string name="referral_program">推荐计划</string>
+
+
+    <!--roi-->
+    <string name="roi_daily">每日</string>
+    <string name="roi_weekly">每周</string>
+    <string name="roi_monthly">每月</string>
+    <string name="roi_annual">每年</string>
+    <string name="min_stake_dialog_title">最低投入为%s %s</string>
+    <string name="roi_alert">过去24小时回报率计算器</string>
+    <string name="max_roi">最高投资回报率：%s %%，%s %s投入</string>
+    <string name="save">保存</string>
+    <string name="qr_saved">二维码已保存到图库</string>
+
+
+    <!--buy-->
+    <string name="pay_by_card">用卡支付</string>
+    <string name="buy_on_exchange">在交易所购买</string>
+
+
+    <!--bottom tabs-->
+    <string name="tab_transfer">发送/接收</string>
+    <string name="create_new_token">创建新的令牌</string>
+    <string name="manage_my_tokens">管理我的令牌</string>
+    <string name="mint">签发</string>
+    <string name="burn">烧伤</string>
+    <string name="operation">手术</string>
+    <string name="referral_copied">推荐代码复制到剪贴板</string>
+    <string name="buy_erc_20_title"><![CDATA[买ERC-20令牌在以下交易及<u><a href="https://guides.enecuum.com/enq/how-to-swap.html">交换到移动Masternode </a></ u>以启动开采。复仇钱包和货币都需要交换ERC-20令牌，本地硬币。]]></string>
+    <string name="back">背部</string>
+    <string name="token">代币</string>
+    <string name="token_balance">令牌平衡</string>
+    <string name="mine">矿</string>
+    <string name="delegate">代表</string>
+    <string name="token_issue">令牌问题</string>
+    <string name="token_name">令牌名</string>
+    <string name="token_ticker">令牌股票</string>
+    <string name="token_supply">游戏币供给</string>
+    <string name="token_users_tx_fee">TX费用户</string>
+    <string name="token_type_non_reissuable">非reissuable</string>
+    <string name="token_type_reissuable">Reissuable</string>
+    <string name="token_issue_emmissions_tip">排放不能改变。</string>
+    <string name="token_issue_emmissions_amount">最大发射是1 844 674 407</string>
+    <string name="token_decimals">小数点：</string>
+    <string name="token_owner">令牌所有者</string>
+    <string name="token_issue_fee">发行费</string>
+    <string name="token_fee">费用</string>
+    <string name="token_min_fee">最低费用</string>
+    <string name="token_choose">选择令牌</string>
+    <string name="check_detail">查看详细信息</string>
+    <string name="reward">奖励</string>
+    <string name="available">可得到</string>
+    <string name="delegated">委托</string>
+    <string name="transit">过境</string>
+    <string name="undelegated">Undelegated</string>
+    <string name="please_check_the_address">请检查地址</string>
+    <string name="all_stake_providers">所有的股权提供商</string>
+    <string name="my_validators">我的验证</string>
+    <string name="total_stake">总有效的股权：</string>
+    <string name="annual_reward">年度奖励：</string>
+    <string name="stake_power">股权动力</string>
+    <string name="provider_page">供应商页面</string>
+    <string name="enter_delegate_amount">输入金额委托</string>
+    <string name="enter_undelegate_amount">输入量undelegate</string>
+    <string name="max_available">可用上限</string>
+    <string name="check_delegation_detail">检查代表团细节</string>
+    <string name="validator_page">验证页面</string>
+    <string name="delegated_amount">委托量</string>
+    <string name="undelegated_amount">Undelegated量</string>
+    <string name="reward_amount">奖励金额</string>
+    <string name="transit_amount">交通量</string>
+    <string name="available_for_delegate">可用于委托：%1$d %2$s</string>
+    <string name="undelegate">Undelegate</string>
+    <string name="transfer_to_wallet">转移到钱包</string>
+    <string name="check_undelegation_detail">检查undelegation细节</string>
+    <string name="from">从</string>
+    <string name="check_transfer_back_detail">支票转账的细节</string>
+    <string name="amount_to_transfer">转让金额</string>
+    <string name="delegation_fee">代表团费</string>
+    <string name="undelegation_fee">Undelegation费</string>
+    <string name="transfer_back_fee">转会费</string>
+    <string name="total_fee">总费用</string>
+    <string name="claim_reward">索赔奖励</string>
+    <string name="reinvest">再投资</string>
+    <string name="provider_fee">供应商的费用</string>
+    <string name="check_claim_reward_detail">检查要求的细节</string>
+    <string name="claim_reward_fee">索赔费</string>
+    <string name="active">活性</string>
+    <string name="inactive">待用</string>
+    <string name="performance">性能 %1$s%%</string>
+    <string name="node_map">节点图</string>
+    <string name="network_stats">网络统计</string>
+    <string name="coins_on_poa">硬币押在行动纲领</string>
+    <string name="coins_on_pos">硬币押在销售点</string>
+    <string name="difficulty">困难</string>
+    <string name="powRewards">24小时战俘奖励</string>
+    <string name="posRewards">24小时销售点奖励</string>
+    <string name="poaRewards">24小时行动纲领奖励</string>
+    <string name="buy">购买</string>
+    <string name="faq_guides_title">用户指南</string>
+    <string name="faq_guides"><![CDATA[要了解更多信息，请阅读<U> <a href="https://guides.enecuum.com/faq.html"> FAQ部分</A> </ U> Enecuum用户指南中。]]></string>
+
+</resources>

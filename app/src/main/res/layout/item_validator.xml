@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/background_view"
+    android:paddingStart="10dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="6dp"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/background_dark_rounded"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        style="@style/XXSmallWhiteText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        app:layout_constraintBottom_toTopOf="@+id/currentRewardLabel"
+        app:layout_constraintEnd_toStartOf="@+id/arrowRight"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="SubZero" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/currentRewardLabel"
+        style="@style/XXSmallWhiteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="@string/roi"
+        android:textSize="9sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/icon"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/currentRewardValue"
+        style="@style/XXSmallWhiteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=": ---"
+        android:textSize="9sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/icon"
+        app:layout_constraintStart_toEndOf="@+id/currentRewardLabel"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <ImageView
+        android:id="@+id/arrowRight"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:paddingRight="4dp"
+        android:src="@drawable/ic_arrow_right"
+        app:layout_constraintBottom_toTopOf="@+id/separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/powerRating" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/powerRating"
+        style="@style/XXSmallWhiteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="66" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:paddingEnd="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/secondary_color"
+        app:layout_constraintTop_toBottomOf="@+id/icon"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFirstQuarter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSecondQuarter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineThirdQuarter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.78" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/delegatedLabel"
+        style="@style/SmallSecondaryText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:text="@string/delegated"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineFirstQuarter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/delegatedValue"
+        style="@style/XXSmallWhiteText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="0"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineFirstQuarter"
+        app:layout_constraintStart_toStartOf="@+id/delegatedLabel"
+        app:layout_constraintTop_toBottomOf="@+id/delegatedLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/rewardLabel"
+        style="@style/SmallSecondaryText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="@string/reward"
+        app:layout_constraintBaseline_toBaselineOf="@id/delegatedLabel"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineSecondQuarter"
+        app:layout_constraintStart_toStartOf="@+id/guidelineFirstQuarter"
+        app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/rewardValue"
+        style="@style/XXSmallWhiteText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="0"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineSecondQuarter"
+        app:layout_constraintStart_toStartOf="@+id/guidelineFirstQuarter"
+        app:layout_constraintTop_toBottomOf="@+id/rewardLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/transitLabel"
+        style="@style/SmallSecondaryText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:text="@string/transit"
+        app:layout_constraintBaseline_toBaselineOf="@id/delegatedLabel"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineThirdQuarter"
+        app:layout_constraintStart_toStartOf="@+id/guidelineSecondQuarter"
+        app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/transitValue"
+        style="@style/XXSmallWhiteText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="0"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineThirdQuarter"
+        app:layout_constraintStart_toStartOf="@+id/guidelineSecondQuarter"
+        app:layout_constraintTop_toBottomOf="@+id/transitLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/undelegatedLabel"
+        style="@style/SmallSecondaryText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:text="@string/undelegated"
+        app:layout_constraintBaseline_toBaselineOf="@id/delegatedLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineThirdQuarter"
+        app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/undelegatedValue"
+        style="@style/XXSmallWhiteText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="0"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineThirdQuarter"
+        app:layout_constraintTop_toBottomOf="@+id/undelegatedLabel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

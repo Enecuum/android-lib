@@ -1,0 +1,160 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    tools:background="@color/colorPrimary">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/exchangeTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/buy_erc_20_title"
+            android:textAlignment="center"
+            android:textAppearance="@style/MediumWhiteText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kucoinLayout"
+            style="@style/ExchangeLayout"
+            android:layout_marginTop="16dp"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/exchangeTitle">
+
+            <ImageView
+                android:id="@+id/kucoinLogo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_kucoin"
+                app:layout_constraintBottom_toTopOf="@+id/kucoinButtons"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread" />
+
+            <LinearLayout
+                android:id="@+id/kucoinButtons"
+                style="@style/ExchangeButtonsLayout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kucoinLogo">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/kucoinBtc"
+                    style="@style/SmallColoredText" />
+
+                <View style="@style/ExchangeDivider" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/kucoinUsd"
+                    style="@style/SmallColoredText" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/crexLayout"
+            style="@style/ExchangeLayout"
+            android:layout_marginTop="9dp"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kucoinLayout">
+
+            <ImageView
+                android:id="@+id/crexLogo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_crex24"
+                app:layout_constraintBottom_toTopOf="@+id/crexButtons"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread" />
+
+            <LinearLayout
+                android:id="@+id/crexButtons"
+                style="@style/ExchangeButtonsLayout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crexLogo">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/crexBtc"
+                    style="@style/SmallColoredText" />
+
+                <View style="@style/ExchangeDivider" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/crexUsd"
+                    style="@style/SmallColoredText" />
+
+                <View style="@style/ExchangeDivider" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/crexRub"
+                    style="@style/SmallColoredText" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/graviexLayout"
+            style="@style/ExchangeLayout"
+            android:layout_marginTop="9dp"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crexLayout">
+
+            <ImageView
+                android:id="@+id/graviexLogo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_graviex"
+                app:layout_constraintBottom_toTopOf="@+id/graviexButtons"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread" />
+
+            <LinearLayout
+                android:id="@+id/graviexButtons"
+                style="@style/ExchangeButtonsLayout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/graviexLogo">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/graviexBtc"
+                    style="@style/SmallColoredText" />
+
+                <View style="@style/ExchangeDivider" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/graviexEth"
+                    style="@style/SmallColoredText" />
+
+                <View style="@style/ExchangeDivider" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/graviexUsdt"
+                    style="@style/SmallColoredText" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

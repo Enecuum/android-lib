@@ -1,0 +1,245 @@
+<resources>
+
+    <!--currency strings-->
+    <string name="balance_enq">Số dư: %s %s</string>
+    <string name="welcome_to_enq">Chào mừng đến với mạng %s</string>
+    <string name="no_enq">Chưa có %s…</string>
+
+
+    <!--main-->
+    <string name="balance_with_colon">Số dư:</string>
+    <string name="balance">Số dư</string>
+    <string name="start_activity">bắt đầu hoạt động</string>
+    <string name="stop_activity">ngừng hoạt động</string>
+    <string name="connecting_btn">đang kết nối</string>
+
+
+    <!--auth-->
+    <string name="your_address">Địa chỉ của bạn</string>
+    <string name="your_private_key">Khóa riêng tư của bạn</string>
+    <string name="copied_private_key">Đã sao chép Khóa riêng tư vào clipboard</string>
+    <string name="copied_address">Đã sao chép địa chỉ vào clipboard</string>
+    <string name="copy">Sao chép</string>
+
+    <string name="start_using_wallet">Bắt đầu Sử dụng Ví</string>
+
+    <string name="private_key_import_title">Nhập Khóa riêng tư</string>
+    <string name="private_key">Khóa riêng tư</string>
+    <string name="private_key_import_hint">Đưa Khóa riêng tư của bạn vào để nhập</string>
+    <string name="private_key_hint">Đưa Khóa riêng tư của bạn vào</string>
+    <string name="signin">Đăng nhập</string>
+
+    <string name="create_new_wallet">Tạo Ví mới</string>
+    <string name="import_wallet">Nhập ví</string>
+
+
+    <!--menu-->
+    <string name="settings">Cài đặt</string>
+    <string name="about">Thông tin Ứng dụng</string>
+    <string name="my_address">Địa chỉ của tôi</string>
+    <string name="community">Cộng đồng</string>
+    <string name="entry_point">Cổng vào</string>
+    <string name="entry_point_url">URL cổng vào</string>
+    <string name="save_url">Lưu URL</string>
+
+
+    <!--about-->
+    <string name="about_app_title">Ứng dụng di động Enecuum\nEnecuum HK Limited.</string>
+    <string name="about_white_paper">Bản cáo bạch</string>
+    <string name="about_version">Phiên bản: %s\nPhiên bản Giao thức Trinity: %d.0.0</string>
+    <string name="about_tech">Báo cáo kỹ thuật</string>
+    <string name="about_terms">Điều khoản và điều kiện</string>
+    <string name="about_privacy">Chính sách bảo mật</string>
+
+
+    <!--import key-->
+    <string name="import_key_warning_title">Cảnh báo!</string>
+    <string name="import_key_warning">Khóa riêng tư hiện tại của bạn sẽ bị xóa khỏi bộ nhớ thiết bị sau khi nhập khóa mới.\nHãy đảm bảo rằng bạn đã có một bản sao lưu</string>
+
+
+    <!--faq-->
+    <string name="faq">Câu hỏi thường gặp</string>
+    <string name="faq_battery_title">Tuổi thọ pin</string>
+    <string name="faq_battery">Về vấn đề chiếm dụng СPU/GPU, nút PoA không tiến hành khai thác theo phương pháp Proof-of-Work thông thường. Thay vào đó, nút di động Enecuum PoA sẽ tiến hành xác nhận mã và ký kết mã tương tự như quy trình mở trang web thông qua https (kết nối an toàn). Do đó, ứng dụng di động Enecuum chỉ tiêu hao pin tương đương với trình duyệt di động hoặc ứng dụng tán gẫu. Bạn sẽ chẳng bận tâm về mức độ tiêu hao pin khi chọn ứng dụng tán gẫu an toàn hoặc trang web an toàn so với những ứng dụng không an toàn, phải không nào?</string>
+    <string name="faq_network_title">Sử dụng mạng</string>
+    <string name="faq_network">Tính chất tương tự với trình duyệt cũng thể hiện ở lưu lượng truy cập Internet mà ứng dụng Enecuum sử dụng. Bạn có thể không xem YouTube hoặc tải phim qua mạng di động, vì vậy với Enecuum - chúng tôi khuyên bạn nên bắt đầu thực hiện PoA khi kết nối với điểm truy cập WiFi nếu gói dữ liệu của bạn bị hạn chế hoặc phải trả phí. Lưu lượng truy cập tiêu thụ thực tế phụ thuộc vào tải mạng và số lượng người tham gia PoA trực tuyến, đồng thời hướng đến mục tiêu sử dụng các biện pháp khuyến khích bằng phần thưởng/phí để mạng lưới chính thức nhẹ hơn trong tương lai. Tuy nhiên, trong các hoạt động của mạng lưới thử nghiệm, không có gì đảm bảo rằng lưu lượng truy cập sẽ ổn định và có thể dự đoán.</string>
+    <string name="faq_airdrop_title">Airdrop</string>
+    <string name="faq_airdrop">Enecuum đang khởi động Airdrop 2.0 (“Gold Rush”) trong đó người tham gia sẽ được thưởng token %s ERC-20. Enecuum ra mắt Gold Rush cùng ứng dụng di động (&lt;u&gt;&lt;a href=\"https://app.enecuum.com\"&gt;https://app.enecuum.com&lt;/a&gt;&lt;/u&gt;), trình quản lý blockchain (&lt;u&gt;&lt;a href=\"https://neuro.enecuum.com\"&gt;https://neuro.enecuum.com&lt;/a&gt;&lt;/u&gt;) và ví trực tuyến (&lt;u&gt;&lt;a href=\"https://wallet.enecuum.com\"&gt;https://wallet.enecuum.com&lt;/a&gt;&lt;/u&gt;) cho phép người dùng tích trữ đồng %s, rút ra và chuyển đổi sang token %s ERC-20. Người tham gia Airdrop sẽ được thưởng khi tải ứng dụng và đào %s. Gold Rush sẽ bao gồm một số giai đoạn mà trong đó đội kỹ thuật của Enecuum sẽ rà soát các cài đặt và tính khả dụng của Neuro. Xem thêm thông tin TẠI ĐÂY</string>
+    <string name="faq_support_title">Hỗ trợ</string>
+    <string name="faq_support">Vui lòng yêu cầu trợ giúp tại &lt;u&gt;&lt;a href=https://t.me/Enecuum_EN&gt;Nhóm Telegram&lt;/a&gt;&lt;/u&gt;</string>
+    <string name="disclaimer">Khóa riêng tư được sử dụng để mở khóa ví của bạn, hỗ trợ quản lý quỹ cũng như tham gia chương trình Mining Airdrop.\nHãy đảm bảo rằng bạn đã lưu lại khóa riêng tư của mình và tránh bị chiếm đoạt. Enecuum không lưu thông tin khóa riêng tư của bạn. Trong trường hợp bạn làm mất khóa riêng tư, chúng tôi sẽ không có khả năng khôi phục. Enecuum không chịu trách nhiệm với bất kỳ sự cố nào phát sinh do làm mất khóa riêng tư.</string>
+
+
+    <!--common-->
+    <string name="loading_balance">Đang tải số dư…</string>
+    <string name="connecting">Đang kết nối…</string>
+    <string name="continue_mining">♔ Hãy Bình tĩnh và Tiếp Tục Đào</string>
+
+    <string name="no_internet">Không có mạng</string>
+    <string name="import_new_private_key">Nhập Khóa riêng tư mới</string>
+    <string name="empty_private_key">Khóa riêng tư trống!</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+
+    <string name="cancel">Hủy bỏ</string>
+    <string name="are_you_sure">Bạn có chắc không?</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="send">Gửi</string>
+    <string name="receive">Nhận</string>
+    <string name="swap">Trao đổi</string>
+    <string name="send_confirmation">Gửi xác nhận</string>
+    <string name="amount">Số tiền</string>
+    <string name="enq_address_to_send">Địa chỉ %s để gửi</string>
+    <string name="reject">Từ chối</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="share_qr">Chia sẻ mã QR</string>
+    <string name="to">Đến</string>
+    <string name="max">TốI đa</string>
+    <string name="wrong_format">Giá trị không chính xác</string>
+    <string name="transaction_result">Kết quả giao dịch</string>
+    <string name="success">Thành công</string>
+    <string name="error">Lỗi</string>
+    <string name="zero_amount">Số tiền bằng không</string>
+    <string name="amount_too_big">Vượt quá số dư của bạn</string>
+    <string name="wrong_secret_key_format">Phải là chuỗi thập lục phân dài 64 ký tự</string>
+    <string name="zero_balance">Số dư bằng không</string>
+    <string name="update">Cập nhật</string>
+    <string name="there_are_new_ver">Có một phiên bản mới của ứng dụng Enecuum</string>
+    <string name="next">Sau</string>
+    <string name="skip">Bỏ qua</string>
+
+
+    <!--update-->
+    <string name="update_now">Cập nhật ngay</string>
+    <string name="update_required">Cần cập nhật</string>
+    <string name="critical_update_description">Cần cập nhật Enecuum để tiếp tục</string>
+
+
+    <!--stats-->
+    <string name="pos_nodes">Các nút PoS</string>
+    <string name="pow_nodes">Các nút PoW</string>
+    <string name="poa_nodes">Các nút PoA</string>
+    <string name="max_tps">TPS tối đa</string>
+    <string name="curr_tps">TPS hiện tại</string>
+    <string name="accounts">Tài khoản</string>
+    <string name="open_in_browser">Mở trong trình duyệt</string>
+    <string name="stats_last_block">Block cuối cùng</string>
+    <string name="stats_rewards">Số token đào được trong 24h</string>
+    <string name="stats_coindata">Dữ liệu coin</string>
+    <string name="stats_coindata_circ_supply">Token cung trong lưu thông:</string>
+    <string name="stats_coindata_max_supply">Tổng cung:</string>
+    <string name="stats_total_nodes">Tổng node:</string>
+
+
+    <!--referral-->
+    <string name="referral_buy_title">Chương trình giới thiệu khách hàng</string>
+    <string name="referral_buy_message">Khi bạn kiếm được %s %s, bạn sẽ có thể chia sẻ mã giới thiệu đại lý của mình. Mã này có thể được những người dùng khác sử dụng để có thêm %s qua đó cung cấp cho bạn nguồn thu nhập thụ động.</string>
+    <string name="referral_title">Xin chúc mừng!</string>
+    <string name="referral_message">Bạn đã mở khóa mã giới thiệu đại lý cá nhân của bạn!</string>
+    <string name="share_code">Chia sẻ mã</string>
+    <string name="referral_not_enough">Không đủ %s trong tài khoản được giới thiệu</string>
+    <string name="referral_skip_message">Với mã giới thiệu, bạn sẽ kiếm được nhiều mã thông báo hơn!</string>
+    <string name="referral_next_message">Thu nhập từ Chương trình giới thiệu khách hàng của bạn sẽ được hiển thị trong Blockchain Explorer</string>
+    <string name="referral_same_address">Địa chỉ được giới thiệu phải khác với địa chỉ của bạn</string>
+    <string name="referral_program">Chương trình giới thiệu khách hàng</string>
+
+
+    <!--roi-->
+    <string name="roi_daily">Hàng ngày</string>
+    <string name="roi_weekly">Hàng tuần</string>
+    <string name="roi_monthly">Hàng tháng</string>
+    <string name="roi_annual">Hàng năm</string>
+    <string name="min_stake_dialog_title">Tiền cược tối thiểu là %s %s</string>
+    <string name="roi_alert">Tính tỷ lệ hoàn trả trong 24 giờ qua</string>
+    <string name="max_roi">ROI tối đa: %s %% trên %s tiền cược %s</string>
+    <string name="save">Lưu</string>
+    <string name="qr_saved">Mã QR được lưu vào Thư viện</string>
+
+    <!--buy-->
+    <string name="pay_by_card">Thanh toán bằng thẻ</string>
+    <string name="buy_on_exchange">Mua trao đổi</string>
+
+
+    <!--bottom tabs-->
+    <string name="tab_transfer">Gửi/Nhận</string>
+    <string name="create_new_token">Tạo Mã Mới</string>
+    <string name="manage_my_tokens">Quản lý của tôi Tokens</string>
+    <string name="mint">Phát hành</string>
+    <string name="burn">Đốt cháy</string>
+    <string name="operation">hoạt động</string>
+    <string name="referral_copied">mã giới thiệu sao chép vào clipboard</string>
+    <string name="buy_erc_20_title"><![CDATA[Mua ERC-20 Mã tại Sở giao dịch sau đây và <u> <a href="https://guides.enecuum.com/enq/how-to-swap.html"> Swap để Mobile Masternode </a> </ u> để bắt đầu khai thác mỏ. ví Ethereum và tiền tệ được yêu cầu phải trao đổi ERC-20 tokens vào đồng tiền bản địa.]]></string>
+    <string name="back">Trở lại</string>
+    <string name="token">Mã thông báo</string>
+    <string name="token_balance">cân bằng thẻ</string>
+    <string name="mine">của tôi</string>
+    <string name="delegate">đại biểu</string>
+    <string name="token_issue">tạo thẻ</string>
+    <string name="token_name">Tên</string>
+    <string name="token_ticker">máy điện báo</string>
+    <string name="token_supply">Cung cấp</string>
+    <string name="token_users_tx_fee">Phí Tx cho người dùng</string>
+    <string name="token_type_non_reissuable">Non-reissuable</string>
+    <string name="token_type_reissuable">Reissuable</string>
+    <string name="token_issue_emmissions_tip">Lượng khí thải không thể thay đổi.</string>
+    <string name="token_issue_emmissions_amount">phát thải tối đa là 1 844 674 407</string>
+    <string name="token_decimals">số thập phân:</string>
+    <string name="token_owner">chủ sở hữu thẻ</string>
+    <string name="token_issue_fee">phí phát hành</string>
+    <string name="token_fee">Học phí</string>
+    <string name="token_min_fee">phí tối thiểu</string>
+    <string name="token_choose">Chọn thẻ</string>
+    <string name="check_detail">kiểm tra chi tiết</string>
+    <string name="reward">Phần thưởng</string>
+    <string name="available">có sẵn</string>
+    <string name="delegated">ủy nhiệm</string>
+    <string name="transit">Transit</string>
+    <string name="undelegated">Undelegated</string>
+    <string name="please_check_the_address">Vui lòng kiểm tra địa chỉ</string>
+    <string name="all_stake_providers">Tất cả các nhà cung cấp cổ phần</string>
+    <string name="my_validators">xác nhận của tôi</string>
+    <string name="total_stake">Tổng số cổ phần đang hoạt động:</string>
+    <string name="annual_reward">thưởng hàng năm:</string>
+    <string name="stake_power">sức mạnh cổ phần</string>
+    <string name="provider_page">trang cung cấp</string>
+    <string name="enter_delegate_amount">Nhập số tiền ủy</string>
+    <string name="enter_undelegate_amount">Nhập số tiền để undelegate</string>
+    <string name="max_available">Max sẵn</string>
+    <string name="check_delegation_detail">Kiểm tra chi tiết đoàn</string>
+    <string name="validator_page">trang Validator</string>
+    <string name="delegated_amount">số lượng ủy nhiệm</string>
+    <string name="undelegated_amount">lượng Undelegated</string>
+    <string name="reward_amount">số tiền thưởng</string>
+    <string name="transit_amount">lượng Transit</string>
+    <string name="available_for_delegate">Sẵn sàng cho đại biểu:</string>
+    <string name="undelegate">Undelegate</string>
+    <string name="transfer_to_wallet">Chuyển đến ví</string>
+    <string name="check_undelegation_detail">Kiểm tra chi tiết undelegation</string>
+    <string name="from">Từ</string>
+    <string name="check_transfer_back_detail">chi tiết séc chuyển</string>
+    <string name="amount_to_transfer">Số tiền chuyển nhượng</string>
+    <string name="delegation_fee">phí đoàn</string>
+    <string name="undelegation_fee">phí Undelegation</string>
+    <string name="transfer_back_fee">Phí chuyển nhượng</string>
+    <string name="total_fee">Tổng số phí</string>
+    <string name="claim_reward">thưởng yêu cầu bồi thường</string>
+    <string name="reinvest">tái đầu tư</string>
+    <string name="provider_fee">phí cung cấp</string>
+    <string name="check_claim_reward_detail">Kiểm tra chi tiết khiếu nại</string>
+    <string name="claim_reward_fee">phí yêu cầu bồi thường</string>
+    <string name="active">tích cực</string>
+    <string name="inactive">Không hoạt động</string>
+    <string name="performance">Hiệu suất</string>
+    <string name="node_map">Bản đồ Node</string>
+    <string name="network_stats">thống kê mạng</string>
+    <string name="coins_on_poa">Coins đặt cược vào PoA</string>
+    <string name="coins_on_pos">Coins đặt cược vào PoS</string>
+    <string name="difficulty">Khó khăn</string>
+    <string name="powRewards">thưởng 24h pow</string>
+    <string name="posRewards">PoS 24h thưởng</string>
+    <string name="poaRewards">thưởng 24h PoA</string>
+    <string name="buy">Mua</string>
+    <string name="faq_guides_title">hướng dẫn sử dụng</string>
+    <string name="faq_guides"><![CDATA[Để tìm hiểu thêm, vui lòng đọc <u> <a href="https://guides.enecuum.com/faq.html"> FAQ section </a> </ u> của Enecuum hướng dẫn sử dụng.]]></string>
+
+</resources>

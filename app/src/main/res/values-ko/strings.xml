@@ -1,0 +1,246 @@
+<resources>
+
+    <!--currency strings-->
+    <string name="balance_enq">잔고: %s %s</string>
+    <string name="welcome_to_enq">%s 네트워크에 오신 것을 환영합니다</string>
+    <string name="no_enq">아직 %s가 없습니다…</string>
+
+
+    <!--main-->
+    <string name="balance_with_colon">잔고:</string>
+    <string name="balance">잔고</string>
+    <string name="start_activity">작업 시작</string>
+    <string name="stop_activity">작업 중지</string>
+    <string name="connecting_btn">연결 중</string>
+
+
+    <!--auth-->
+    <string name="your_address">내 주소</string>
+    <string name="your_private_key">내 개인키</string>
+    <string name="copied_private_key">개인키가 클립 보드에 복사되었습니다</string>
+    <string name="copied_address">주소가 클립 보드에 복사되었습니다</string>
+    <string name="copy">복사하기</string>
+
+    <string name="start_using_wallet">지갑 시작하기</string>
+
+    <string name="private_key_import_title">개인키 가져오기</string>
+    <string name="private_key">개인키</string>
+    <string name="private_key_import_hint">가져온 내 개인키 입력</string>
+    <string name="private_key_hint">개인키 입력</string>
+    <string name="signin">로그인</string>
+
+    <string name="create_new_wallet">새 지갑 생성</string>
+    <string name="import_wallet">지갑 가져오기</string>
+
+
+    <!--menu-->
+    <string name="settings">설정</string>
+    <string name="about">앱 정보</string>
+    <string name="my_address">내 주소</string>
+    <string name="community">커뮤니티</string>
+    <string name="entry_point">엔트리 포인트</string>
+    <string name="entry_point_url">엔트리 포인트 URL</string>
+    <string name="save_url">URL 저장</string>
+
+
+    <!--about-->
+    <string name="about_app_title">Enecuum 모바일 애플리케이션 \nEnecuum HK Limited.</string>
+    <string name="about_white_paper">백서</string>
+    <string name="about_version">버전: %s\n트리니티 프로토콜 버전: %d.0.0</string>
+    <string name="about_tech">테크 페이퍼</string>
+    <string name="about_terms">이용약관</string>
+    <string name="about_privacy">개인정보 처리방침</string>
+
+
+    <!--import key-->
+    <string name="import_key_warning_title">경고!</string>
+    <string name="import_key_warning">새 개인키를 가져온 후 사용자의 현재 개인키는 기기 메모리에서 삭제됩니다.\n복사본을 백업하시기 바랍니다</string>
+
+
+    <!--faq-->
+    <string name="faq">FAQ</string>
+    <string name="faq_battery_title">배터리 수명</string>
+    <string name="faq_battery">PoA 노드는 СPU/GPU 사용 면에서 일반적인 작업 증명 방식으로 채굴하지 않습니다. 그 대신 Enecuum PoA 모바일 노드는 https(보안 연결)를 통해 웹사이트를 여는 동안 프로세스와 유사한 암호화 유효성 검사 및 서명을 수행합니다. 결과적으로 Enecuum 모바일 앱의 배터리 사용량은 모바일 브라우저나 채팅에서 사용할 때와 비슷합니다. 안전하지 않은 채팅이나 보안 웹사이트가 아닌, 안전한 채팅과 웹사이트를 선택할 때, 배터리 수명을 고민해본 적이 없으실 겁니다.</string>
+    <string name="faq_network_title">네트워크 사용</string>
+    <string name="faq_network">Enecuum 앱에서 사용하는 인터넷 트래픽에 대해 브라우저로 비유해 계속 알려드리겠습니다. Enecuum을 사용할 때와 마찬가지로, YouTube를 보거나 영화를 다운받을 때에는 모바일 네트워크를 사용하지 않으실 것입니다. 제한된 요금제나 추가 요금이 부과되는 데이터 요금제를 사용하는 경우 WiFi 스폿에서 PoA 활동을 연결하시기 바랍니다. 실제로 사용한 트래픽 양은 네트워크 로드와 온라인 PoA 참가자의 수에 따라 달라지며, 보상/수수료를 통해 마련될 향후의 메인넷에서는 더 가벼운 트래픽을 제공할 것을 목표로 하고 있습니다. 그러나 테스트넷 활동 중에는 트래픽 양이 지속적이고 예측 가능한 수준일 것으로 보장할 수 없습니다.</string>
+    <string name="faq_airdrop_title">Airdrop</string>
+    <string name="faq_airdrop">Enecuum is starting a new Airdrop 2.0 (“Gold Rush”) which will reward its participants with %s ERC-20 tokens. Enecuum launches a Gold Rush along with the mobile application (&lt;u&gt;&lt;a href=\"https://app.enecuum.com\"&gt;https://app.enecuum.com&lt;/a&gt;&lt;/u&gt;), blockchain explorer (&lt;u&gt;&lt;a href=\"https://neuro.enecuum.com\"&gt;https://neuro.enecuum.com&lt;/a&gt;&lt;/u&gt;) and a web wallet (&lt;u&gt;&lt;a href=\"https://wallet.enecuum.com\"&gt;https://wallet.enecuum.com&lt;/a&gt;&lt;/u&gt;) which allows users to keep their %s coins, withdraw and convert them into %s ERC-20 tokens. Airdrop participants will be rewarded for downloading the application and mining with %s coins. Gold Rush is going to have few phases during which Enecuum technical team will check up the settings and usability of Neuro. More info can be found HERE</string>
+    <string name="faq_support_title">고객 지원</string>
+    <string name="faq_support">도움이 필요하시면 언제든지 &lt;u&gt;&lt;a href=https://t.me/Enecuum_EN&gt;텔레그램 그룹&lt;/a&gt;&lt;/u&gt;을 통해 문의하세요</string>
+    <string name="disclaimer">개인키는 채굴 프로그램에 참여하는 데 사용되며, 자금 관리 기능을 제공하는 지갑의 잠금을 해제하는 데 사용됩니다.\n자신의 개인키를 안전한 곳에 보관하고 도난당하지 않도록 유의하세요. Enecuum에서는 사용자의 개인키를 저장하지 않습니다. 개인키를 분실할 경우 이를 복원해드릴 수 없습니다. Enecuum은 개인키 분실로 인한 어떠한 불편 사항에도 책임을 지지 않습니다.</string>
+
+
+    <!--common-->
+    <string name="loading_balance">잔고를 불러오는 중…</string>
+    <string name="connecting">연결 중…</string>
+    <string name="continue_mining">♔ 진정하시고 계속 채굴하세요</string>
+
+    <string name="no_internet">인터넷 없음</string>
+    <string name="import_new_private_key">새 개인키 가져오기</string>
+    <string name="empty_private_key">개인키가 비어있습니다!</string>
+    <string name="yes">예</string>
+    <string name="no">아니요</string>
+
+    <string name="cancel">취소</string>
+    <string name="are_you_sure">확실합니까?</string>
+    <string name="language">언어</string>
+    <string name="send">전송</string>
+    <string name="receive">수신</string>
+    <string name="swap">스왑</string>
+    <string name="send_confirmation">전송 확인</string>
+    <string name="amount">금액</string>
+    <string name="enq_address_to_send">전송할 %s 주소</string>
+    <string name="reject">거부</string>
+    <string name="confirm">확인</string>
+    <string name="share_qr">QR 코드 공유</string>
+    <string name="to">받는 사람</string>
+    <string name="max">최대</string>
+    <string name="wrong_format">값이 정확하지 않습니다</string>
+    <string name="transaction_result">거래 결과</string>
+    <string name="success">성공</string>
+    <string name="error">오류</string>
+    <string name="zero_amount">금액 없음</string>
+    <string name="amount_too_big">잔고에 비해 너무 많습니다</string>
+    <string name="wrong_secret_key_format">64자리 길이의 16진법 스트링이어야 합니다</string>
+    <string name="zero_balance">잔고 없음</string>
+    <string name="update">업데이트</string>
+    <string name="there_are_new_ver">Enecuum app 새 버전이 있습니다</string>
+    <string name="next">다음</string>
+    <string name="skip">넘기기</string>
+    <string name="save">저장</string>
+    <string name="qr_saved">QR코드가 갤러리에 저장되었습니다</string>
+
+
+    <!--update-->
+    <string name="update_now">지금 업데이트</string>
+    <string name="update_required">업데이트가 필요합니다</string>
+    <string name="critical_update_description">계속하려면 Enecuum 업데이트가 필요합니다</string>
+
+
+    <!--stats-->
+    <string name="pos_nodes">PoS 노드</string>
+    <string name="pow_nodes">PoW 노드</string>
+    <string name="poa_nodes">PoA 노드</string>
+    <string name="max_tps">최대 TPS</string>
+    <string name="curr_tps">현재 TPS</string>
+    <string name="accounts">계좌</string>
+    <string name="open_in_browser">브라우저에서 열기</string>
+    <string name="stats_last_block">마지막 블록</string>
+    <string name="stats_rewards">최근 24시간 보상</string>
+    <string name="stats_coindata">코인 데이터</string>
+    <string name="stats_coindata_circ_supply">순환 공급량:</string>
+    <string name="stats_coindata_max_supply">최대 공급량:</string>
+    <string name="stats_total_nodes">전체 노드:</string>
+
+
+    <!--referral-->
+    <string name="referral_buy_title">추천 프로그램</string>
+    <string name="referral_buy_message">%s %s를 획득하면 내 에이전트 추천 코드를 공유할 수 있습니다. 이 코드는 다른 사용자에게 더 많은 %s를 제공하면서 나에게 수동적 소득(일정량의 추가 소득)을 제공합니다.</string>
+    <string name="referral_title">축하합니다!</string>
+    <string name="referral_message">개인 에이전트 추천 코드를 사용할 수 있습니다!</string>
+    <string name="share_code">코드 공유</string>
+    <string name="referral_not_enough">추천받은 계정에 %s가 모자랍니다</string>
+    <string name="referral_skip_message">추천 코드를 사용하면 더 많은 토큰을 받을 수 있어요!</string>
+    <string name="referral_next_message">추천 프로그램 수입은 블록체인 탐색기에 표시됩니다</string>
+    <string name="referral_same_address">추천받은 주소는 내 주소와 달라야 합니다</string>
+    <string name="referral_program">추천 프로그램</string>
+
+
+    <!--roi-->
+    <string name="roi_daily">매일</string>
+    <string name="roi_weekly">주간</string>
+    <string name="roi_monthly">월간</string>
+    <string name="roi_annual">연간</string>
+    <string name="min_stake_dialog_title">최소 스테이크는 %s %s 입니다</string>
+    <string name="roi_alert">최근 24시간 내 수익률 계산기</string>
+    <string name="max_roi">최대 ROI: %s %s 스테이크에서 %s%%</string>
+
+
+    <!--buy-->
+    <string name="pay_by_card">카드로 결제하기</string>
+    <string name="buy_on_exchange">거래소에서 구매</string>
+
+
+    <!--bottom tabs-->
+    <string name="tab_transfer">전송/수신</string>
+    <string name="create_new_token">새로운 토큰을 생성</string>
+    <string name="manage_my_tokens">내 토큰 관리</string>
+    <string name="mint">발행하려면</string>
+    <string name="burn">타다</string>
+    <string name="operation">조작</string>
+    <string name="referral_copied">클립 보드에 복사 추천 코드</string>
+    <string name="back">뒤</string>
+    <string name="token">토큰</string>
+    <string name="token_balance">토큰 균형</string>
+    <string name="mine">나의 것</string>
+    <string name="delegate">대리자</string>
+    <string name="token_issue">토큰 생성</string>
+    <string name="token_name">이름</string>
+    <string name="token_ticker">증권 시세 표시기</string>
+    <string name="token_supply">공급</string>
+    <string name="token_users_tx_fee">사용자를위한 송신 수수료</string>
+    <string name="token_type_non_reissuable">비 재발행</string>
+    <string name="token_type_reissuable">재발행</string>
+    <string name="token_issue_emmissions_tip">배출량은 변경할 수 없습니다.</string>
+    <string name="token_issue_emmissions_amount">최대 발광은 1 844 674 407</string>
+    <string name="token_decimals">소수 :</string>
+    <string name="token_owner">토큰 소유자</string>
+    <string name="token_issue_fee">발행 수수료</string>
+    <string name="token_fee">회비</string>
+    <string name="token_min_fee">최소 비용</string>
+    <string name="token_choose">토큰 선택</string>
+    <string name="check_detail">세부 정보 확인</string>
+    <string name="reward">보상</string>
+    <string name="available">유효한</string>
+    <string name="delegated">위임</string>
+    <string name="transit">운송</string>
+    <string name="undelegated">Undelegated</string>
+    <string name="please_check_the_address">주소를 확인하시기 바랍니다</string>
+    <string name="all_stake_providers">모든 지분 제공</string>
+    <string name="my_validators">내 유효성 검사기</string>
+    <string name="total_stake">총 활성 지분 :</string>
+    <string name="annual_reward">연간 보상 :</string>
+    <string name="stake_power">스테이크 전력</string>
+    <string name="provider_page">제공자 페이지</string>
+    <string name="enter_delegate_amount">위임 할 금액을 입력</string>
+    <string name="enter_undelegate_amount">undelegate에 금액을 입력</string>
+    <string name="max_available">가능한 최대</string>
+    <string name="check_delegation_detail">위임 세부 사항을 확인</string>
+    <string name="validator_page">검사기 페이지</string>
+    <string name="delegated_amount">위임 된 금액</string>
+    <string name="undelegated_amount">Undelegated 양</string>
+    <string name="reward_amount">보상 금액</string>
+    <string name="transit_amount">교통 금액</string>
+    <string name="available_for_delegate">위임 가능 : %1$d %2$s</string>
+    <string name="undelegate">Undelegate</string>
+    <string name="transfer_to_wallet">지갑에 전송</string>
+    <string name="check_undelegation_detail">undelegation 세부 사항을 확인</string>
+    <string name="from">에서</string>
+    <string name="check_transfer_back_detail">체크 전송 세부 사항</string>
+    <string name="amount_to_transfer">양도 금액</string>
+    <string name="delegation_fee">위임 수수료</string>
+    <string name="undelegation_fee">Undelegation 요금</string>
+    <string name="transfer_back_fee">환승 요금</string>
+    <string name="total_fee">총 비용</string>
+    <string name="claim_reward">리워드</string>
+    <string name="reinvest">재투자</string>
+    <string name="provider_fee">제공자 수수료</string>
+    <string name="check_claim_reward_detail">청구 내용을 확인</string>
+    <string name="claim_reward_fee">청구 요금</string>
+    <string name="active">유효한</string>
+    <string name="inactive">비활성</string>
+    <string name="node_map">노드지도</string>
+    <string name="network_stats">네트워크 통계</string>
+    <string name="coins_on_poa">동전 POA에 걸었</string>
+    <string name="coins_on_pos">동전의 PoS에 걸었</string>
+    <string name="difficulty">어려움</string>
+    <string name="powRewards">24 시간 포로 보상</string>
+    <string name="posRewards">24 시간의 POS 보상</string>
+    <string name="poaRewards">24 시간 POA 보상</string>
+    <string name="buy">구입</string>
+    <string name="faq_guides_title">사용 설명서</string>
+    <string name="faq_guides"><![CDATA[자세한 내용을 보려면하려면 <U> <a href="https://guides.enecuum.com/faq.html"> FAQ 섹션을 참조하십시오 </A> </ U> Enecuum 사용자 가이드의.]]></string>
+    <string name="performance">공연 %1$s%%</string>
+    <string name="buy_erc_20_title"><![CDATA[다음 거래소에서 구입 ERC-20 토큰 및 모바일 Masternode <u><a href="https://guides.enecuum.com/enq/how-to-swap.html">Swap to Mobile Masternode</a></u> 광산을 시작하기 위해서이다. 에테 리움 지갑과 통화는 기본 동전에 스왑 ERC-20 토큰이 필요합니다.]]></string>
+
+</resources>

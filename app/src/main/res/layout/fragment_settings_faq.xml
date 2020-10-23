@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SettingsRootLayout">
+
+    <include layout="@layout/partial_toolbar_settings" />
+
+    <RelativeLayout style="@style/SettingsTabLayout">
+
+        <include
+            android:id="@+id/subtoolbar"
+            layout="@layout/partial_toolbar_settings_submenu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_toolbar_height"
+            android:layout_alignParentTop="true" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/subtoolbar"
+            android:paddingStart="20dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="22dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/batteryTitleText"
+                    style="@style/FaqTitle"
+                    android:text="@string/faq_battery_title" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/batteryText"
+                    style="@style/FaqText"
+                    android:text="@string/faq_battery" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/networkTitleText"
+                    style="@style/FaqTitle"
+                    android:paddingTop="10dp"
+                    android:text="@string/faq_guides_title" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/networkText"
+                    style="@style/FaqText"
+                    android:text="@string/faq_guides" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/airdropTitleText"
+                    style="@style/FaqTitle"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/airdropText"
+                    style="@style/FaqText"
+                    android:text="@string/about_site"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/supportTitleText"
+                    style="@style/FaqTitle"
+                    android:layout_marginTop="28dp"
+                    android:text="@string/faq_support_title" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/supportText"
+                    style="@style/FaqText" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/text_fade_out_gradient" />
+    </RelativeLayout>
+</LinearLayout>

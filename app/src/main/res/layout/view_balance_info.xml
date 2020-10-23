@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/balanceRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_view"
+    android:orientation="vertical"
+    android:paddingStart="9dp"
+    android:paddingEnd="9dp"
+    android:paddingBottom="13dp"
+    tools:layout_width="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/balanceLayout"
+        android:paddingTop="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/balanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/balance_with_colon"
+            android:textAppearance="@style/SmallWhiteText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/balanceAmountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/balanceText"
+            android:layout_marginStart="8dp"
+            android:layout_toStartOf="@+id/amountTickerText"
+            android:layout_toEndOf="@+id/balanceText"
+            android:ellipsize="end"
+            android:gravity="end|bottom"
+            android:text="@string/ellipsis_placeholder"
+            android:textAppearance="@style/SmallWhiteBoldText"
+            tools:text="828.12345678" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/amountTickerText"
+            style="@style/SmallTickerText"
+            android:layout_alignBaseline="@+id/balanceAmountText"
+            android:layout_alignParentEnd="true"
+            tools:text="ENQ" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/usdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/usdRateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="bottom"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            tools:text="1 ENQ = $ 0.04" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/amountConvertedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/usdRateText"
+            android:layout_marginStart="8dp"
+            android:layout_toStartOf="@+id/usdText"
+            android:layout_toEndOf="@+id/usdRateText"
+            android:fontFamily="sans-serif"
+            android:gravity="end"
+            android:textColor="@color/text_secondary_light"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:text="10.49" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/usdText"
+            style="@style/SmallTickerText"
+            android:layout_alignBaseline="@+id/usdRateText"
+            android:layout_alignParentEnd="true"
+            android:text="$"
+            android:textColor="@color/text_secondary_light" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tokenLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tokenBalanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/token_balance"
+            android:textAppearance="@style/SmallWhiteText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/amountConvertedText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tokenBalanceText"
+            android:layout_marginStart="8dp"
+            android:layout_toStartOf="@+id/usdText2"
+            android:gravity="end"
+            android:text="@string/value_stub_text"
+            android:textAppearance="@style/SmallWhiteBoldText"
+            android:textSize="17sp"
+            tools:text="123.45" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/usdText2"
+            style="@style/SmallTickerText"
+            android:layout_alignBaseline="@+id/tokenBalanceText"
+            android:layout_alignParentEnd="true"
+            android:text="$" />
+    </RelativeLayout>
+</LinearLayout>

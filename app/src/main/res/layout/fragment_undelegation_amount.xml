@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="14dp">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/partial_toolbar_submenu" />
+
+    <LinearLayout
+        android:id="@+id/dotLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLayout">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/dot_active" />
+
+        <Space
+            android:layout_width="44dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/dot_inactive" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/amountLabel"
+        style="@style/flatCommonLabel"
+        android:layout_width="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:text="@string/enter_undelegate_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dotLayout" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/amountEditText"
+        style="@style/FlatInputEditText"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:maxLength="40"
+        android:padding="10dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountLabel" />
+
+    <TextView
+        android:id="@+id/maxValueWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#5f6c82"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/amountEditText"
+        app:layout_constraintTop_toBottomOf="@+id/amountEditText"
+        tools:text="Max Available: 2,000.00 ENQ" />
+
+    <com.enecuum.app.vvm.common.FlatSeekBar
+        android:id="@+id/flatSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maxValueWarning" />
+
+    <ImageView
+        android:id="@+id/exclamationView"
+        style="@style/StatsIcon"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_exclamation"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/warningText"
+        app:layout_constraintStart_toStartOf="@+id/cancelButton"
+        app:layout_constraintTop_toTopOf="@+id/warningText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/warningText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/secondary_color"
+        android:textSize="10sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/cancelButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/exclamationView" />
+
+    <com.enecuum.app.vvm.common.TextButton
+        android:id="@+id/cancelButton"
+        style="@style/ButtonSmall"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="4dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.enecuum.app.vvm.common.TextButton
+        android:id="@+id/nextButton"
+        style="@style/ButtonSmall"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="18dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cancelButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

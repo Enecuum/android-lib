@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/partial_toolbar_submenu" />
+
+    <LinearLayout
+        android:id="@+id/dotLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/dot_active" />
+
+        <Space
+            android:layout_width="44dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/progressDot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/dot_inactive" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/inputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:paddingBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tokenNameLabel"
+                    style="@style/flatCommonLabel"
+                    android:text="@string/token_name" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/tokenNameEditText"
+                    style="@style/FlatInputEditText"
+                    android:layout_marginTop="6dp"
+                    android:maxLength="40"
+                    android:padding="10dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tokenTickerLabel"
+                    style="@style/flatCommonLabel"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/token_ticker" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/tokenTickerEditText"
+                    style="@style/FlatInputEditText"
+                    android:layout_marginTop="6dp"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:maxLength="6"
+                    android:padding="10dp"
+                    android:textAllCaps="true" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tokenSupplyLabel"
+                    style="@style/flatCommonLabel"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/token_supply" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/tokenSupplyEditText"
+                    style="@style/FlatInputEditText"
+                    android:layout_marginTop="6dp"
+                    android:digits="1234567890,."
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:text="1000" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/token_issue_emmissions_amount"
+                    android:textColor="#5f6c82"
+                    android:textSize="9sp"
+                    android:textStyle="normal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tokenTxFeeLabel"
+                    style="@style/flatCommonLabel"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/token_users_tx_fee" />
+
+                <LinearLayout
+                    android:id="@+id/feeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/border_stroke_xsmall_corners"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/userTxFeeValue"
+                        style="@style/FlatInputEditText"
+                        android:layout_width="wrap_content"
+                        android:background="@null"
+                        android:digits="1234567890,."
+                        android:fontFamily="sans-serif"
+                        android:imeOptions="actionDone"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="8dp"
+                        android:text="1"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        tools:text="1" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/userTxFeeTicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/colorTickerAccent"
+                        android:textSize="12sp"
+                        tools:text="TKN" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/separator" />
+
+                    <ImageView
+                        android:id="@+id/flatFee"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_flat" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/separator" />
+
+                    <ImageView
+                        android:id="@+id/percentFee"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_percent" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tokenMinFeeLabel"
+                    style="@style/flatCommonLabel"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/token_min_fee" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/tokenMinFeeText"
+                    style="@style/FlatInputEditText"
+                    android:layout_marginTop="6dp"
+                    android:digits="1234567890,."
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:text="1" />
+
+                <RadioGroup
+                    android:id="@+id/tokenTypeGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@id/nonreissuable"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/nonreissuable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:buttonTint="@color/colorWhite"
+                        android:text="@string/token_type_non_reissuable"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/reissuable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:buttonTint="@color/colorWhite"
+                        android:text="@string/token_type_reissuable"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/minable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:buttonTint="@color/colorWhite"
+                        android:text="@string/token_type_minable"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+                </RadioGroup>
+
+                <!--                <androidx.appcompat.widget.AppCompatTextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="8dp"-->
+                <!--                    android:fontFamily="sans-serif"-->
+                <!--                    android:paddingBottom="20dp"-->
+                <!--                    android:text="@string/token_issue_emmissions_tip"-->
+                <!--                    android:textColor="#5f6c82"-->
+                <!--                    android:textSize="9sp"-->
+                <!--                    android:textStyle="normal" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/decimalsLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/token_decimals"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/decimalsValue"
+                        style="@style/flatCommonLabel"
+                        android:layout_marginStart="2dp"
+                        android:text="10" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#3b414b" />
+
+                <LinearLayout
+                    android:id="@+id/minableParams"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tokenMaxSupplyLabel"
+                        style="@style/flatCommonLabel"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/token_max_supply" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/tokenMaxSupplyEditText"
+                        style="@style/FlatInputEditText"
+                        android:layout_marginTop="6dp"
+                        android:digits="1234567890,."
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp"
+                        android:text="10000" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/blockRewardLabel"
+                        style="@style/flatCommonLabel"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/block_reward" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/blockRewardEditText"
+                        style="@style/FlatInputEditText"
+                        android:layout_marginTop="6dp"
+                        android:digits="1234567890,."
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp"
+                        android:text="1" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/minStakeLabel"
+                        style="@style/flatCommonLabel"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/min_stake" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/minStakeEditText"
+                        style="@style/FlatInputEditText"
+                        android:layout_marginTop="6dp"
+                        android:digits="1234567890,."
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp"
+                        android:text="10" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/refStakeLabel"
+                        style="@style/flatCommonLabel"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/referrer_stake" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/refStakeEditText"
+                        style="@style/FlatInputEditText"
+                        android:layout_marginTop="6dp"
+                        android:digits="1234567890,."
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp"
+                        android:text="100" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/refShareLabel"
+                        style="@style/flatCommonLabel"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/referrer_share" />
+
+                    <LinearLayout
+                        android:id="@+id/refShareLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/border_stroke_xsmall_corners"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/refShareValue"
+                            style="@style/FlatInputEditText"
+                            android:layout_width="wrap_content"
+                            android:background="@null"
+                            android:digits="1234567890,."
+                            android:fontFamily="sans-serif"
+                            android:imeOptions="actionDone"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="18dp"
+                            android:text="10"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12sp"
+                            tools:text="10" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/separator" />
+
+                        <ImageView
+                            android:id="@+id/refShareIcon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_percent" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/confirmLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:paddingBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/flatCommonLabel"
+                        android:text="@string/token_name"
+                        android:textSize="11sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tokenNameValueText"
+                        style="@style/flatCommonLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="viewEnd"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <View style="@style/tokenDataSeparator" />
+
+                <LinearLayout style="@style/tokenDataLayout">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/flatCommonLabel"
+                        android:text="@string/token_ticker"
+                        android:textSize="11sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tokenTickerValueText"
+                        style="@style/flatCommonLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="viewEnd"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <View style="@style/tokenDataSeparator" />
+
+                <LinearLayout style="@style/tokenDataLayout">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/flatCommonLabel"
+                        android:text="@string/token_supply"
+                        android:textSize="11sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tokenSupplyValueText"
+                        style="@style/flatCommonLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="viewEnd"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <View style="@style/tokenDataSeparator" />
+
+                <LinearLayout style="@style/tokenDataLayout">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/flatCommonLabel"
+                        android:text="@string/token_users_tx_fee"
+                        android:textSize="11sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tokenUserFeeValueText"
+                        style="@style/flatCommonLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="viewEnd"
+                        android:textSize="11sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tokenUserFeeTicker"
+                        style="@style/flatCommonLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="2dp"
+                        android:textColor="@color/colorTickerAccent"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <View style="@style/tokenDataSeparator" />
+
+                <LinearLayout
+                    android:id="@+id/minFeeLayout"
+                    style="@style/tokenDataLayout">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/flatCommonLabel"
+                        android:text="@string/token_min_fee"
+                        android:textSize="11sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/minFeeValueText"
+                        style="@style/flatCommonLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="viewEnd"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/minFeeSeparator"
+                    style="@style/tokenDataSeparator" />
+
+                <LinearLayout style="@style/tokenDataLayout">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/flatCommonLabel"
+                        android:text="@string/token_owner"
+                        android:textSize="11sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tokenOwnerValueText"
+                        style="@style/flatCommonLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="middle"
+                        android:singleLine="true"
+                        android:textAlignment="viewEnd"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <View style="@style/tokenDataSeparator" />
+
+                <LinearLayout style="@style/tokenDataLayout">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/flatCommonLabel"
+                        android:text="@string/token_issue_fee"
+                        android:textSize="11sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tokenIssueFeeValueText"
+                        style="@style/flatCommonLabel.tokenData"
+                        android:text="0" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/amountTicker"
+                        style="@style/flatCommonLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTickerAccent"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <View style="@style/tokenDataSeparator" />
+
+                <LinearLayout style="@style/tokenDataLayout">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/flatCommonLabel"
+                        android:text="@string/token_fee"
+                        android:textSize="11sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/transactionFeeValueText"
+                        style="@style/flatCommonLabel.tokenData"
+                        android:text="0" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/transactionFeeTicker"
+                        style="@style/flatCommonLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTickerAccent"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <View style="@style/tokenDataSeparator" />
+
+                <LinearLayout style="@style/tokenDataLayout">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/flatCommonLabel"
+                        android:text="@string/token_type"
+                        android:textSize="11sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/transactionTokenTypeText"
+                        style="@style/flatCommonLabel.tokenData"
+                        android:text="0" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/transactionTokenType"
+                        style="@style/flatCommonLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTickerAccent"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <View style="@style/tokenDataSeparator" />
+
+                <LinearLayout
+                    android:id="@+id/minableParamsConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <LinearLayout style="@style/tokenDataLayout">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/flatCommonLabel"
+                            android:text="@string/token_max_supply"
+                            android:textSize="11sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tokenMaxSupplyText"
+                            style="@style/flatCommonLabel.tokenData"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <View style="@style/tokenDataSeparator" />
+
+                    <LinearLayout style="@style/tokenDataLayout">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/flatCommonLabel"
+                            android:text="@string/block_reward"
+                            android:textSize="11sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/blockRewardText"
+                            style="@style/flatCommonLabel.tokenData"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <View style="@style/tokenDataSeparator" />
+
+                    <LinearLayout style="@style/tokenDataLayout">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/flatCommonLabel"
+                            android:text="@string/min_stake"
+                            android:textSize="11sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tokenMinStakeText"
+                            style="@style/flatCommonLabel.tokenData"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <View style="@style/tokenDataSeparator" />
+
+                    <LinearLayout style="@style/tokenDataLayout">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/flatCommonLabel"
+                            android:text="@string/referrer_stake"
+                            android:textSize="11sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/referrerStakeText"
+                            style="@style/flatCommonLabel.tokenData"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <View style="@style/tokenDataSeparator" />
+
+                    <LinearLayout style="@style/tokenDataLayout">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/flatCommonLabel"
+                            android:text="@string/referrer_share"
+                            android:textSize="11sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/referrerShareText"
+                            style="@style/flatCommonLabel.tokenData"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <View style="@style/tokenDataSeparator" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nodeResponseTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="32dp"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="horizontal"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp">
+
+        <com.enecuum.app.vvm.common.TextButton
+            android:id="@+id/cancelButton"
+            style="@style/ButtonSmall"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1" />
+
+        <com.enecuum.app.vvm.common.TextButton
+            android:id="@+id/nextButton"
+            style="@style/ButtonSmall"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

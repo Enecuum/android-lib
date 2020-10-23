@@ -1,0 +1,243 @@
+<resources>
+
+    <!--currency strings-->
+    <string name="balance_enq">残高：%s %s</string>
+    <string name="welcome_to_enq">%sネットワークへようこそ</string>
+    <string name="no_enq">まだ%sはありません…</string>
+
+    <!--main-->
+    <string name="balance_with_colon">残高：</string>
+    <string name="balance">残高</string>
+    <string name="start_activity">アクティビティを開始</string>
+    <string name="stop_activity">アクティビティを停止</string>
+    <string name="connecting_btn">接続中</string>
+
+
+    <!--auth-->
+    <string name="your_address">アドレス</string>
+    <string name="your_private_key">秘密鍵</string>
+    <string name="copied_private_key">クリップボードにコピーされた秘密鍵</string>
+    <string name="copied_address">クリップボードにコピーされたアドレス</string>
+    <string name="copy">コピー</string>
+
+    <string name="start_using_wallet">ウォレットを使い始める</string>
+
+    <string name="private_key_import_title">秘密鍵のインポート</string>
+    <string name="private_key">秘密鍵</string>
+    <string name="private_key_import_hint">インポートする秘密鍵を入力</string>
+    <string name="private_key_hint">秘密鍵を入力</string>
+    <string name="signin">サインイン</string>
+
+    <string name="create_new_wallet">新しいウォレットを作成</string>
+    <string name="import_wallet">ウォレットをインポート</string>
+
+
+    <!--menu-->
+    <string name="settings">設定</string>
+    <string name="about">アプリについて</string>
+    <string name="my_address">私のアドレス</string>
+    <string name="community">コミュニティ</string>
+    <string name="entry_point">エントリーポイント</string>
+    <string name="entry_point_url">エントリポイント URL</string>
+    <string name="save_url">URLを保存</string>
+
+
+    <!--about-->
+    <string name="about_app_title">Enecuum モバイルアプリケーション\nEnecuum HK Limited.</string>
+    <string name="about_white_paper">ホワイトペーパー</string>
+    <string name="about_version">バージョン：%s\nTrinity Protocol  バージョン：%d.0.0</string>
+    <string name="about_tech">技術文書</string>
+    <string name="about_terms">利用規約</string>
+    <string name="about_privacy">プライバシーポリシー</string>
+
+
+    <!--import key-->
+    <string name="import_key_warning_title">警告 !</string>
+    <string name="import_key_warning">新しい秘密鍵をインポートすると、現在の秘密鍵がデバイスメモリから削除されます。\n必ずバックアップコピーを取ってください</string>
+
+
+    <!--faq-->
+    <string name="faq">よくある質問</string>
+    <string name="faq_battery_title">バッテリー寿命</string>
+    <string name="faq_battery">СPU /  GPUの使用に関しては、PoAノードは通常のProof-of-Workでマイニングを実行しません。その代わりに、Enecuum PoAモバイルノードは、https（安全な接続）を介してWebサイトを開く際のプロセスと同様の暗号化検証および署名を実行します。その結果、Enecuumモバイルアプリのバッテリー使用量は、モバイルブラウザやチャットに匹敵します。安全性の低いチャットやWebサイトではなく、安全性の高いチャットやWebサイトを選ぶことで、バッテリ持続時間を確保することはできません。</string>
+    <string name="faq_network_title">ネットワーク使用量</string>
+    <string name="faq_network">ブラウザとの類似性は、Enecuumアプリによるインターネットトラフィック使用量について述べています。 Enecuumでは、YouTubeを見たり、モバイルネットワーク経由で映画をダウンロードしたりすることはおそらくないでしょう。データプランが限られているか有料の場合は、WiFiスポットに接続したPoAアクティビティを始められることをお勧めします。実際に消費されるトラフィック量は、ネットワークの負荷とオンラインのPoA参加者の数によって異なり、将来の主要ネットでは、報酬や料金の刺激によって達成可能な軽さを目指しています。しかし、テストネットがアクティブ中は、トラフィック量が持続的で予測可能であることが保証されていません。</string>
+    <string name="faq_airdrop_title">Airdrop</string>
+    <string name="faq_airdrop">Enecuum is starting a new Airdrop 2.0 (“Gold Rush”) which will reward its participants with %s ERC-20 tokens. Enecuum launches a Gold Rush along with the mobile application (&lt;u&gt;&lt;a href=\"https://app.enecuum.com\"&gt;https://app.enecuum.com&lt;/a&gt;&lt;/u&gt;), blockchain explorer (&lt;u&gt;&lt;a href=\"https://neuro.enecuum.com\"&gt;https://neuro.enecuum.com&lt;/a&gt;&lt;/u&gt;) and a web wallet (&lt;u&gt;&lt;a href=\"https://wallet.enecuum.com\"&gt;https://wallet.enecuum.com&lt;/a&gt;&lt;/u&gt;) which allows users to keep their %s coins, withdraw and convert them into %s ERC-20 tokens. Airdrop participants will be rewarded for downloading the application and mining with %s coins. Gold Rush is going to have few phases during which Enecuum technical team will check up the settings and usability of Neuro. More info can be found HERE</string>
+    <string name="faq_support_title">サポート</string>
+    <string name="faq_support">&lt;u&gt; &lt;a href=https://t.me/Enecuum_EN&gt;Telegramグループ&lt;/a&gt; &lt;/u&gt;に、お気軽にお問い合わせください。</string>
+    <string name="disclaimer">秘密鍵は、マイニングへの参加を含む資金管理を提供し、ウォレットのロックを解除するために使用されます。\n 秘密鍵を必ず保管し、盗まれないようにしてください。 Enecuumは、秘密鍵を保存しません。秘密鍵が紛失した場合、復旧することはできません。秘密鍵の紛失によって生じた、いかなる損害についてもEnecuumは責任を負いません。</string>
+
+
+    <!--common-->
+    <string name="loading_balance">残高の読み込み中…</string>
+    <string name="connecting">接続中…</string>
+    <string name="continue_mining">♔  落ち着いてマイニングを続けましょう。</string>
+
+    <string name="no_internet">インターネットがありません</string>
+    <string name="import_new_private_key">新しい秘密鍵をインポートする</string>
+    <string name="empty_private_key">秘密鍵が空です！</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+
+    <string name="cancel">キャンセル</string>
+    <string name="are_you_sure">本当ですか？</string>
+    <string name="language">言語</string>
+    <string name="send">送る</string>
+    <string name="receive">受け取る</string>
+    <string name="swap">スワップ</string>
+    <string name="send_confirmation">確認を送信</string>
+    <string name="amount">額</string>
+    <string name="enq_address_to_send">送信する%sアドレス</string>
+    <string name="reject">拒否</string>
+    <string name="confirm">確認</string>
+    <string name="share_qr">QRコードを共有</string>
+    <string name="to">宛先</string>
+    <string name="max">最大</string>
+    <string name="wrong_format">誤った値</string>
+    <string name="transaction_result">トランザクション結果</string>
+    <string name="success">成功</string>
+    <string name="error">エラー</string>
+    <string name="zero_amount">額 0</string>
+    <string name="amount_too_big">残高には多すます</string>
+    <string name="wrong_secret_key_format">64文字の16進数列でなければなりません</string>
+    <string name="zero_balance">残高 0</string>
+    <string name="update">更新</string>
+    <string name="there_are_new_ver">Enecuumアプリの新しいバージョンがあります</string>
+    <string name="next">次</string>
+    <string name="skip">スキップ</string>
+
+
+    <!--update-->
+    <string name="update_now">今すぐアップデート</string>
+    <string name="update_required">アップデート必要です</string>
+    <string name="critical_update_description">続けるにはEnecuumのアップデートが必要です</string>
+
+
+    <!--stats-->
+    <string name="pos_nodes">PoSノード</string>
+    <string name="pow_nodes">PoWノード</string>
+    <string name="poa_nodes">PoAノード</string>
+    <string name="max_tps">最大TPS</string>
+    <string name="curr_tps">現在のTPS</string>
+    <string name="accounts">アカウント</string>
+    <string name="open_in_browser">ブラウザで開く</string>
+    <string name="stats_last_block">先回のブロック</string>
+    <string name="stats_rewards">過去24時間の報酬</string>
+    <string name="stats_coindata">コインデータ</string>
+    <string name="stats_coindata_circ_supply">循環サプライ :</string>
+    <string name="stats_coindata_max_supply">最大サプライ :</string>
+    <string name="stats_total_nodes">合計ノード :</string>
+
+
+    <!--referral-->
+    <string name="referral_buy_title">紹介プログラム</string>
+    <string name="referral_buy_message">%s %sを獲得すれば、代理人紹介コードを共有することができます。このコードを他のユーザーが使用すると、より多くの%sを入手して受動収入を得ることができます。</string>
+    <string name="referral_title">おめでとうございます。</string>
+    <string name="referral_message">個人代理人紹介コードをアンロックしました！</string>
+    <string name="share_code">コードを共有する</string>
+    <string name="referral_not_enough">紹介先アカウントの%sが足りません</string>
+    <string name="referral_skip_message">紹介コードを使用すると、より多くのトークンを獲得できます！</string>
+    <string name="referral_next_message">紹介プログラムの収益がブロックチェーン エクスプローラーに表示されます</string>
+    <string name="referral_same_address">紹介アドレスは、あなたのとは違うものでなければなりません</string>
+    <string name="referral_program">紹介プログラム</string>
+
+    <!--roi-->
+    <string name="roi_daily">毎日</string>
+    <string name="roi_weekly">毎週</string>
+    <string name="roi_monthly">毎月</string>
+    <string name="roi_annual">毎年</string>
+    <string name="min_stake_dialog_title">最低ステークは、%s %sです</string>
+    <string name="roi_alert">過去24時間のリターンレート計算機</string>
+    <string name="max_roi">最大 ROI：%s %sステークで%s %%</string>
+    <string name="save">保存する</string>
+    <string name="qr_saved">QRコードをギャラリーに保存しました</string>
+
+    <!--buy-->
+    <string name="pay_by_card">カードで支払う</string>
+    <string name="buy_on_exchange">取引で購入する</string>
+
+
+    <!--bottom tabs-->
+    <string name="tab_transfer">送る/受け取る</string>
+    <string name="create_new_token">新しいトークンを作成します。</string>
+    <string name="manage_my_tokens">私のトークンを管理します</string>
+    <string name="mint">発行する</string>
+    <string name="burn">燃やす</string>
+    <string name="operation">操作</string>
+    <string name="referral_copied">クリップボードにコピーされた紹介コード</string>
+    <string name="buy_erc_20_title"><![CDATA[購入ERC-20以下の交流のトークンと<U> <a href="https://guides.enecuum.com/enq/how-to-swap.html">モバイルマスター・ノードにスワップする</a> </ U>鉱業を開始するためです。イーサリアム財布及び通貨は、天然のコインにスワップERC-20トークンに必要とされます。]]></string>
+    <string name="back">バック</string>
+    <string name="token">トークン</string>
+    <string name="token_balance">トークンのバランス</string>
+    <string name="mine">私の</string>
+    <string name="delegate">代表</string>
+    <string name="token_issue">トークン作成</string>
+    <string name="token_name">名前</string>
+    <string name="token_ticker">ティッカー</string>
+    <string name="token_supply">サプライ</string>
+    <string name="token_users_tx_fee">ユーザーのためのTx料金</string>
+    <string name="token_type_non_reissuable">非reissuable</string>
+    <string name="token_type_reissuable">Reissuable</string>
+    <string name="token_issue_emmissions_tip">排出量を変更することはできません。</string>
+    <string name="token_issue_emmissions_amount">最大放出は1 844 674 407であります</string>
+    <string name="token_decimals">小数：</string>
+    <string name="token_owner">トークンの所有者</string>
+    <string name="token_issue_fee">発行手数料</string>
+    <string name="token_fee">費用</string>
+    <string name="token_min_fee">最低料金</string>
+    <string name="token_choose">トークンを選択します。</string>
+    <string name="check_detail">チェック詳細</string>
+    <string name="reward">褒賞</string>
+    <string name="available">利用できます</string>
+    <string name="delegated">委任</string>
+    <string name="transit">トランジット</string>
+    <string name="undelegated">委任解除</string>
+    <string name="please_check_the_address">アドレスを確認してください</string>
+    <string name="all_stake_providers">すべてのステークプロバイダ</string>
+    <string name="my_validators">私のバリデータ</string>
+    <string name="total_stake">合計アクティブ株式：</string>
+    <string name="annual_reward">年間報酬：</string>
+    <string name="stake_power">ステークパワー</string>
+    <string name="provider_page">プロバイダ]ページ</string>
+    <string name="enter_delegate_amount">デリゲートに金額を入力します。</string>
+    <string name="enter_undelegate_amount">undelegateに金額を入力します。</string>
+    <string name="max_available">利用できる最大</string>
+    <string name="check_delegation_detail">委任の詳細を確認します</string>
+    <string name="validator_page">バリページ</string>
+    <string name="delegated_amount">委任された量</string>
+    <string name="undelegated_amount">委任解除量</string>
+    <string name="reward_amount">報酬額</string>
+    <string name="transit_amount">トランジット量</string>
+    <string name="available_for_delegate">デリゲートで利用可能：%1$d %2$s</string>
+    <string name="undelegate">Undelegate</string>
+    <string name="transfer_to_wallet">財布に転送します</string>
+    <string name="check_undelegation_detail">undelegationの詳細を確認します</string>
+    <string name="from">から</string>
+    <string name="check_transfer_back_detail">チェック転送詳細</string>
+    <string name="amount_to_transfer">転送までの量</string>
+    <string name="delegation_fee">委任料</string>
+    <string name="undelegation_fee">Undelegation料</string>
+    <string name="transfer_back_fee">転送料</string>
+    <string name="total_fee">合計料金</string>
+    <string name="claim_reward">請求の報酬</string>
+    <string name="reinvest">再投資</string>
+    <string name="provider_fee">プロバイダ料金</string>
+    <string name="check_claim_reward_detail">請求の詳細を確認します</string>
+    <string name="claim_reward_fee">請求料</string>
+    <string name="active">アクティブ</string>
+    <string name="inactive">非活性</string>
+    <string name="performance">パフォーマンス %1$s%%</string>
+    <string name="node_map">ノードマップ</string>
+    <string name="network_stats">ネットワーク統計</string>
+    <string name="coins_on_poa">PoAで賭けコイン</string>
+    <string name="coins_on_pos">コインは、PoSに賭け</string>
+    <string name="difficulty">困難</string>
+    <string name="powRewards">24時間捕虜報酬</string>
+    <string name="posRewards">24時間のPoS報酬</string>
+    <string name="poaRewards">24時間のPoA報酬</string>
+    <string name="buy">購入</string>
+    <string name="faq_guides_title">ユーザーガイド</string>
+    <string name="faq_guides"><![CDATA[もっと調べるには、<U> <a href="https://guides.enecuum.com/faq.html">よくある質問セクションを参照してくださいする</a> </ U> Enecuumユーザーガイドの。]]></string>
+
+</resources>

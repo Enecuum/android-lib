@@ -1,0 +1,246 @@
+<resources>
+
+    <!--currency strings-->
+    <string name="balance_enq">Saldo: %s %s</string>
+    <string name="welcome_to_enq">Selamat datang di jaringan %s</string>
+    <string name="no_enq">Belum ada %s…</string>
+
+
+    <!--main-->
+    <string name="balance_with_colon">Saldo:</string>
+    <string name="balance">Saldo</string>
+    <string name="start_activity">mulai aktivitas</string>
+    <string name="stop_activity">hentikan aktivitas</string>
+    <string name="connecting_btn">menyambungkan</string>
+
+
+    <!--auth-->
+    <string name="your_address">Alamat anda</string>
+    <string name="your_private_key">Kode pribadi anda</string>
+    <string name="copied_private_key">Kode pribadi disalin ke clipboard</string>
+    <string name="copied_address">Alamat disalin ke clipboard</string>
+    <string name="copy">Salin</string>
+
+    <string name="start_using_wallet">Mulai gunakan wallet</string>
+
+    <string name="private_key_import_title">Impor kode pribadi</string>
+    <string name="private_key">Kode pribadi</string>
+    <string name="private_key_import_hint">Masukkan kode pribadi anda untuk diimpor</string>
+    <string name="private_key_hint">Masukkan kode pribadi anda</string>
+    <string name="signin">Masuk</string>
+
+    <string name="create_new_wallet">Buat wallet baru</string>
+    <string name="import_wallet">Impor wallet</string>
+
+
+    <!--menu-->
+    <string name="settings">Pengaturan</string>
+    <string name="about">Tentang aplikasi</string>
+    <string name="my_address">Alamat saya</string>
+    <string name="community">Komunitas</string>
+    <string name="entry_point">Titik masuk</string>
+    <string name="entry_point_url">URL titik masuk</string>
+    <string name="save_url">Simpan url</string>
+
+
+    <!--about-->
+    <string name="about_app_title">Aplikasi seluler Enecuum\nEnecuum HK Limited.</string>
+    <string name="about_white_paper">White paper</string>
+    <string name="about_version">Versi: %s\nVersi Trinity Protocol: %d.0.0</string>
+    <string name="about_tech">Tech paper</string>
+    <string name="about_terms">Syarat dan ketentuan</string>
+    <string name="about_privacy">Kebijakan privasi</string>
+
+
+    <!--import key-->
+    <string name="import_key_warning_title">Peringatan!</string>
+    <string name="import_key_warning">Kode Pribadi Anda saat ini akan dihapus dari memori perangkat setelah mengimpor yang baru.\nPastikan untuk memiliki salinan cadangan</string>
+
+
+    <!--faq-->
+    <string name="faq">Pertanyaan Umum</string>
+    <string name="faq_battery_title">Masa pakai baterai</string>
+    <string name="faq_battery">Dalam hal penggunaan СPU/GPU, node PoA tidak melakukan penambangan dengan cara Proof-of-Work yang umum. Node mobile Enecuum PoA melakukan validasi kriptografi dan masuk yang mirip dengan proses saat membuka situs web melalui https (sambungan aman). Akibatnya, penggunaan baterai oleh aplikasi seluler Enecuum sebanding dengan browser seluler atau obrolan. Anda tidak pernah memikirkan masa pakai baterai saat memilih obrolan aman atau situs web aman dibanding yang tidak aman, bukan?</string>
+    <string name="faq_network_title">Penggunaan jaringan</string>
+    <string name="faq_network">Analogi dengan browser terus berlanjut dengan penggunaan lalu lintas Internet oleh aplikasi Enecuum. Anda mungkin tidak menonton YouTube atau mengunduh film melalui jaringan seluler dengan Enecuum - kami sarankan untuk memulai aktivitas PoA yang terhubung dengan WiFi jika Anda memiliki paket data terbatas atau berbayar. Volume lalu lintas aktual yang digunakan tergantung pada beban jaringan dan jumlah peserta PoA yang online dan bertujuan agar ringan di mainnet masa depan yang dapat dicapai dengan stimulasi hadiah/biaya. Namun selama aktivitas testnet, volume lalu lintas tidak dijamin persisten dan dapat diprediksi.</string>
+    <string name="faq_airdrop_title">Airdrop</string>
+    <string name="faq_airdrop">Enecuum sedang memulai Airdrop 2.0 (\"Gold Rush\") baru yang akan memberi reward kepada pesertanya dengan token %s ERC-20. Enecuum meluncurkan Gold Rush bersama dengan aplikasi seluler (&lt;u&gt;&lt;ahref=\"https://app.enecuum.com\"&gt;https://app.enecuum.com&lt;/a&gt;&lt;/u&gt;), blockchain explorer (&lt;u&gt;&lt;a href=\"https://neuro.enecuum.com\"&gt;https://neuro.enecuum.com&lt;/a&gt;&lt;/u&gt;) dan wallet web (&lt;u&gt; &lt;a href =\"https://wallet.enecuum.com\"&gt;https://wallet.enecuum.com&lt;/a&gt;&lt;/u&gt;) yang memungkinkan pengguna untuk menyimpan koin %s, menarik dan mengonversinya menjadi token %s ERC-20 . Peserta Airdrop akan diberi reward dengan mengunduh aplikasi dan menambang dengan koin %s. Gold Rush akan memiliki beberapa fase di mana tim teknis Enecuum akan memeriksa pengaturan dan kedayagunaan Neuro. Info selengkapnya dapat ditemukan di SINI</string>
+    <string name="faq_support_title">Dukungan</string>
+    <string name="faq_support">Jangan ragu untuk meminta bantuan di &lt;u&gt;&lt;a href=https://t.me/Enecuum_EN&gt;Grup Telegram&lt;/a&gt;&lt;/u&gt;</string>
+    <string name="disclaimer">Kode Pribadi digunakan untuk membuka dompet Anda yang menyediakan pengelolaan dana.\n Pastikan untuk menyimpan kode pribadi Anda dan mencegah pencurian. Enecuum tidak menyimpan kode pribadi Anda. Apabila kode pribadi hilang, kami tidak akan dapat memulihkannya. Enecuum tidak bertanggung jawab atas ketidaknyamanan yang disebabkan oleh hilangnya kode pribadi.</string>
+
+
+    <!--common-->
+    <string name="loading_balance">Memuat saldo…</string>
+    <string name="connecting">Menyambungkan…</string>
+    <string name="continue_mining">♔ Tetap Tenang dan Lanjutkan Menambang</string>
+
+    <string name="no_internet">Tidak ada internet</string>
+    <string name="import_new_private_key">Impor Kode Pribadi yang baru</string>
+    <string name="empty_private_key">Kode Pribadi Kosong!</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+
+    <string name="cancel">Batal</string>
+    <string name="are_you_sure">Anda yakin?</string>
+    <string name="language">Bahasa</string>
+    <string name="send">Kirim</string>
+    <string name="receive">Terima</string>
+    <string name="swap">Tukar</string>
+    <string name="send_confirmation">Kirim Konfirmasi</string>
+    <string name="amount">Jumlah</string>
+    <string name="enq_address_to_send">Alamat %s untuk mengirim</string>
+    <string name="reject">Tolak</string>
+    <string name="confirm">Konfirmasi</string>
+    <string name="share_qr">Bagikan Kode QR</string>
+    <string name="to">Ke</string>
+    <string name="max">Maks</string>
+    <string name="wrong_format">Nilai tidak benar</string>
+    <string name="transaction_result">Hasil transaksi</string>
+    <string name="success">Berhasil</string>
+    <string name="error">Kesalahan</string>
+    <string name="zero_amount">Jumlah nol</string>
+    <string name="amount_too_big">Terlalu banyak untuk saldo Anda</string>
+    <string name="wrong_secret_key_format">Harus string heksadesimal 64 karakter</string>
+    <string name="zero_balance">Saldo nol</string>
+    <string name="update">Pembaruan</string>
+    <string name="there_are_new_ver">Ada versi baru untuk aplikasi Enecuum</string>
+    <string name="next">Berikutnya</string>
+    <string name="skip">Lewati</string>
+
+
+    <!--update-->
+    <string name="update_now">Perbarui sekarang</string>
+    <string name="update_required">Pembaruan diperlukan</string>
+    <string name="critical_update_description">Pembaruan Enecuum diperlukan untuk melanjutkan</string>
+
+
+    <!--stats-->
+    <string name="pos_nodes">Node PoS</string>
+    <string name="pow_nodes">Node PoW</string>
+    <string name="poa_nodes">Node PoA</string>
+    <string name="max_tps">Max TPS</string>
+    <string name="curr_tps">TPS saat ini</string>
+    <string name="accounts">Akun</string>
+    <string name="open_in_browser">Buka di browser</string>
+    <string name="stats_last_block">Blok terakhir</string>
+    <string name="stats_rewards">Reward 24 jam terakhir</string>
+    <string name="stats_coindata">Data Koin</string>
+    <string name="stats_coindata_circ_supply">Pasokan yang Beredar:</string>
+    <string name="stats_coindata_max_supply">Pasokan Maks.:</string>
+    <string name="stats_total_nodes">Total Node:</string>
+
+
+    <!--referral-->
+    <string name="referral_buy_title">Program referral</string>
+    <string name="referral_buy_message">Setelah mendapatkan %s %s, Anda akan dapat membagikan kode referral agen Anda. Kode ini dapat digunakan oleh pengguna lain untuk mendapatkan lebih banyak %s yang memberi Anda penghasilan pasif.</string>
+    <string name="referral_title">Selamat!</string>
+    <string name="referral_message">Anda telah mengaktifkan kode referral agen pribadi Anda!</string>
+    <string name="share_code">Bagikan kode</string>
+    <string name="referral_not_enough">%s tidak cukup pada akun yang direferensikan</string>
+    <string name="referral_skip_message">Dengan kode referral, Anda akan mendapat lebih banyak token!</string>
+    <string name="referral_next_message">Penghasilan program Referral Anda akan ditampilkan pada Blockchain Explorer</string>
+    <string name="referral_same_address">Alamat yang direferensikan harus berbeda dari milik Anda</string>
+    <string name="referral_program">Program referral</string>
+
+
+    <!--roi-->
+    <string name="roi_daily">Harian</string>
+    <string name="roi_weekly">Mingguan</string>
+    <string name="roi_monthly">Bulanan</string>
+    <string name="roi_annual">Tahunan</string>
+    <string name="min_stake_dialog_title">Taruhan minimum adalah %s %s</string>
+    <string name="roi_alert">Kalkulator tingkat pengembalian 24 jam terakhir</string>
+    <string name="max_roi">ROI Maks: %s %% pada taruhan %s %s</string>
+    <string name="save">Simpan</string>
+    <string name="qr_saved">QRCode disimpan ke Galeri</string>
+
+
+    <!--buy-->
+    <string name="pay_by_card">Bayar dengan kartu</string>
+    <string name="buy_on_exchange">Beli di bursa</string>
+
+
+    <!--bottom tabs-->
+    <string name="tab_transfer">Kirim/Terima</string>
+    <string name="create_new_token">Buat New Token</string>
+    <string name="manage_my_tokens">Mengelola saya Token</string>
+    <string name="mint">Untuk menerbitkan</string>
+    <string name="burn">Membakar</string>
+    <string name="operation">Operasi</string>
+    <string name="referral_copied">Kode referral disalin ke clipboard</string>
+    <string name="buy_erc_20_title"><![CDATA[Beli ERC-20 Token di Bursa berikut dan <u> <a href="https://guides.enecuum.com/enq/how-to-swap.html"> Swap untuk Ponsel Masternode </a> </ u> untuk memulai penambangan. dompet Ethereum dan mata uang yang diperlukan untuk pertukaran ERC-20 token ke dalam koin asli.]]></string>
+    <string name="back">Kembali</string>
+    <string name="token">Token</string>
+    <string name="token_balance">keseimbangan Token</string>
+    <string name="mine">Milikku</string>
+    <string name="delegate">Melimpahkan</string>
+    <string name="token_issue">penciptaan Token</string>
+    <string name="token_name">"Nama "</string>
+    <string name="token_ticker">Jantung</string>
+    <string name="token_supply">pasokan Token</string>
+    <string name="token_users_tx_fee">Biaya tx untuk pengguna</string>
+    <string name="token_type_non_reissuable">Non-reissuable</string>
+    <string name="token_type_reissuable">Reissuable</string>
+    <string name="token_issue_emmissions_tip">Emisi tidak dapat diubah.</string>
+    <string name="token_issue_emmissions_amount">emisi maksimum adalah 1 844 674 407</string>
+    <string name="token_decimals">desimal:</string>
+    <string name="token_owner">pemilik Token</string>
+    <string name="token_issue_fee">biaya masalah</string>
+    <string name="token_fee">Biaya</string>
+    <string name="token_min_fee">biaya minimum</string>
+    <string name="token_choose">Pilih tanda</string>
+    <string name="check_detail">Periksa rinci</string>
+    <string name="reward">Penghargaan</string>
+    <string name="available">Tersedia</string>
+    <string name="delegated">yang didelegasikan</string>
+    <string name="transit">Transit</string>
+    <string name="undelegated">Undelegated</string>
+    <string name="please_check_the_address">Silakan periksa alamat</string>
+    <string name="all_stake_providers">Semua penyedia saham</string>
+    <string name="my_validators">validator saya</string>
+    <string name="total_stake">Jumlah saham yang aktif:</string>
+    <string name="annual_reward">reward tahunan:</string>
+    <string name="stake_power">kekuatan stake</string>
+    <string name="provider_page">halaman penyedia</string>
+    <string name="enter_delegate_amount">Masukkan jumlah yang mendelegasikan</string>
+    <string name="enter_undelegate_amount">Masukkan jumlah yang Hapus delegasi</string>
+    <string name="max_available">Max tersedia</string>
+    <string name="check_delegation_detail">Periksa rincian delegasi</string>
+    <string name="validator_page">halaman validator</string>
+    <string name="delegated_amount">jumlah yang didelegasikan</string>
+    <string name="undelegated_amount">jumlah Undelegated</string>
+    <string name="reward_amount">jumlah reward</string>
+    <string name="transit_amount">jumlah Transit</string>
+    <string name="available_for_delegate">Tersedia untuk mendelegasikan: %1$d %2$s</string>
+    <string name="undelegate">Hapus delegasi</string>
+    <string name="transfer_to_wallet">Transfer ke dompet</string>
+    <string name="check_undelegation_detail">Periksa rincian undelegation</string>
+    <string name="from">Dari</string>
+    <string name="check_transfer_back_detail">Periksa Transfer rinci</string>
+    <string name="amount_to_transfer">Jumlah transfer</string>
+    <string name="delegation_fee">biaya delegasi</string>
+    <string name="undelegation_fee">biaya Undelegation</string>
+    <string name="transfer_back_fee">Biaya transfer</string>
+    <string name="total_fee">total biaya</string>
+    <string name="claim_reward">klaim hadiah</string>
+    <string name="reinvest">menginvestasikan kembali</string>
+    <string name="provider_fee">biaya penyedia</string>
+    <string name="check_claim_reward_detail">Periksa rincian klaim</string>
+    <string name="claim_reward_fee">biaya klaim</string>
+    <string name="active">Aktif</string>
+    <string name="inactive">non-aktif</string>
+    <string name="performance">Kinerja %1$s%%</string>
+    <string name="node_map">peta Node</string>
+    <string name="network_stats">statistik jaringan</string>
+    <string name="coins_on_poa">Koin mempertaruhkan pada PoA</string>
+    <string name="coins_on_pos">Koin mempertaruhkan pada PoS</string>
+    <string name="difficulty">Kesulitan</string>
+    <string name="powRewards">imbalan 24h Pow</string>
+    <string name="posRewards">PoS 24h imbalan</string>
+    <string name="poaRewards">imbalan 24h PoA</string>
+    <string name="buy">Membeli</string>
+    <string name="faq_guides_title">Panduan pengguna</string>
+    <string name="faq_guides"><![CDATA[Untuk mengetahui lebih lanjut, silakan baca <u> <a href="https://guides.enecuum.com/faq.html"> bagian FAQ </a> </ u> dari Enecuum Panduan Pengguna.]]></string>
+
+</resources>

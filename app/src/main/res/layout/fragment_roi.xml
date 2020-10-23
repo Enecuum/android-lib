@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    <include-->
+    <!--        android:id="@+id/toolbarLayout"-->
+    <!--        layout="@layout/partial_toolbar" />-->
+
+    <!--    <com.enecuum.app.vvm.main.BalanceInfoView-->
+    <!--        android:id="@+id/balanceInfoView"-->
+    <!--        style="@style/BalanceInfo"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/toolbarLayout" />-->
+
+    <!--    <include-->
+    <!--        android:id="@+id/roiLayout"-->
+    <!--        layout="@layout/partial_roi_data"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <com.enecuum.app.vvm.buy.BuyLayout-->
+    <!--        android:id="@+id/buyLayout"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:paddingBottom="@dimen/bottom_tabs_height"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/balanceInfoView" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

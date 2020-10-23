@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="14dp">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/partial_toolbar_submenu" />
+
+    <LinearLayout
+        android:id="@+id/dotLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLayout">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/dot_active" />
+
+        <Space
+            android:layout_width="44dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/dot_active" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/currentRewardLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/check_undelegation_detail"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dotLayout" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/flat_tabs_line"
+        app:layout_constraintTop_toBottomOf="@+id/currentRewardLabel" />
+
+    <LinearLayout
+        android:id="@+id/detailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="18dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/line">
+
+        <LinearLayout style="@style/tokenDataLayout">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/amountLabel"
+                style="@style/flatCommonLabel"
+                android:text="@string/amount"
+                android:textSize="11sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/amountValueText"
+                style="@style/flatCommonLabel.tokenData"
+                android:layout_marginStart="8dp"
+                android:text="0" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/amountTicker"
+                style="@style/flatCommonLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTickerAccent"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <View style="@style/tokenDataSeparator" />
+
+        <LinearLayout style="@style/tokenDataLayout">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/flatCommonLabel"
+                android:text="@string/token_fee"
+                android:textSize="11sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/transactionFeeValueText"
+                style="@style/flatCommonLabel.tokenData"
+                android:layout_marginStart="8dp"
+                android:text="0" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/transactionFeeTicker"
+                style="@style/flatCommonLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTickerAccent"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator68"
+            style="@style/tokenDataSeparator" />
+
+        <LinearLayout style="@style/tokenDataLayout">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/flatCommonLabel"
+                android:text="@string/undelegation_fee"
+                android:textSize="11sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/undelegationFeeValueText"
+                style="@style/flatCommonLabel.tokenData"
+                android:layout_marginStart="8dp"
+                android:text="0" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/undelegationFeeTicker"
+                style="@style/flatCommonLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTickerAccent"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator69"
+            style="@style/tokenDataSeparator" />
+
+        <LinearLayout style="@style/tokenDataLayout">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/flatCommonLabel"
+                android:text="@string/total_fee"
+                android:textSize="11sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/totalFeeValueText"
+                style="@style/flatCommonLabel.tokenData"
+                android:layout_marginStart="8dp"
+                android:text="0" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/totalFeeTicker"
+                style="@style/flatCommonLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTickerAccent"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/minFeeSeparator"
+            style="@style/tokenDataSeparator" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/addressLabel"
+                style="@style/flatCommonLabel"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/from"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="18dp"
+                android:background="@drawable/background_dark_rounded"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbarLayout" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/addressNameText"
+                style="@style/flatCommonLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:textAlignment="viewEnd"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3b414b" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/exclamationView"
+        style="@style/StatsIcon"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_exclamation"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/warningText"
+        app:layout_constraintStart_toStartOf="@+id/cancelButton"
+        app:layout_constraintTop_toTopOf="@+id/warningText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/warningText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#5f6c82"
+        android:textSize="10sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/cancelButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/exclamationView" />
+
+    <com.enecuum.app.vvm.common.TextButton
+        android:id="@+id/cancelButton"
+        style="@style/ButtonSmall"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="4dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.enecuum.app.vvm.common.TextButton
+        android:id="@+id/nextButton"
+        style="@style/ButtonSmall"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="18dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cancelButton" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nodeResponseTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/background"
+        android:padding="32dp"
+        android:textColor="@color/colorWhite"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLayout"
+        tools:visibility="gone" />
+</androidx.constraintlayout.widget.ConstraintLayout>

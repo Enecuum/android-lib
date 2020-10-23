@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorWhite">#ffffff</color>
+
+    <!--palette-->
+    <color name="colorPrimary">#343A41</color>
+    <color name="colorPrimaryLight">#464F5B</color>
+    <color name="colorAccent">#7380F2</color>
+
+    <color name="colorAccent60">#997380F2</color>
+    <color name="black30">#4D000000</color>
+    <color name="white25">#40FFFFFF</color>
+
+    <!--common-->
+    <color name="colorBorder">#5c6179</color>
+
+    <!--main views-->
+    <color name="colorBuyButtonsBackground">#7a222329</color>
+
+    <color name="colorMainButtonTextIdle">#54FFFFFF</color>
+    <color name="colorMainButtonBackgroundIdle">#36394d</color>
+
+    <color name="colorTickerAccent">#00d1ff</color>
+
+    <!--text-->
+    <color name="colorTextPrimary">@color/colorWhite</color>
+
+    <color name="colorTextWhite">@color/colorWhite</color>
+    <color name="colorTextAccent">#696eaa</color>
+    <color name="colorAuthSecondaryText">#777ebe</color>
+    <color name="colorErrorText">#ff0000</color>
+
+    <!--gradient-->
+    <color name="blue_gradient_start">#409EFE</color>
+    <color name="blue_gradient_end">#1965BD</color>
+    <color name="violet_gradient_start">#555ca3</color>
+    <color name="violet_gradient_end">#5621be</color>
+    <color name="dark_blue_gradient_start">#3C4A93</color>
+    <color name="dark_blue_gradient_end">#2D3143</color>
+    <color name="navbar_gradient_start">#313345</color>
+    <color name="navbar_gradient_end">#36394e</color>
+    <color name="view_gradient_start">#22232F</color>
+    <color name="view_gradient_end">#292a3a</color>
+    <color name="balance_gradient_start">#2F3042</color>
+    <color name="balance_gradient_end">#383B4E</color>
+    <color name="main_button_gradient_start">#1869CB</color>
+    <color name="main_button_gradient_end">#3F9DFE</color>
+    <color name="menu_button_gradient_start">#3d4155</color>
+    <color name="menu_button_gradient_end">#2f3042</color>
+    <color name="settings_root_gradient_start">#303345</color>
+    <color name="settings_root_gradient_end">#36394E</color>
+    <color name="settings_tab_gradient_start">#323447</color>
+    <color name="settings_tab_gradient_end">#36394C</color>
+    <color name="buy_view_gradient_start">#404566</color>
+    <color name="buy_view_gradient_end">#212437</color>
+
+    <!--qr-->
+    <color name="qr_dark">#1f2129</color>
+    <color name="qr_light">#2759a3</color>
+
+    <!-- - - - - - - - - - - -->
+    <!--flat design iteration-->
+    <!-- - - - - - - - - - - -->
+
+    <!--common-->
+    <color name="accent_color">#008bff</color>
+    <color name="secondary_color">#5f6c82</color>
+
+    <color name="background">#282a38</color>
+    <color name="background_dark">#21232a</color>
+    <color name="view_background">#343747</color>
+    <color name="button_background_violet">#5760be</color>
+    <color name="button_background_gray_disabled">#4c5c6179</color>
+    <color name="button_background_gray">#5c6179</color>
+    <color name="separator">#5e6c85</color>
+    <color name="separator_light">#dbdeeb</color>
+    <color name="inactive_color">#3a414d</color>
+    <color name="seekbar_background">#3f4a5c</color>
+
+    <!--text-->
+    <color name="text_secondary">@color/secondary_color</color>
+    <color name="text_secondary_light">#8797b0</color>
+
+    <!--bottom tabs-->
+    <color name="bottom_tabs_back">#35394c</color>
+    <color name="bottom_tabs_text">@color/secondary_color</color>
+
+    <!--flat tabs-->
+    <color name="flat_tabs_line">#7d8ba4</color>
+    <color name="flat_tabs_inactive_text">@color/secondary_color</color>
+
+</resources>

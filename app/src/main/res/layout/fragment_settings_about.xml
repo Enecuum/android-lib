@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/SettingsRootLayout">
+
+    <include layout="@layout/partial_toolbar_settings" />
+
+    <LinearLayout style="@style/SettingsTabLayout">
+
+        <include layout="@layout/partial_toolbar_settings_submenu" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="20dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_app_title"
+                    android:textAppearance="@style/SmallWhiteBoldText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/versionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/about_version"
+                    android:textAppearance="@style/XSmallWhiteText" />
+
+                <LinearLayout
+                    android:id="@+id/siteLayout"
+                    style="@style/LinkLayout"
+                    android:layout_marginTop="32dp">
+
+                    <ImageView
+                        style="@style/LinkIcon"
+                        android:src="@drawable/ic_world" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/siteText"
+                        style="@style/LinkText"
+                        android:text="@string/about_site" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="22dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/stakeText" />
+
+                <LinearLayout
+                    android:id="@+id/whitePaperLayout"
+                    style="@style/LinkLayout">
+
+                    <ImageView
+                        style="@style/LinkIcon"
+                        android:src="@drawable/ic_pdf" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/whitePaperText"
+                        style="@style/LinkText"
+                        android:text="@string/about_white_paper" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/techPaperLayout"
+                    style="@style/LinkLayout"
+                    android:layout_marginTop="32dp">
+
+                    <ImageView
+                        style="@style/LinkIcon"
+                        android:src="@drawable/ic_pdf" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/techPaperText"
+                        style="@style/LinkText"
+                        android:text="@string/about_tech" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/termsLayout"
+                    style="@style/LinkLayout"
+                    android:layout_marginTop="32dp">
+
+                    <ImageView
+                        style="@style/LinkIcon"
+                        android:src="@drawable/ic_pdf" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/termsText"
+                        style="@style/LinkText"
+                        android:text="@string/about_terms" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/privacyLayout"
+                    style="@style/LinkLayout"
+                    android:layout_marginTop="32dp">
+
+                    <ImageView
+                        style="@style/LinkIcon"
+                        android:src="@drawable/ic_pdf" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/privacyText"
+                        style="@style/LinkText"
+                        android:text="@string/about_privacy" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,253 @@
+<resources>
+
+    <!--currency strings-->
+    <string name="balance_enq">Saldo: %s %s</string>
+    <string name="welcome_to_enq">Bem-vindo à rede %s</string>
+    <string name="no_enq">Ainda sem %s…</string>
+
+
+    <!--main-->
+    <string name="balance_with_colon">Saldo:</string>
+    <string name="balance">Saldo</string>
+    <string name="start_activity">iniciar atividade</string>
+    <string name="stop_activity">parar atividade</string>
+    <string name="connecting_btn">a ligar</string>
+
+
+    <!--auth-->
+    <string name="your_address">O seu endereço</string>
+    <string name="your_private_key">A sua chave privada</string>
+    <string name="copied_private_key">Chave privada copiada para a área de transferência</string>
+    <string name="copied_address">Endereço copiado para a área de transferência</string>
+    <string name="copy">Copiar</string>
+
+    <string name="start_using_wallet">Começar a usar a carteira</string>
+
+    <string name="private_key_import_title">Importar chave privada</string>
+    <string name="private_key">Chave privada</string>
+    <string name="private_key_import_hint">Insira a sua chave privada para importar</string>
+    <string name="private_key_hint">Insira a sua chave privada</string>
+    <string name="signin">Iniciar sessão</string>
+
+    <string name="create_new_wallet">Criar nova carteira</string>
+    <string name="import_wallet">Importar carteira</string>
+
+
+    <!--menu-->
+    <string name="settings">Definições</string>
+    <string name="about">Sobre a aplicação</string>
+    <string name="my_address">O meu endereço</string>
+    <string name="community">Comunidade</string>
+    <string name="entry_point">Ponto de entrada</string>
+    <string name="entry_point_url">URL do ponto de entrada</string>
+    <string name="save_url">Guardar URL</string>
+
+
+    <!--about-->
+    <string name="about_app_title">Aplicação móvel Enecuum\nEnecuum HK Limited.</string>
+    <string name="about_white_paper">Livro branco</string>
+    <string name="about_version">Versão: %s\nVersão do protocolo Trinity: %d.0.0</string>
+    <string name="about_tech">Artigo técnico: https</string>
+    <string name="about_terms">Termos e condições</string>
+    <string name="about_privacy">Política de privacidade</string>
+
+    <!--import key-->
+    <string name="import_key_warning_title">Aviso!</string>
+    <string name="import_key_warning">A sua chave privada atual será eliminada da memória do dispositivo depois de importar a nova.\nCertifique-se que tem uma cópia de segurança</string>
+
+
+    <!--faq-->
+    <string name="faq">Perguntas frequentes</string>
+    <string name="faq_battery_title">Duração da bateria</string>
+    <string name="faq_battery">Em termos de uso da CPU/GPU, o nó PoA não realiza a mineração na forma habitual da Prova de Trabalho. Em vez disso, o nó móvel do Enecuum PoA realiza validações e assinaturas criptográficas que são semelhantes ao processo durante a abertura de um site via https (ligação segura). Como resultado, o uso da bateria pela aplicação móvel da Enecuum é comparável ao navegador móvel ou funcionamento de um chat. Nunca pensa na duração da bateria ao escolher um chat seguro ou uma ligação seguro em detrimento de um site segurança, pois não?</string>
+    <string name="faq_network_title">Uso da rede</string>
+    <string name="faq_network">A analogia com o navegador também se aplica ao uso do tráfego da Internet pela aplicação Enecuum. Provavelmente não vê vídeos no YouTube nem transfere filmes através da rede móvel, portanto, com a Enecuum recomendamos que inicie uma atividade de PoA através da ligação a um ponto de Wi-Fi se tiver um plano de dados limitado ou pagável. O volume real de tráfego consumido depende do carregamento da rede e do número de participantes online do PoA, que devem ser leves na futura rede principal, alcançável pela estimulação de recompensas/taxas. Mas, durante as atividades testnet, não é garantido que o volume de tráfego seja persistente e previsível.</string>
+    <string name="faq_airdrop_title">Airdrop</string>
+    <string name="faq_airdrop">A Enecuum está a iniciar um novo Airdrop 2.0 (“Gold Rush”) que premiará os seus participantes com tokens %s ERC-20. A Enecuum lança uma Gold Rush juntamente com a aplicação móvel (&lt;u&gt;&lt;a href=\"https://app.enecuum.com\"&gt;https://app.enecuum.com&lt;/a&gt;&lt;/u&gt;), o blockchain explorer (&lt;u&gt;&lt;a href=\"https://neuro.enecuum.com\"&gt;https://neuro.enecuum.com&lt;/a&gt;&lt;/u&gt;) e uma carteira virtual (&lt;u&gt;&lt;a href = \"https://wallet.enecuum.com\"&gt;https://wallet.enecuum.com&lt;/a&gt;&lt;/u&gt;) que permite aos utilizadores manter as suas moedas %s, retirá-las e convertê-las em tokens %s ERC-20. Os participantes do Airdrop serão recompensados ​​por transferir a aplicação e minerar com moedas %s. O Gold Rush terá algumas fases durante as quais a equipa técnica da Enecuum verificará as configurações e a usabilidade do Neuro. Mais informações podem ser encontradas AQUI</string>
+    <string name="faq_support_title">Apoio</string>
+    <string name="faq_support">Sinta-se à vontade em pedir apoio no &lt;u&gt;&lt;a href=https://t.me/Enecuum_EN&gt;Grupo do Telegram&lt;/a&gt;&lt;/u&gt;</string>
+    <string name="disclaimer">A chave privada é usada para desbloquear a sua carteira, fornecendo gestão de fundos.\nCertifique-se que guarda a sua chave privada e previne que alguém a roube. A Enecuum não armazena a sua chave privada. Em caso de perda da chave privada, não poderemos recuperá-la. A Enecuum não é responsável por nenhum inconveniente causado pela perda da chave privada.</string>
+
+
+    <!--common-->
+    <string name="loading_balance">A carregar saldo…</string>
+    <string name="connecting">A conectar…</string>
+    <string name="continue_mining">♔ Mantenha a calma e continue a minerar</string>
+
+    <string name="no_internet">Sem Internet</string>
+    <string name="import_new_private_key">Importar nova chave privada</string>
+    <string name="empty_private_key">Chave privada vazia!</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+
+    <string name="save">Guardar</string>
+    <string name="qr_saved">Código QR guardado na Galeria</string>
+
+    <string name="cancel">Cancelar</string>
+    <string name="are_you_sure">Tem a certeza?</string>
+    <string name="language">Língua</string>
+    <string name="send">Enviar</string>
+    <string name="receive">Receber</string>
+    <string name="swap">Cambiar</string>
+    <string name="send_confirmation">Enviar confirmação</string>
+    <string name="amount">Montante</string>
+    <string name="enq_address_to_send">Endereço %s para enviar</string>
+    <string name="reject">Rejeitar</string>
+    <string name="confirm">Confirmar</string>
+    <string name="share_qr">Partilhar código QR</string>
+    <string name="to">Para</string>
+    <string name="max">Max</string>
+    <string name="wrong_format">Valor incorreto</string>
+    <string name="transaction_result">Resultado da transação</string>
+    <string name="success">Bem-sucedida</string>
+    <string name="error">Erro</string>
+    <string name="zero_amount">Montante zero</string>
+    <string name="amount_too_big">Demasiado para o seu saldo</string>
+    <string name="wrong_secret_key_format">Deve ser uma cadeia hexadecimal de 64 caracteres</string>
+    <string name="zero_balance">Saldo zero</string>
+    <string name="update">Atualização</string>
+    <string name="there_are_new_ver">Há uma nova versão da aplicação Enecuum</string>
+    <string name="next">Seguinte</string>
+    <string name="skip">Ignorar</string>
+
+
+    <!--update-->
+    <string name="update_now">Atualizar agora</string>
+    <string name="update_required">Atualização necessária</string>
+    <string name="critical_update_description">É necessária uma atualização da Enecuum para continuar</string>
+
+    <!--stats-->
+    <string name="pos_nodes">Nós PoS</string>
+    <string name="pow_nodes">Nós PoW</string>
+    <string name="poa_nodes">Nós PoA</string>
+    <string name="max_tps">TPS máx.</string>
+    <string name="curr_tps">TPS atual</string>
+    <string name="accounts">Contas</string>
+    <string name="open_in_browser">Abrir no navegador</string>
+    <string name="stats_last_block">Último bloco</string>
+    <string name="stats_rewards">Recompensas últimas 24h</string>
+    <string name="stats_coindata">Dados da moeda</string>
+    <string name="stats_coindata_circ_supply">Oferta circ.:</string>
+    <string name="stats_coindata_max_supply">Oferta máx.:</string>
+    <string name="stats_total_nodes">Nós totais:</string>
+
+
+    <!--referral-->
+    <string name="referral_buy_title">Programa de referência</string>
+    <string name="referral_buy_message">Depois de ganhar %s %s, poderá partilhar o seu código de agente de referência. O código pode ser usado por outros utilizadores para obter mais %s proporcionando-lhe rendimento passivo.</string>
+    <string name="referral_title">Parabéns!</string>
+    <string name="referral_message">Desbloqueou o seu código pessoal de agente de referência!</string>
+    <string name="share_code">Partilhar código</string>
+    <string name="referral_not_enough">Não há %s suficiente na conta referida</string>
+    <string name="referral_skip_message">Com o código de referência, ganhará mais tokens!</string>
+    <string name="referral_next_message">Os seu ganhos no programa de referência serão mostrados no Blockchain Explorer</string>
+    <string name="referral_same_address">O endereço referido deve ser diferente do seu</string>
+    <string name="referral_program">Programa de referência</string>
+
+
+    <!--roi-->
+    <string name="roi_daily">Diário</string>
+    <string name="roi_weekly">Semanal</string>
+    <string name="roi_monthly">Mensal</string>
+    <string name="roi_annual">Anual</string>
+    <string name="min_stake_dialog_title">A participação mínima é de %s %s</string>
+    <string name="roi_alert">Calculadora da taxa de retorno nas últimas 24 horas</string>
+    <string name="max_roi">ROI máx: %s %% por %s %s de participação</string>
+
+    <!--buy-->
+    <string name="pay_by_card">Pagar com cartão</string>
+    <string name="buy_on_exchange">Comprar em corretora</string>
+
+
+    <!--bottom tabs-->
+    <string name="tab_transfer">Enviar/Receber</string>
+    <string name="tab_home">Início</string>
+    <string name="tab_mining">Minerar</string>
+    <string name="tab_token_issue">Emissão de token</string>
+    <string name="token_balance">Total de Token</string>
+    <string name="mine">Minerar</string>
+    <string name="delegate">Delegar</string>
+    <string name="token_issue">Emissão de token</string>
+    <string name="token_name">Nome do Token</string>
+    <string name="token_ticker">Bilhete do Token</string>
+    <string name="token_supply">Fornecimento de tokens em Circulação</string>
+    <string name="token_users_tx_fee">Taxa transação para usuários</string>
+    <string name="token_type_non_reissuable">Não reutilizável</string>
+    <string name="token_issue_emmissions_tip">Emissão não pode ser alterada.</string>
+    <string name="token_issue_emmissions_amount">Emissão máxima é de 1 844 674 407</string>
+    <string name="token_decimals">Décimas:</string>
+    <string name="token_owner">Proprietario do Token</string>
+    <string name="token_issue_fee">Taxa de emissão</string>
+    <string name="token_fee">Taxa</string>
+    <string name="token_min_fee">Taxa mínima</string>
+    <string name="token_choose">Escolher token</string>
+    <string name="check_detail">Verificar Detalhes</string>
+    <string name="back">Retroceder</string>
+
+    <!-- - - - - - - - - - - -->
+    <!--flat design iteration-->
+    <!-- - - - - - - - - - - -->
+
+    <!--token-->
+    <string name="reward">Recompensa</string>
+    <string name="available">Disponível</string>
+    <string name="delegated">Delegados</string>
+    <string name="transit">Trânsito</string>
+    <string name="undelegated">Indeleito</string>
+    <string name="create_new_token">Criar novo token</string>
+    <string name="manage_my_tokens">Gerir a Minha Tokens</string>
+    <string name="mint">para problema</string>
+    <string name="burn">Queimar</string>
+    <string name="operation">Operação</string>
+    <string name="referral_copied">código de referência copiado para área de transferência</string>
+    <string name="buy_erc_20_title"><![CDATA[Comprar ERC-20 token nos seguintes Trocas e <u> <a href="https://guides.enecuum.com/enq/how-to-swap.html"> Trocar para mobile Masternode </a> </ u> para começar a mineração. carteira Ethereum e moeda são necessários para trocar ERC-20 fichas em moedas nativas.]]></string>
+    <string name="token">Token</string>
+    <string name="token_type_reissuable">Reutilizável</string>
+    <string name="please_check_the_address">Por favor, verifique o endereço</string>
+    <string name="all_stake_providers">Todos os prestadores de estaca</string>
+    <string name="my_validators">meus validadores</string>
+    <string name="total_stake">Total de participação ativa:</string>
+    <string name="annual_reward">recompensa anual:</string>
+    <string name="stake_power">poder Stake</string>
+    <string name="provider_page">página Provider</string>
+    <string name="enter_delegate_amount">Introduza o valor a delegar</string>
+    <string name="enter_undelegate_amount">Introduza o valor a undelegate</string>
+    <string name="max_available">Max disponíveis</string>
+    <string name="check_delegation_detail">Verifique detalhes de delegação</string>
+    <string name="validator_page">página validador</string>
+    <string name="delegated_amount">quantidade delegado</string>
+    <string name="undelegated_amount">quantidade Undelegated</string>
+    <string name="reward_amount">quantidade recompensa</string>
+    <string name="transit_amount">montante de trânsito</string>
+    <string name="available_for_delegate">Disponível para delegado: %1$d %2$s</string>
+    <string name="undelegate">Undelegate</string>
+    <string name="transfer_to_wallet">Transferência de carteira</string>
+    <string name="check_undelegation_detail">Confira detalhes undelegation</string>
+    <string name="from">De</string>
+    <string name="check_transfer_back_detail">detalhe cheque de transferência</string>
+    <string name="amount_to_transfer">Montante a ser transferido</string>
+    <string name="delegation_fee">taxa de delegação</string>
+    <string name="undelegation_fee">taxa Undelegation</string>
+    <string name="transfer_back_fee">Taxa de transferência</string>
+    <string name="total_fee">Taxa total</string>
+    <string name="claim_reward">recompensa reivindicação</string>
+    <string name="reinvest">Reinvestir</string>
+    <string name="provider_fee">taxa Provider</string>
+    <string name="check_claim_reward_detail">Confira detalhes da reivindicação</string>
+    <string name="claim_reward_fee">taxa de reivindicação</string>
+    <string name="active">Ativo</string>
+    <string name="inactive">Inativo</string>
+    <string name="performance">atuação %1$s%%</string>
+    <string name="node_map">mapa nó</string>
+    <string name="network_stats">estatísticas de rede</string>
+    <string name="coins_on_poa">Moedas apostou em PoA</string>
+    <string name="coins_on_pos">Moedas apostou no PoS</string>
+    <string name="difficulty">Dificuldade</string>
+    <string name="powRewards">recompensas 24h Pow</string>
+    <string name="posRewards">PoS 24h recompensas</string>
+    <string name="poaRewards">recompensas 24h PoA</string>
+    <string name="buy">Comprar</string>
+    <string name="faq_guides_title">Guia do usuário</string>
+    <string name="faq_guides"><![CDATA[Para saber mais, leia o <u> <a href="https://guides.enecuum.com/faq.html"> FAQ seção </a> </ u> de Enecuum Guias do usuário.]]></string>
+
+</resources>

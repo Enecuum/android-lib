@@ -1,0 +1,401 @@
+<resources>
+
+    <string name="app_name" translatable="false">Enecuum Masternode</string>
+
+
+    <!--currency strings-->
+    <string name="enq_as_usd" translatable="false">1 %s = $ %s</string>
+    <string name="enq_value_cut" translatable="false">\u00A0%s</string>
+    <string name="coin_to_btc" translatable="false">%s/BTC</string>
+    <string name="coin_to_usdt" translatable="false">%s/USDT</string>
+    <string name="coin_to_usd" translatable="false">%s/USD</string>
+    <string name="coin_to_rub" translatable="false">%s/RUB</string>
+    <string name="coin_to_eth" translatable="false">%s/ETH</string>
+    <string name="balance_enq">Balance: %s %s</string>
+    <string name="balance_simple" translatable="false">%s %s</string>
+    <string name="welcome_to_enq">Welcome to %s network</string>
+    <string name="no_enq">No %s yet…</string>
+    <string name="enq_address_to_send">%s address to send</string>
+
+    <string name="string">%s</string>
+
+    <!--main-->
+    <string name="miner_app_download" translatable="false">Download Enecuum mobile masternode</string>
+    <string name="balance_with_colon">Balance:</string>
+    <string name="balance">Balance</string>
+    <string name="start_activity">start activity</string>
+    <string name="stop_activity">stop activity</string>
+    <string name="connecting_btn">connecting</string>
+
+
+    <!--auth-->
+    <string name="copied_public_key" translatable="false">Public key copied to clipboard</string>
+    <string name="your_address">Your address</string>
+    <string name="your_private_key">Your private key</string>
+    <string name="copied_private_key">Private key copied to clipboard</string>
+    <string name="copied_address">Address copied to clipboard</string>
+    <string name="copy">Copy</string>
+
+    <string name="start_using_wallet">Start using wallet</string>
+
+    <string name="private_key_import_title">Private key import</string>
+    <string name="private_key">Private key</string>
+    <string name="private_key_import_hint">Enter your private key to import</string>
+    <string name="private_key_hint">Enter your private key</string>
+    <string name="signin">Sign in</string>
+    <string name="login">Login</string>
+
+    <string name="create_new_wallet">Create new wallet</string>
+    <string name="import_wallet">Import wallet</string>
+
+
+    <string name="create_new_token">Create New Token</string>
+    <string name="manage_my_tokens">Manage My Tokens</string>
+    <string name="mint">Mint</string>
+    <string name="burn">Burn</string>
+
+
+    <!--menu-->
+    <string name="settings">Settings</string>
+    <string name="about">About app</string>
+    <string name="my_address">My address</string>
+    <string name="community">Community</string>
+    <string name="entry_point">Entry point</string>
+    <string name="entry_point_url">Entry point URL</string>
+    <string name="save_url">Save url</string>
+
+
+    <!--about-->
+    <string name="about_site" translatable="false"><u>https://www.enecuum.com</u></string>
+    <string name="about_app_title">Enecuum mobile application\nEnecuum HK Limited.</string>
+    <string name="about_white_paper">White paper</string>
+    <string name="about_version">Version: %s\nTrinity Protocol version: %d.0.0</string>
+    <string name="about_tech">Tech paper</string>
+    <string name="about_terms">Terms and conditions</string>
+    <string name="about_privacy">Privacy policy</string>
+
+
+    <!--import key-->
+    <string name="import_key_warning_title">Warning!</string>
+    <string name="import_key_warning">Your current Private Key will be deleted from the device memory after importing the new one.\nPlease be sure to have a backup copy</string>
+
+
+    <!--faq-->
+    <string name="faq">FAQ</string>
+    <string name="faq_battery_title">Battery life</string>
+    <string name="faq_battery">In terms of СPU/GPU usage PoA node does not carry out mining in the ordinary Proof-of-Work way. Instead Enecuum PoA mobile node performs cryptographic validations and signings which is similar to the process during opening a web site via https (secure connection). As a result the battery usage by Enecuum mobile app is comparable to mobile browser or chat work. You never think about battery life choosing secure chat or secure web site over unsecure, right?</string>
+    <string name="faq_network_title">Network usage</string>
+    <string name="faq_network">The analogy with browser continues speaking of the Internet traffic usage by Enecuum app. You probably do not watch YouTube or download movies via mobile network so with Enecuum — we recommend to start PoA activity connected to a WiFi spot if you have limited or payable data plan. Actual consumed traffic volume depends on the network load and the number of online PoA participants and aimed to be light in the future mainnet achievable by rewards/fees stimulation. But during testnet activities traffic volume is not guaranteed to be persistent and predictable.</string>
+    <string name="faq_airdrop_title">Airdrop</string>
+    <string name="faq_airdrop">
+        <![CDATA[Enecuum is starting a new Airdrop 2.0 (“Gold Rush”) which will reward its participants with %s ERC-20 tokens.
+        Enecuum launches a Gold Rush along with the mobile application (<u><a href=\"https://app.enecuum.com\">https://app.enecuum.com</a></u>), blockchain explorer (<u><a href=\"https://neuro.enecuum.com\">https://neuro.enecuum.com</a></u>) and a web wallet (<u><a href=\"https://wallet.enecuum.com\">https://wallet.enecuum.com</a></u>) which allows users to keep their %s coins, withdraw and convert them into %s ERC-20 tokens.
+        Airdrop participants will be rewarded for downloading the application and mining with %s coins. Gold Rush is going to have few phases during which Enecuum technical team will check up the settings and usability of Neuro.
+        More info can be found HERE ]]>
+    </string>
+    <string name="faq_support_title">Support</string>
+    <string name="faq_support"><![CDATA[Feel free to ask for help in the <u><a href="https://t.me/Enecuum_EN">Telegram group</a></u>]]></string>
+    <string name="disclaimer">Private Key is used to unlock your wallet and provide funds management. Please make sure to save your private key and prevent it from stealing. Enecuum does not store your private key. In case of private key loss we will not be able to recover it. Enecuum is not responsible for any inconveniences caused by the private key loss.</string>
+
+
+    <!--common-->
+    <string name="execute" translatable="false">Execute</string>
+    <string name="application_restart" translatable="false">Application will be closed. Settings will be applied after restart</string>
+    <string name="ellipsis_placeholder" translatable="false">...</string>
+    <string name="ok" translatable="false">OK</string>
+
+    <string name="loading_balance">Loading balance…</string>
+    <string name="connecting">Connecting…</string>
+    <string name="continue_mining">♔ Keep calm and continue mining</string>
+
+    <string name="no_internet">No internet</string>
+    <string name="import_new_private_key">Import new private key</string>
+    <string name="empty_private_key">Empty private key</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="are_you_sure">Are you sure?</string>
+
+    <string name="save">Save</string>
+    <string name="qr_saved">QRCode saved into Gallery</string>
+
+    <string name="language">Language</string>
+    <string name="send">Send</string>
+    <string name="receive">Receive</string>
+    <string name="swap">Swap</string>
+    <string name="send_confirmation">Send confirmation</string>
+    <string name="amount">Amount</string>
+    <string name="reject">Reject</string>
+    <string name="confirm">Confirm</string>
+    <string name="share_qr">Share QR code</string>
+    <string name="to">To</string>
+    <string name="max">Max</string>
+    <string name="wrong_format">Incorrect value</string>
+    <string name="transaction_result">Transaction result</string>
+    <string name="success">Success</string>
+    <string name="error">Error</string>
+    <string name="hash">Hash</string>
+    <string name="status">Status</string>
+    <string name="zero_amount">Zero amount</string>
+    <string name="amount_too_big">Too much for your balance</string>
+    <string name="wrong_secret_key_format">Should be a hexadecimal string 64 characters long</string>
+    <string name="zero_balance">Zero balance</string>
+    <string name="update">Update</string>
+    <string name="there_are_new_ver">There is a new version of Enecuum app</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="operation">Operation</string>
+
+
+    <!--update-->
+    <string name="update_reason" translatable="false">Version too low.\nYou need to update the app.</string>
+    <string name="update_now">Update now</string>
+    <string name="update_required">Update required</string>
+    <string name="critical_update_description">An update to Enecuum is required to continue</string>
+
+
+    <!--stats-->
+    <string name="pos_nodes">PoS nodes</string>
+    <string name="pow_nodes">PoW nodes</string>
+    <string name="poa_nodes">PoA nodes</string>
+    <string name="max_tps">Max TPS</string>
+    <string name="curr_tps">Current TPS</string>
+    <string name="accounts">Accounts</string>
+    <string name="open_in_browser">Open in browser</string>
+    <string name="stats_last_block">Last block</string>
+    <string name="stats_rewards">Rewards last 24h</string>
+    <string name="stats_coindata">Coin Data</string>
+    <string name="stats_coindata_circ_supply">Circ. Supply:</string>
+    <string name="stats_coindata_max_supply">Max Supply:</string>
+    <string name="stats_total_nodes">Total Nodes:</string>
+
+
+    <!--referral-->
+    <string name="referral_tick" translatable="false">I\'m a referral</string>
+    <string name="referral_code" translatable="false">Referral code</string>
+    <string name="referral_buy_title">Referral program</string>
+    <string name="referral_buy_message">Once you earn %s %s, you will be able to share your agent referral code. The code can be used by other users to get more %s providing you passive income.</string>
+    <string name="referral_title">Congratulations!</string>
+    <string name="referral_message">You\'ve unlocked your personal agent referral code!</string>
+    <string name="share_code">Share code</string>
+    <string name="referral_not_enough">Not enough %s at referred account</string>
+    <string name="referral_skip_message">With referral code you will earn more tokens!</string>
+    <string name="referral_next_message">Your Referral program earnings will be shown in Blockchain Explorer</string>
+    <string name="referral_same_address">Referred address should be different from yours</string>
+    <string name="referral_program">Referral program</string>
+    <string name="referral_copied">Referral code copied to clipboard</string>
+
+
+    <!--roi-->
+    <string name="percent_f_value" translatable="false">%1$f%%</string>
+    <string name="percent_s_value" translatable="false">%1$s%%</string>
+    <string name="percent" translatable="false">%</string>
+    <string name="min_value" translatable="false">min %s</string>
+    <string name="max_value" translatable="false">max %s</string>
+    <string name="roi_daily">Daily</string>
+    <string name="roi_weekly">Weekly</string>
+    <string name="roi_monthly">Monthly</string>
+    <string name="roi_annual">Yearly</string>
+    <string name="min_stake_dialog_title">Minimum stake is %s %s</string>
+    <string name="roi_alert">Return rate calculator last 24 hours</string>
+    <string name="stake" translatable="false">Stake</string>
+    <string name="roi" translatable="false">ROI</string>
+    <string name="max_roi">Max ROI: %s %% at %s %s stake</string>
+
+
+    <!--battery-->
+    <string name="battery_optimization_dialog_title" translatable="false">Improve stability</string>
+    <string name="battery_optimization_dialog_message" translatable="false">To increase your mining rewards please disable battery optimization for the Enecuum Masternode.</string>
+    <string name="battery_optimization_dialog_action" translatable="false">Open settings dialog</string>
+
+
+    <!--protocol-->
+    <string name="service_error_duplicate_key" translatable="false">You are already mining with the same private key, disconnecting</string>
+
+
+    <!--buy-->
+    <string name="buy_tab_native" translatable="false">By card</string>
+    <string name="buy_tab_erc_20" translatable="false">Exchanges</string>
+    <string name="buy_native_title" translatable="false"> at our partner\'s website and start Mobile Masternode immediately. The KYC procedure is required to purchase cryptocurrency by banking cards.</string>
+    <string name="buy_native_title_link" translatable="false">Buy Native %s Coin</string>
+    <string name="buy_erc_20_title"><![CDATA[Buy ERC-20 Token at the following Exchanges and <u><a href="https://guides.enecuum.com/enq/how-to-swap.html">Swap to Mobile Masternode</a></u> in order to start mining. Ethereum wallet and currency are required to swap ERC-20 tokens into native coins.]]></string>
+    <string name="pay_by_card">Pay by card</string>
+    <string name="buy_on_exchange">Buy on exchange</string>
+
+
+    <!--keystore-->
+    <string name="message_keypair_already_exists" translatable="false">Enecuum keypair already exists in keystore</string>
+    <string name="message_keypair_does_not_exist" translatable="false">Enecuum keypair doesn\'t exist in keystore</string>
+    <string name="message_problem_encryption" translatable="false">Encryption exception</string>
+
+
+    <!--urls-->
+    <string name="community_fb_link" translatable="false">https://www.facebook.com/enecuum.EN</string>
+    <string name="community_twitter_link" translatable="false">https://twitter.com/enq_enecuum</string>
+    <string name="community_medium_link" translatable="false">https://medium.com/@EnqBlockchain</string>
+    <string name="community_github_link" translatable="false">https://github.com/Enecuum</string>
+    <string name="community_telegram_link">https://t.me/Enecuum_EN</string>
+    <string name="community_linkedin_link" translatable="false">https://www.linkedin.com/company/enecuum-limited</string>
+    <string name="community_youtube_link" translatable="false">https://www.youtube.com/channel/UCyZqNfzK_PP82nkAVOlmN4Q</string>
+    <string name="community_bt_link" translatable="false">https://bitcointalk.org/index.php?topic=2939909.0;topicseen</string>
+    <string name="community_forklog_link" translatable="false">https://hub.forklog.com/companies/enecuum</string>
+
+
+    <!--languages-->
+    <array name="language_list">
+        <item>عربى</item>
+        <item>中文</item>
+        <item>English</item>
+        <item>Français</item>
+        <item>Deutsche</item>
+        <item>Bahasa Indonesia</item>
+        <item>日本人</item>
+        <item>한국어</item>
+        <item>Português</item>
+        <item>Русский</item>
+        <item>Español</item>
+        <item>Türkçe</item>
+        <item>Việt</item>
+    </array>
+
+    <array name="language_subtitle_list">
+        <item>Arabic</item>
+        <item>Chinese</item>
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Indonesian</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Portuguese</item>
+        <item>Russian</item>
+        <item>Spanish</item>
+        <item>Turkish</item>
+        <item>Vietnamese</item>
+    </array>
+
+    <array name="language_code">
+        <item>ar</item>
+        <item>zh</item>
+        <item>en</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>in</item>
+        <item>ja</item>
+        <item>ko</item>
+        <item>pt</item>
+        <item>ru</item>
+        <item>es</item>
+        <item>tr</item>
+        <item>vi</item>
+    </array>
+
+    <!-- - - - - - - - - - - -->
+    <!--flat design iteration-->
+    <!-- - - - - - - - - - - -->
+
+    <string name="back">Back</string>
+
+    <!--bottom tabs-->
+    <string name="tab_home" translatable="false">Home</string>
+    <string name="tab_transfer">Send/Receive</string>
+    <string name="tab_mining" translatable="false">Mining</string>
+    <string name="tab_smart_stake" translatable="false">Smart staking</string>
+    <string name="tab_token_issue" translatable="false">Token issue</string>
+    <string name="tab_token_management" translatable="false">Token management</string>
+
+    <!--token-->
+    <string name="token">Token</string>
+    <string name="value_stub_text" translatable="false">---</string>
+    <string name="token_balance">Token balance</string>
+    <string name="mine">Mine</string>
+    <string name="delegate">Delegate</string>
+    <string name="token_issue">Token issue</string>
+    <string name="token_name">Token name</string>
+    <string name="token_ticker">Token ticker</string>
+    <string name="token_supply">Token supply</string>
+    <string name="token_type">Token type</string>
+    <string name="token_max_supply">Maximum token supply</string>
+    <string name="block_reward">Block reward</string>
+    <string name="min_stake">Minimum stake</string>
+    <string name="referrer_stake">Referrer stake</string>
+    <string name="referrer_share">Referrer share</string>
+
+    <string name="token_users_tx_fee">Tx fee for users</string>
+    <string name="token_type_non_reissuable">Non-reissuable</string>
+    <string name="token_type_reissuable">Reissuable</string>
+    <string name="token_type_minable">Minable</string>
+    <string name="token_issue_emmissions_tip">Emissions cannot be changed.</string>
+    <string name="token_issue_emmissions_amount">Maximum emission is 1 844 674 407</string>
+    <string name="token_decimals">Decimals:</string>
+    <string name="token_owner">Token owner</string>
+    <string name="token_issue_fee">Issue fee</string>
+    <string name="token_fee">Fee</string>
+    <string name="token_min_fee">Minimum fee</string>
+    <string name="token_choose">Choose token</string>
+    <string name="check_detail">Check detail</string>
+    <string name="reward">Reward</string>
+    <string name="available">Available</string>
+    <string name="delegated">Delegated</string>
+    <string name="transit">Transit</string>
+    <string name="undelegated">Undelegated</string>
+    <string name="please_check_the_address">Please check the address</string>
+
+    <!--smart staking-->
+    <string name="all_stake_providers">All stake providers</string>
+    <string name="my_validators">My validators</string>
+    <string name="tab_sum_number_format" translatable="false">(%d)</string>
+    <string name="total_stake">Total active stake:</string>
+    <string name="annual_reward">Annual reward:</string>
+    <string name="stake_power">Stake power</string>
+    <string name="provider_page">Provider page</string>
+    <string name="enter_delegate_amount">Enter amount to delegate</string>
+    <string name="enter_undelegate_amount">Enter amount to undelegate</string>
+    <string name="max_available">Max available</string>
+    <string name="check_delegation_detail">Check delegation details</string>
+    <string name="validator_page">Validator page</string>
+    <string name="delegated_amount">Delegated amount</string>
+    <string name="undelegated_amount">Undelegated amount</string>
+    <string name="reward_amount">Reward amount</string>
+    <string name="transit_amount">Transit amount</string>
+    <string name="available_for_delegate">Available for delegate: %1$d %2$s</string>
+    <string name="undelegate">Undelegate</string>
+    <string name="transfer_to_wallet">Transfer to wallet</string>
+    <string name="check_undelegation_detail">Check undelegation details</string>
+    <string name="from">From</string>
+    <string name="check_transfer_back_detail">Check transfer detail</string>
+    <string name="amount_to_transfer">Amount to transfer</string>
+    <string name="delegation_fee">Delegation fee</string>
+    <string name="undelegation_fee">Undelegation fee</string>
+    <string name="transfer_back_fee">Transfer fee</string>
+    <string name="total_fee">Total fee</string>
+    <string name="claim_reward">Claim reward</string>
+    <string name="reinvest">Reinvest</string>
+    <string name="provider_fee">Provider fee</string>
+
+    <string name="check_claim_reward_detail">Check claim details</string>
+    <string name="claim_reward_fee">Claim fee</string>
+
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
+    <string name="performance">Performance %1$s%%</string>
+
+    <!--home fragment-->
+    <string name="node_map">Node map</string>
+    <string name="network_stats">Network stats</string>
+    <string name="coins_on_poa">Coins staked on PoA</string>
+    <string name="coins_on_pos">Coins staked on PoS</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="powRewards">24h PoW rewards</string>
+    <string name="posRewards">24h PoS rewards</string>
+    <string name="poaRewards">24h PoA rewards</string>
+
+
+    <string name="buy">Buy</string>
+    <string name="faq_guides_title">User Guides</string>
+    <string name="faq_guides"><![CDATA[To find out more, please read the <u><a href="https://guides.enecuum.com/faq.html">FAQ section</a></u> of Enecuum User Guides.]]></string>
+
+    <string name="get_bit">Get 25 BIT</string>
+
+</resources>
