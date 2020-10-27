@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--keystore-->
+    <string name="message_keypair_already_exists" translatable="false">Enecuum keypair already exists in keystore</string>
+    <string name="message_keypair_does_not_exist" translatable="false">Enecuum keypair doesn\'t exist in keystore</string>
+    <string name="message_problem_encryption" translatable="false">Encryption exception</string>
+</resources>
