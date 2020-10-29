@@ -36,7 +36,7 @@ import java.security.Security;
  * Cryptography Architecture primitives. A good place to invoke them is in the
  * application's {@code onCreate}.
  */
-final class PRNGFixes {
+public final class PRNGFixes {
     private static final int VERSION_CODE_JELLY_BEAN = 16;
     private static final int VERSION_CODE_JELLY_BEAN_MR2 = 18;
     private static final byte[] BUILD_FINGERPRINT_AND_DEVICE_SERIAL = getBuildFingerprintAndDeviceSerial();
@@ -52,7 +52,7 @@ final class PRNGFixes {
      *
      * @throws SecurityException if a fix is needed but could not be applied.
      */
-    static void apply() {
+    public static void apply() {
         applyOpenSSLFix();
         installLinuxPRNGSecureRandom();
     }
