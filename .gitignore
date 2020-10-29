@@ -1,3 +1,4 @@
 .idea
 .gradle
 libcrypto/build/
+build/
