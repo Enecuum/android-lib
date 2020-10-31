@@ -1,4 +1,4 @@
-package com.enecuum.lib
+package com.enecuum.lib.api
 
 data class LeaderBeaconDataMBlockTx(
     val from: String,

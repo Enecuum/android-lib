@@ -2,8 +2,7 @@ package com.enecuum.lib
 
 import android.content.Context
 import android.util.Log
-import com.enecuum.lib.LeaderBeaconDataMBlockTx
-import com.enecuum.lib.KeyStore
+import com.enecuum.lib.api.LeaderBeaconDataMBlockTx
 import org.bouncycastle.math.ec.ECCurve
 import org.bouncycastle.math.ec.ECPoint
 import org.bouncycastle.util.encoders.Hex
