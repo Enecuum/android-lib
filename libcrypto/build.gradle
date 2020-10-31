@@ -16,6 +16,12 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
         buildConfigField "int", "TRINITY_VERSION", "4"
+
+        buildConfigField "String", "PROD_IP", "\"95.216.246.116\""
+        buildConfigField "String", "PROD_DOMAIN", "\"bit.enecuum.com\""
+
+        buildConfigField "String", "DEBUG_IP", "\"95.216.246.116\""
+        buildConfigField "String", "DEBUG_DOMAIN", "\"bit-dev.enecuum.com\""
     }
 
     buildTypes {
@@ -36,6 +42,7 @@ android {
 }
 
 dependencies {
+    def retrofit_version = "2.5.0"
 
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 
@@ -55,5 +62,9 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    implementation  "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0"
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
     implementation 'com.google.code.gson:gson:2.8.6'
 }
