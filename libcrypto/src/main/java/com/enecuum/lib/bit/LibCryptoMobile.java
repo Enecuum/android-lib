@@ -2,6 +2,7 @@ package com.enecuum.lib.bit;
 
 import android.util.Log;
 
+import com.enecuum.lib.BuildConfig;
 import com.enecuum.lib.SageSign;
 
 import java.math.BigInteger;
@@ -27,8 +28,8 @@ public class LibCryptoMobile {
     private final String mhash = "e3ef5e0cb7f89dfc1744003d9927bf588936e5a348641cf3984643a96014e22a";
 
     // BIT MPK
-    private final String mpkx = "4a1597df1daf506c6471069af7b64071021f26676ff305ebc9760c345ce88c5d5855f85c5ee7bff0f998960154a6da2ca722b705615c88f50ea62933049695c5 27b9614b006b3387a13b3746918bd47aa189b483fbf5e36b13468946608d9ef8cb08c9ddfbbdf818aafbc7b6917ee5de3bef4ab83943207363f4091f5e32aec2";
-    private final String mpky = "6c4433f2104926310d6685c6d949ea95da57113e9ed819b7f9232de7418534ed3f14341d9ef44defd370b1d94e9fd311e4a9573f52e0c240ec6406eedd3b953e 2a5bcdbe2e04446f8bf3185bd39c33a1f7d75eeae6ab18919f7cd67b4095d02df457a6565d7a74339bab46a320aba5940c97eeb5e28830430e4a34df3f6e312b";
+    private final String mpkx = BuildConfig.mpkx;
+    private final String mpky = BuildConfig.mpky;
 
 
     static {
