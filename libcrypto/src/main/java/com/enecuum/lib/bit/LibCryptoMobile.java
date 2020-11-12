@@ -20,12 +20,6 @@ public class LibCryptoMobile {
     private final String gx = "25a41f7b42f7c1775b983cb548e48cc646b0fdfa375d95127ce79f0bd42f43de76957c705b7f6440a23a79793d447e5fac6f5b46ad4e76e16ee670858bbd6763 520acc54c0e383d454c21aae0a4f3f7c333efff7e043378fb197d024eccf73c138139e0b6e320254840bc823d28e7323cc02d4e9c61751e366ebcd5def3324f1";
     private final String gy = "67de09049fab6cb27343f0f6ba348cc212bc6f892700d17bced2ba3856bcc7b77162431d6bea89d22adcb8bd53ada074ee18fa1c54cc6cbd45e06136c84f05a4 3e239fb4f7e10e12f9a9450adad92807154b0f327407c16d051e7542532da03cd92bd64a430d79b44a1bbc30670fc61ba21e5511e6e43d1b6707d8a727c046aa";
     private final int k = 2; // not used
-    private final String s1x = "7b6955fdb8aeefc1dd6c96fffe9506ac85d1ab5cf317d04a581e08677ec6952ef8737fae365845d5eac55e26250518d4a079adbaff8184b0f1903c71c5e4a358 1b0b0c09f9384ae54ff51c33a03765388ac1ba940c04ba62317fa19c7b66d35bac4168648d12c1859d8c65fb926d6fe2e3911419bff5acf414fa3b85a4f89724";
-    private final String s1y = "740e974e6515ffbac90510c3111337b97adc0dc5e5ab9b0a35e25c55d531b6c890d3b675e17f64c376e33bfdde9936f9e7cc56eb384da9dcd0a2e5af9423b277 d1252740dbc31524b4fc44990690ac8423c2d47005bc807a574714fb3cb6ca77b3c21f2d5205b37c2258c22a7a7be853e5c29aff3668467fddf334ba2b25333";
-    private final String s2x = "0 4245123bac69a6c89693f07e321dc7b72d18d9e78e95321bd546ecae2ff1bc35d70253393a0b942f34b8669375942924728ad44c98e950c229e43b68fd81e739";
-    private final String s2y = "0 211989be20581151af1f4da67b63288725a361d051957615f3eef74e6eda2a487439ff071ed2628b3211fbe627aa8f35d7b79f9219d60b3eb50dbe122a60ae64";
-    private final String pk_lpos = "7cd925afaffb8466029213a05ae0faaff9c533dfb3ae446dbfcb971e45e2cacf";
-    private final String mhash = "e3ef5e0cb7f89dfc1744003d9927bf588936e5a348641cf3984643a96014e22a";
 
     // BIT MPK
     private final String mpkx = BuildConfig.mpkx;
@@ -37,27 +31,6 @@ public class LibCryptoMobile {
         System.loadLibrary("crypto");
         System.loadLibrary("ssl");
         System.loadLibrary("integer");
-    }
-
-    public String checkSumTest(int length) {
-        String a = getRandom(length);
-        String b = getRandom(length);
-        String c = getRandom(length);
-        String text = "";
-        final int radix = 16;
-        text += "Best viewed in landscape orientation.\n";
-        text += mobileVerify();
-        text += "Current radix is " + radix + "\n";
-        text += "Testing for numbers with " + length + " digits.\n";
-        BigInteger abi = new BigInteger(a, radix);
-        BigInteger bbi = new BigInteger(b, radix);
-        BigInteger cCorrect = abi.add(bbi);
-        String cCorrect16 = cCorrect.toString(radix);
-        text += createLine(a, b, c, cCorrect16.equals(c));
-        text += createLine(a, b, cCorrect16, true);
-        text += createLine("1", "2", "3", true);
-        text += createLine("1", "2", "4", false);
-        return text;
     }
 
     public native boolean checkSum(String a, String b, String c);
@@ -109,51 +82,5 @@ public class LibCryptoMobile {
                 pklpos, //sha256(data.mblock_data.k_hash + data.leader_id + data.mblock_data.nonce)
                 h, //data.m_hash
                 mpkx, mpky);
-    }
-
-    private boolean verifyMobile() {
-        return verifyMobile(p, a, b, order, irred, gx, gy, k, s1x, s1y, s2x, s2y, pk_lpos, mhash, mpkx, mpky);
-    }
-
-    private boolean verifyMobileIncorrect() {
-        return verifyMobile(p, a, b, order, irred, gy, gx, k, s1x, s1y, s2x, s2y, pk_lpos, mhash, mpkx, mpky);
-    }
-
-    private String getRandom(int length) {
-        Random rand = new Random();
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < length; i++) {
-            int value = rand.nextInt(10);
-            if (value == 0) {
-                value = 1;
-            }
-            sb.append(value);
-        }
-        return sb.toString();
-    }
-
-    private String createLine(String a, String b, String c, boolean expected) {
-        boolean result = checkSum(a, b, c);
-        String res = "";
-        if (result != expected) {
-            res += "Warning:\n";
-        }
-        res += a + " + " + b + " = " + c + "\nLibrary returns: " + result + " (sholud be " + expected + ")\n";
-        return res;
-    }
-
-    private String mobileVerify() {
-        long begin = System.currentTimeMillis();
-        boolean res = verifyMobile();
-        long end = System.currentTimeMillis();
-        long time = end - begin;
-        String text = "";
-        text += "Verify correct mobile is " + res + ", iteration time is " + time + "ms\n";
-        begin = System.currentTimeMillis();
-        res = verifyMobileIncorrect();
-        end = System.currentTimeMillis();
-        time = end - begin;
-        text += "Verify incorrect mobile is " + res + ", iteration time is " + time + "ms\n";
-        return text;
     }
 }
