@@ -1,4 +1,4 @@
-package com.enecuum.lib.bit;
+package com.enecuum.lib;
 
 import android.util.Log;
 
