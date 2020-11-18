@@ -34,8 +34,8 @@ object ApiRouter {
     private const val wsProtocolPrefix = "ws://"
     private const val httpProtocolPrefix = "http://" //if (BuildConfig.DEBUG) "http://" else
 
-    private const val wsProtocolPort = 3000
-    private const val httpProtocolPort = 80
+    private const val wsProtocolPort = BuildConfig.WS_PROTOCOL_PORT
+    private const val httpProtocolPort = BuildConfig.HTTP_PROTOCOL_PORT
 
     private const val apiSuffix = "/api/v1/"
 

@@ -2,3 +2,4 @@
 .gradle
 libcrypto/build/
 build/
+/local.properties
