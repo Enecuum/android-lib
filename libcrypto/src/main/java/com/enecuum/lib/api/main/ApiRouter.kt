@@ -30,14 +30,13 @@ object ApiRouter {
             get() = "$apiURL$path"
     }
 
-    //TODO SSL/TLS please
-    private const val wsProtocolPrefix = "ws://"
-    private const val httpProtocolPrefix = "http://" //if (BuildConfig.DEBUG) "http://" else
+    private val baseIP: String by lazy {
 
-    private const val wsProtocolPort = BuildConfig.WS_PROTOCOL_PORT
-    private const val httpProtocolPort = BuildConfig.HTTP_PROTOCOL_PORT
-
-    private const val apiSuffix = "/api/v1/"
+        return@lazy when {
+            BuildConfig.DEBUG -> debugIp
+            else -> prodIp
+        }
+    }
 
     val apiURL: String by lazy {
         return@lazy "$httpProtocolPrefix$baseIP:$httpProtocolPort$apiSuffix"
@@ -47,11 +46,13 @@ object ApiRouter {
         return@lazy "$wsProtocolPrefix$baseIP:$wsProtocolPort"
     }
 
-    private val baseIP: String by lazy {
+    //TODO SSL/TLS please
+    var wsProtocolPrefix = "ws://"
+    var httpProtocolPrefix = "http://"
 
-        return@lazy when {
-            BuildConfig.DEBUG -> BuildConfig.DEBUG_IP
-            else -> BuildConfig.PROD_IP
-        }
-    }
+    var wsProtocolPort = BuildConfig.WS_PROTOCOL_PORT
+    var httpProtocolPort = BuildConfig.HTTP_PROTOCOL_PORT
+    var apiSuffix = BuildConfig.API_SUFFIX
+    var debugIp = BuildConfig.DEBUG_IP
+    var prodIp = BuildConfig.PROD_IP
 }

@@ -23,8 +23,10 @@ android {
         buildConfigField "String", "DEBUG_IP", "\"95.216.246.116\""
         buildConfigField "String", "DEBUG_DOMAIN", "\"bit-dev.enecuum.com\""
 
-        buildConfigField "String", "WS_PROTOCOL_PORT", "\"3000\""
-        buildConfigField "String", "HTTP_PROTOCOL_PORT", "\"80\""
+        buildConfigField "int", "WS_PROTOCOL_PORT", "3000"
+        buildConfigField "int", "HTTP_PROTOCOL_PORT", "80"
+
+        buildConfigField "String", "API_SUFFIX", "\"/api/v1/\""
 
         // BIT MPK
         buildConfigField "String", "mpkx", "\"4a1597df1daf506c6471069af7b64071021f26676ff305ebc9760c345ce88c5d5855f85c5ee7bff0f998960154a6da2ca722b705615c88f50ea62933049695c5 27b9614b006b3387a13b3746918bd47aa189b483fbf5e36b13468946608d9ef8cb08c9ddfbbdf818aafbc7b6917ee5de3bef4ab83943207363f4091f5e32aec2\"";
