@@ -10,6 +10,7 @@ data class Transactions(
     val id: String
 )
 
+//TODO
 data class TransactionItem(
     val i: Int,
     val hash: String,
