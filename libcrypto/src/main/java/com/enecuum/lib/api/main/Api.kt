@@ -21,7 +21,8 @@ interface Api {
     @GET
     fun getAccountTransactionsAsync(
         @Url url: String,
-        @Query("id") id: String
+        @Query("id") id: String,
+        @Query("page") page: Int = 0,
     ): Deferred<Transactions>
 
     @GET
