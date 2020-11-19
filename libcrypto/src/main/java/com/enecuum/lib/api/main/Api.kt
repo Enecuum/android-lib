@@ -19,6 +19,12 @@ interface Api {
     ): Deferred<List<TokenBalance>>
 
     @GET
+    fun getAccountTransactionsAsync(
+        @Url url: String,
+        @Query("id") id: String
+    ): Deferred<Transactions>
+
+    @GET
     fun getVersionAsync(@Url url: String): Deferred<Version>
 
     @GET

@@ -7,6 +7,7 @@ object ApiRouter {
     enum class Route(private val path: String) {
         DETAILED_BALANCE("balance"),
         BALANCE_ALL("balance_all"),
+        ACCOUNT_TRANSACTIONS("account_transactions"),
         BALANCE_MINABLE("balance_minable"),
         TRANSACTION("tx"),
         STATS("stats"),
