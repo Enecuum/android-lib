@@ -8,6 +8,7 @@ object ApiRouter {
         DETAILED_BALANCE("balance"),
         BALANCE_ALL("balance_all"),
         ACCOUNT_TRANSACTIONS("account_transactions"),
+        ACCOUNT_REWARDS("account_rewards"),
         BALANCE_MINABLE("balance_minable"),
         TRANSACTION("tx"),
         STATS("stats"),

@@ -26,6 +26,13 @@ interface Api {
     ): Deferred<Transactions>
 
     @GET
+    fun getAccountRewardsAsync(
+            @Url url: String,
+            @Query("id") id: String,
+            @Query("page") page: Int = 0,
+    ): Deferred<Rewards>
+
+    @GET
     fun getVersionAsync(@Url url: String): Deferred<Version>
 
     @GET
