@@ -17,11 +17,11 @@ android {
         consumerProguardFiles "consumer-rules.pro"
         buildConfigField "int", "TRINITY_VERSION", "4"
 
-        buildConfigField "String", "PROD_IP", "\"95.216.246.116\""
-        buildConfigField "String", "PROD_DOMAIN", "\"bit.enecuum.com\""
+        buildConfigField "String", "PROD_IP", "\"95.216.68.221\""
+        buildConfigField "String", "PROD_DOMAIN", "\"pulse.enecuum.com\""
 
         buildConfigField "String", "DEBUG_IP", "\"95.216.246.116\""
-        buildConfigField "String", "DEBUG_DOMAIN", "\"bit-dev.enecuum.com\""
+        buildConfigField "String", "DEBUG_DOMAIN", "\"bit.enecuum.com\""
 
         buildConfigField "int", "WS_PROTOCOL_PORT", "3000"
         buildConfigField "int", "HTTP_PROTOCOL_PORT", "80"
