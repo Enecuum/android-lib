@@ -17,5 +17,6 @@ data class RewardItem(
     val time: BigInteger,
     val rectype: String,
     val amount: BigDecimal,
-    val irew: BigDecimal
+    val irew: BigDecimal,
+    val ticker: String
 )
