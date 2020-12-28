@@ -48,6 +48,20 @@ object ApiRouter {
         return@lazy "$wsProtocolPrefix$baseIP:$wsProtocolPort"
     }
 
+    val mpkx: String by lazy {
+        return@lazy when {
+            BuildConfig.DEBUG -> BuildConfig.debug_mpkx
+            else -> BuildConfig.prod_mpkx
+        }
+    }
+
+    val mpky: String by lazy {
+        return@lazy when {
+            BuildConfig.DEBUG -> BuildConfig.debug_mpky
+            else -> BuildConfig.prod_mpky
+        }
+    }
+
     //TODO SSL/TLS please
     var wsProtocolPrefix = "ws://"
     var httpProtocolPrefix = "http://"

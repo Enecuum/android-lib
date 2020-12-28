@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 28
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -28,9 +28,13 @@ android {
 
         buildConfigField "String", "API_SUFFIX", "\"/api/v1/\""
 
+        // PULSE MPK
+        buildConfigField "String", "prod_mpkx", "\"6f39627d79bc1095d65b4eefee792b2d63590edd7beb9ae003ffcd6982088c8cd766606fbc6ebf4b2ddf666297b25cdef4cd0259479744be11041cc79c5142e4 7159352bce66434f22a9896822e351c6483d495c28e4f4651282621f312feb9c2da692f304a1f20e4b6cb74e0bfd756a91db997925e75db0a1785a22a5f06c71\""
+        buildConfigField "String", "prod_mpky", "\"59859440b275be09c328c391d2458c4e45b77db28eee96e10889058bb84cc81f67ddf75bac2e9e7dbe75b4cb6e933d6ebe7a71add9cde7d52aaeb1fe29675174 4dfcac1a388e30bcd58ce67b565bb9d923abdfb6a79fa5f52ac5f368de76eb859d47cc9a0d90b3596825e3248bfeea9c9d2947d460c9711035216a8136958b4c\""
+
         // BIT MPK
-        buildConfigField "String", "mpkx", "\"4a1597df1daf506c6471069af7b64071021f26676ff305ebc9760c345ce88c5d5855f85c5ee7bff0f998960154a6da2ca722b705615c88f50ea62933049695c5 27b9614b006b3387a13b3746918bd47aa189b483fbf5e36b13468946608d9ef8cb08c9ddfbbdf818aafbc7b6917ee5de3bef4ab83943207363f4091f5e32aec2\"";
-        buildConfigField "String", "mpky", "\"6c4433f2104926310d6685c6d949ea95da57113e9ed819b7f9232de7418534ed3f14341d9ef44defd370b1d94e9fd311e4a9573f52e0c240ec6406eedd3b953e 2a5bcdbe2e04446f8bf3185bd39c33a1f7d75eeae6ab18919f7cd67b4095d02df457a6565d7a74339bab46a320aba5940c97eeb5e28830430e4a34df3f6e312b\"";
+        buildConfigField "String", "debug_mpkx", "\"4a1597df1daf506c6471069af7b64071021f26676ff305ebc9760c345ce88c5d5855f85c5ee7bff0f998960154a6da2ca722b705615c88f50ea62933049695c5 27b9614b006b3387a13b3746918bd47aa189b483fbf5e36b13468946608d9ef8cb08c9ddfbbdf818aafbc7b6917ee5de3bef4ab83943207363f4091f5e32aec2\"";
+        buildConfigField "String", "debug_mpky", "\"6c4433f2104926310d6685c6d949ea95da57113e9ed819b7f9232de7418534ed3f14341d9ef44defd370b1d94e9fd311e4a9573f52e0c240ec6406eedd3b953e 2a5bcdbe2e04446f8bf3185bd39c33a1f7d75eeae6ab18919f7cd67b4095d02df457a6565d7a74339bab46a320aba5940c97eeb5e28830430e4a34df3f6e312b\"";
     }
 
     buildTypes {
@@ -46,7 +50,6 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    //ndkVersion '21.0.6113669'
     flavorDimensions "version"
 }
 
@@ -61,7 +64,7 @@ dependencies {
     //root
     implementation 'com.scottyab:rootbeer-lib:0.0.8'
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.10"
     implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
 
@@ -71,7 +74,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    implementation  "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0"
+    implementation  "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7"
 
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
