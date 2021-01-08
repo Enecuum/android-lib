@@ -11,8 +11,13 @@ data class TokenInfo(
     val ticker: String,
     val decimals: Int,
     val total_supply: BigDecimal?,
-    val name: String?,
-    val minable: Int,
+    val caption: String?,
+    val active: Int,
     val reissuable: Int,
-    val min_stake: BigDecimal
+    val minable: Int,
+    val max_supply: BigDecimal?,
+    val block_reward: BigDecimal,
+    val min_stake: BigDecimal,
+    val referrer_stake: BigDecimal,
+    val ref_share: BigDecimal
 )

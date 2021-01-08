@@ -6,6 +6,12 @@ import retrofit2.http.*
 
 interface Api {
 
+//    token_info +
+//    account_transactions +
+//    account_rewards +
+//    pending_tx_hash -
+//    pending_tx_account -
+
     @GET
     fun getDetailedBalanceAsync(
         @Url url: String,
@@ -24,6 +30,13 @@ interface Api {
         @Query("id") id: String,
         @Query("page") page: Int = 0,
     ): Deferred<Transactions>
+
+    @GET
+    fun getAccountRewardsAsync(
+            @Url url: String,
+            @Query("id") id: String,
+            @Query("page") page: Int = 0,
+    ): Deferred<Rewards>
 
     @GET
     fun getVersionAsync(@Url url: String): Deferred<Version>
@@ -50,7 +63,7 @@ interface Api {
     fun getReferrerStakeAsync(@Url url: String): Deferred<ReferrerStake>
 
     @GET
-    fun getRoiAsync(@Url url: String): Deferred<List<Roi>>
+    fun getRoiAsync(@Url url: String, @Query("hash") hash: String): Deferred<List<Roi>>
 
     @GET
     fun getMinStakeAsync(@Url url: String): Deferred<MinStake>

@@ -8,6 +8,7 @@ object ApiRouter {
         DETAILED_BALANCE("balance"),
         BALANCE_ALL("balance_all"),
         ACCOUNT_TRANSACTIONS("account_transactions"),
+        ACCOUNT_REWARDS("account_rewards"),
         BALANCE_MINABLE("balance_minable"),
         TRANSACTION("tx"),
         STATS("stats"),
@@ -45,6 +46,20 @@ object ApiRouter {
 
     val wsURL: String by lazy {
         return@lazy "$wsProtocolPrefix$baseIP:$wsProtocolPort"
+    }
+
+    val mpkx: String by lazy {
+        return@lazy when {
+            BuildConfig.DEBUG -> BuildConfig.debug_mpkx
+            else -> BuildConfig.prod_mpkx
+        }
+    }
+
+    val mpky: String by lazy {
+        return@lazy when {
+            BuildConfig.DEBUG -> BuildConfig.debug_mpky
+            else -> BuildConfig.prod_mpky
+        }
     }
 
     //TODO SSL/TLS please

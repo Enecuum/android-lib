@@ -11,5 +11,6 @@ data class Hail(
 data class HailData(
     val hash: String,
     val sign: String,
+    val token: String,
     val id: String
 )
