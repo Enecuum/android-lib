@@ -9,7 +9,7 @@ data class CoingeckoData(
 )
 
 data class Probit(
-    val data: ProbitData
+    val data: Array<ProbitData>
 )
 
 data class ProbitData(
