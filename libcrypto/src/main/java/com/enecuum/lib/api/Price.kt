@@ -1,7 +1,7 @@
 package com.enecuum.lib.api
 
 data class Coingecko(
-    val enq_enecuum: CoingeckoData
+    val `enq-enecuum`: CoingeckoData
 )
 
 data class CoingeckoData(
