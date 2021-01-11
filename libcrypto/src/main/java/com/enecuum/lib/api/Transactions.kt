@@ -22,5 +22,6 @@ data class TransactionItem(
     val token_hash: String,
     val fee_type: Int,
     val fee_value: BigDecimal,
-    val fee_min: BigDecimal
+    val fee_min: BigDecimal,
+    val ticker: String
 )
