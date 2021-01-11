@@ -71,4 +71,6 @@ object ApiRouter {
     var apiSuffix = BuildConfig.API_SUFFIX
     var debugIp = BuildConfig.DEBUG_IP
     var prodIp = BuildConfig.PROD_IP
+
+    var coingecko = BuildConfig.COINGECKO
 }

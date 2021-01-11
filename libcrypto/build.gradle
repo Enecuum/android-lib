@@ -17,6 +17,8 @@ android {
         consumerProguardFiles "consumer-rules.pro"
         buildConfigField "int", "TRINITY_VERSION", "4"
 
+        buildConfigField "String", "COINGECKO", "\"https://api.coingecko.com/api/v3/simple/price\""
+
         buildConfigField "String", "PROD_IP", "\"95.216.68.221\""
         buildConfigField "String", "PROD_DOMAIN", "\"pulse.enecuum.com\""
 

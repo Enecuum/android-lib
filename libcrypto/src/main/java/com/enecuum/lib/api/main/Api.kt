@@ -107,9 +107,14 @@ interface Api {
     @GET
     fun getPosNamesAsync(@Url url: String): Deferred<List<PosName>>
 
+    //DEVELOP
+
     @POST
     fun get25BITAsync(
         @Url url: String,
         @Body body: Key
     ): Deferred<Boolean>
+
+    @GET
+    fun getTokensPriceAsync(@Url url: String, @Query("ids") ids: String, @Query("vs_currencies") vs_currencies: String): Deferred<CoingeckoData>
 }
