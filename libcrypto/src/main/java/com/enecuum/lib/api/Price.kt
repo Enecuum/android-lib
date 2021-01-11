@@ -7,3 +7,18 @@ data class Coingecko(
 data class CoingeckoData(
     val usd: String
 )
+
+data class Probit(
+    val data: ProbitData
+)
+
+data class ProbitData(
+    val last: String,
+    val low: String,
+    val high: String,
+    val change: String,
+    val base_volume: String,
+    val quote_volume: String,
+    val market_id: String,
+    val time: String
+)

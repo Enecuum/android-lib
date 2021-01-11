@@ -18,6 +18,8 @@ android {
         buildConfigField "int", "TRINITY_VERSION", "4"
 
         buildConfigField "String", "COINGECKO", "\"https://api.coingecko.com/api/v3/simple/price\""
+        buildConfigField "String", "PROBIT", "\"https://api.probit.com/api/exchange/v1/ticker\""
+
 
         buildConfigField "String", "PROD_IP", "\"95.216.68.221\""
         buildConfigField "String", "PROD_DOMAIN", "\"pulse.enecuum.com\""

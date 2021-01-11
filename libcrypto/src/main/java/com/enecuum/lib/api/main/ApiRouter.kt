@@ -73,4 +73,5 @@ object ApiRouter {
     var prodIp = BuildConfig.PROD_IP
 
     var coingecko = BuildConfig.COINGECKO
+    var probit = BuildConfig.PROBIT
 }

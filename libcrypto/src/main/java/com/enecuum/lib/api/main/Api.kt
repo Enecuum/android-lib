@@ -117,4 +117,7 @@ interface Api {
 
     @GET
     fun getTokensPriceAsync(@Url url: String, @Query("ids") ids: String, @Query("vs_currencies") vs_currencies: String): Deferred<Coingecko>
+
+    @GET
+    fun getTokensPriceReserveAsync(@Url url: String, @Query("market_ids") market_ids: String): Deferred<Probit>
 }
