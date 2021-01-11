@@ -116,5 +116,5 @@ interface Api {
     ): Deferred<Boolean>
 
     @GET
-    fun getTokensPriceAsync(@Url url: String, @Query("ids") ids: String, @Query("vs_currencies") vs_currencies: String): Deferred<CoingeckoData>
+    fun getTokensPriceAsync(@Url url: String, @Query("ids") ids: String, @Query("vs_currencies") vs_currencies: String): Deferred<Coingecko>
 }
