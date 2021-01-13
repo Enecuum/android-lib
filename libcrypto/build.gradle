@@ -29,6 +29,7 @@ android {
 
         buildConfigField "int", "WS_PROTOCOL_PORT", "3000"
         buildConfigField "int", "HTTP_PROTOCOL_PORT", "80"
+        buildConfigField "int", "HTTPS_PROTOCOL_PORT", "443"
 
         buildConfigField "String", "API_SUFFIX", "\"/api/v1/\""
 

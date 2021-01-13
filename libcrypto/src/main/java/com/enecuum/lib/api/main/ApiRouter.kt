@@ -41,7 +41,7 @@ object ApiRouter {
     }
 
     val apiURL: String by lazy {
-        return@lazy "$httpProtocolPrefix$baseHost:$httpProtocolPort$apiSuffix"
+        return@lazy "$httpProtocolPrefix$baseHost:$httpsProtocolPort$apiSuffix"
     }
 
     val wsURL: String by lazy {
@@ -68,6 +68,7 @@ object ApiRouter {
 
     var wsProtocolPort = BuildConfig.WS_PROTOCOL_PORT
     var httpProtocolPort = BuildConfig.HTTP_PROTOCOL_PORT
+    var httpsProtocolPort = BuildConfig.HTTPS_PROTOCOL_PORT
     var apiSuffix = BuildConfig.API_SUFFIX
     var debugHost = BuildConfig.DEBUG_DOMAIN
     var prodHost = BuildConfig.PROD_DOMAIN
