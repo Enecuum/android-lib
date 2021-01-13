@@ -1,6 +1,8 @@
 package com.enecuum.lib.api.main
 
 import com.enecuum.lib.BuildConfig
+import com.enecuum.lib.BuildConfig.DEBUG_IP
+import com.enecuum.lib.BuildConfig.PROD_IP
 
 object ApiRouter {
 
@@ -45,7 +47,10 @@ object ApiRouter {
     }
 
     val wsURL: String by lazy {
-        return@lazy "$wsProtocolPrefix$baseHost:$wsProtocolPort"
+        return@lazy when {
+            BuildConfig.DEBUG -> "$wsProtocolPrefix$DEBUG_IP:$wsProtocolPort"
+            else -> "$wsProtocolPrefix$PROD_IP:$wsProtocolPort"
+        }
     }
 
     val mpkx: String by lazy {
