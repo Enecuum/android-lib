@@ -1,6 +1,8 @@
 package com.enecuum.lib.api.main
 
 import com.enecuum.lib.BuildConfig
+import com.enecuum.lib.BuildConfig.DEBUG_IP
+import com.enecuum.lib.BuildConfig.PROD_IP
 
 object ApiRouter {
 
@@ -32,20 +34,23 @@ object ApiRouter {
             get() = "$apiURL$path"
     }
 
-    private val baseIP: String by lazy {
+    private val baseHost: String by lazy {
 
         return@lazy when {
-            BuildConfig.DEBUG -> debugIp
-            else -> prodIp
+            BuildConfig.DEBUG -> debugHost
+            else -> prodHost
         }
     }
 
     val apiURL: String by lazy {
-        return@lazy "$httpProtocolPrefix$baseIP:$httpProtocolPort$apiSuffix"
+        return@lazy "$httpProtocolPrefix$baseHost:$httpsProtocolPort$apiSuffix"
     }
 
     val wsURL: String by lazy {
-        return@lazy "$wsProtocolPrefix$baseIP:$wsProtocolPort"
+        return@lazy when {
+            BuildConfig.DEBUG -> "$wsProtocolPrefix$DEBUG_IP:$wsProtocolPort"
+            else -> "$wsProtocolPrefix$PROD_IP:$wsProtocolPort"
+        }
     }
 
     val mpkx: String by lazy {
@@ -64,11 +69,15 @@ object ApiRouter {
 
     //TODO SSL/TLS please
     var wsProtocolPrefix = "ws://"
-    var httpProtocolPrefix = "http://"
+    var httpProtocolPrefix = "https://"
 
     var wsProtocolPort = BuildConfig.WS_PROTOCOL_PORT
     var httpProtocolPort = BuildConfig.HTTP_PROTOCOL_PORT
+    var httpsProtocolPort = BuildConfig.HTTPS_PROTOCOL_PORT
     var apiSuffix = BuildConfig.API_SUFFIX
-    var debugIp = BuildConfig.DEBUG_IP
-    var prodIp = BuildConfig.PROD_IP
+    var debugHost = BuildConfig.DEBUG_DOMAIN
+    var prodHost = BuildConfig.PROD_DOMAIN
+
+    var coingecko = BuildConfig.COINGECKO
+    var probit = BuildConfig.PROBIT
 }
