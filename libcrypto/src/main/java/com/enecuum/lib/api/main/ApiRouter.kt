@@ -1,8 +1,6 @@
 package com.enecuum.lib.api.main
 
 import com.enecuum.lib.BuildConfig
-import com.enecuum.lib.BuildConfig.DEBUG_IP
-import com.enecuum.lib.BuildConfig.PROD_IP
 
 object ApiRouter {
 
@@ -34,50 +32,45 @@ object ApiRouter {
             get() = "$apiURL$path"
     }
 
-    private val baseHost: String by lazy {
-
-        return@lazy when {
-            BuildConfig.DEBUG -> debugHost
-            else -> prodHost
-        }
-    }
-
-    val apiURL: String by lazy {
-        return@lazy "$httpProtocolPrefix$baseHost:$httpsProtocolPort$apiSuffix"
-    }
-
-    val wsURL: String by lazy {
-        return@lazy when {
-            BuildConfig.DEBUG -> "$wsProtocolPrefix$DEBUG_IP:$wsProtocolPort"
-            else -> "$wsProtocolPrefix$PROD_IP:$wsProtocolPort"
-        }
-    }
-
-    val mpkx: String by lazy {
-        return@lazy when {
-            BuildConfig.DEBUG -> BuildConfig.debug_mpkx
-            else -> BuildConfig.prod_mpkx
-        }
-    }
-
-    val mpky: String by lazy {
-        return@lazy when {
-            BuildConfig.DEBUG -> BuildConfig.debug_mpky
-            else -> BuildConfig.prod_mpky
-        }
-    }
-
     //TODO SSL/TLS please
-    var wsProtocolPrefix = "ws://"
-    var httpProtocolPrefix = "https://"
+    val wsProtocolPrefix = "ws://"
+    val httpProtocolPrefix = "https://"
 
-    var wsProtocolPort = BuildConfig.WS_PROTOCOL_PORT
-    var httpProtocolPort = BuildConfig.HTTP_PROTOCOL_PORT
-    var httpsProtocolPort = BuildConfig.HTTPS_PROTOCOL_PORT
-    var apiSuffix = BuildConfig.API_SUFFIX
-    var debugHost = BuildConfig.DEBUG_DOMAIN
-    var prodHost = BuildConfig.PROD_DOMAIN
+    val wsURL = wsProtocolPrefix + setter.ip + ":" + setter.PortWs
+    val apiURL = httpProtocolPrefix + setter.domain + ":" + setter.PortHttp + setter.apiSuffix
 
-    var coingecko = BuildConfig.COINGECKO
-    var probit = BuildConfig.PROBIT
+    val mpkx = setter.mpkx
+    val mpky = setter.mpky
+
+    class ConnectionSetter(val ip : String,
+                           val domain : String,
+                           val PortWs : Int,
+                           val PortHttp : Int,
+                           val apiSuffix : String,
+                           val mpkx : String,
+                           val mpky : String)
+
+    fun getConnectionSetter(useDebug : Boolean) : ConnectionSetter {
+        if (useDebug) {
+            return ConnectionSetter(BuildConfig.DEBUG_IP,
+                BuildConfig.DEBUG_DOMAIN,
+                BuildConfig.WS_PROTOCOL_PORT,
+                BuildConfig.HTTP_PROTOCOL_PORT,
+                BuildConfig.API_SUFFIX,
+                BuildConfig.debug_mpkx,
+                BuildConfig.debug_mpky
+            );
+        } else {
+            return ConnectionSetter(BuildConfig.PROD_IP,
+                BuildConfig.PROD_DOMAIN,
+                BuildConfig.WS_PROTOCOL_PORT,
+                BuildConfig.HTTP_PROTOCOL_PORT,
+                BuildConfig.API_SUFFIX,
+                BuildConfig.prod_mpkx,
+                BuildConfig.prod_mpky
+            );
+        }
+    }
+
+    lateinit var setter : ConnectionSetter;
 }
