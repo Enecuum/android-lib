@@ -33,8 +33,8 @@ object ApiRouter {
     }
 
     //TODO SSL/TLS please
-    val wsProtocolPrefix = "ws://"
     val httpProtocolPrefix = "https://"
+    val wsProtocolPrefix = "ws://"
 
     val wsURL = wsProtocolPrefix + setter.ip + ":" + setter.PortWs
     val apiURL = httpProtocolPrefix + setter.domain + ":" + setter.PortHttp + setter.apiSuffix
