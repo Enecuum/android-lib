@@ -42,35 +42,39 @@ object ApiRouter {
     val mpkx = setter.mpkx
     val mpky = setter.mpky
 
-    class ConnectionSetter(val ip : String,
-                           val domain : String,
-                           val portWs : Int,
-                           val portHttp : Int,
-                           val apiSuffix : String,
-                           val mpkx : String,
-                           val mpky : String)
+    class ConnectionSetter(
+        val ip: String,
+        val domain: String,
+        val portWs: Int,
+        val portHttp: Int,
+        val apiSuffix: String,
+        val mpkx: String,
+        val mpky: String
+    )
 
-    fun getConnectionSetter(useDebug : Boolean) : ConnectionSetter {
+    fun getConnectionSetter(useDebug: Boolean): ConnectionSetter {
         if (useDebug) {
-            return ConnectionSetter(BuildConfig.DEBUG_IP,
+            return ConnectionSetter(
+                BuildConfig.DEBUG_IP,
                 BuildConfig.DEBUG_DOMAIN,
                 BuildConfig.WS_PROTOCOL_PORT,
                 BuildConfig.HTTP_PROTOCOL_PORT,
                 BuildConfig.API_SUFFIX,
                 BuildConfig.debug_mpkx,
                 BuildConfig.debug_mpky
-            );
+            )
         } else {
-            return ConnectionSetter(BuildConfig.PROD_IP,
+            return ConnectionSetter(
+                BuildConfig.PROD_IP,
                 BuildConfig.PROD_DOMAIN,
                 BuildConfig.WS_PROTOCOL_PORT,
                 BuildConfig.HTTP_PROTOCOL_PORT,
                 BuildConfig.API_SUFFIX,
                 BuildConfig.prod_mpkx,
                 BuildConfig.prod_mpky
-            );
+            )
         }
     }
 
-    lateinit var setter : ConnectionSetter;
+    lateinit var setter: ConnectionSetter;
 }
