@@ -7,7 +7,7 @@ object ApiRouter {
     var setter: ConnectionSetter
 
     init {
-        setter = getConnectionSetter(false)
+       setter = getConnectionSetter(false)
     }
 
     enum class Route(private val path: String) {
@@ -54,13 +54,13 @@ object ApiRouter {
         get() = setter.mpky
 
     class ConnectionSetter(
-        val ip: String,
-        val domain: String,
-        val portWs: Int,
-        val portHttp: Int,
-        val apiSuffix: String,
-        val mpkx: String,
-        val mpky: String
+        var ip: String,
+        var domain: String,
+        var portWs: Int,
+        var portHttp: Int,
+        var apiSuffix: String,
+        var mpkx: String,
+        var mpky: String
     )
 
     fun getConnectionSetter(useDebug: Boolean): ConnectionSetter {
