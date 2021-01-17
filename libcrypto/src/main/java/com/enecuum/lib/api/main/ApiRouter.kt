@@ -42,11 +42,16 @@ object ApiRouter {
     val httpProtocolPrefix = "https://"
     val wsProtocolPrefix = "ws://"
 
-    val wsURL = wsProtocolPrefix + setter.ip + ":" + setter.portWs
-    val apiURL = httpProtocolPrefix + setter.domain + ":" + setter.portHttp + setter.apiSuffix
+    val wsURL: String
+        get() = wsProtocolPrefix + setter.ip + ":" + setter.portWs
 
-    val mpkx = setter.mpkx
-    val mpky = setter.mpky
+    val apiURL: String
+        get() = httpProtocolPrefix + setter.domain + ":" + setter.portHttp + setter.apiSuffix
+
+    val mpkx: String
+        get() = setter.mpkx
+    val mpky: String
+        get() = setter.mpky
 
     class ConnectionSetter(
         val ip: String,
