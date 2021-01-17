@@ -4,7 +4,7 @@ import com.enecuum.lib.BuildConfig
 
 object ApiRouter {
 
-    val setter: ConnectionSetter
+    var setter: ConnectionSetter
 
     init {
         setter = getConnectionSetter(false)
@@ -42,15 +42,15 @@ object ApiRouter {
     val httpProtocolPrefix = "https://"
     val wsProtocolPrefix = "ws://"
 
-    val wsURL: String
+    val wsURL : String
         get() = wsProtocolPrefix + setter.ip + ":" + setter.portWs
 
-    val apiURL: String
+    val apiURL : String
         get() = httpProtocolPrefix + setter.domain + ":" + setter.portHttp + setter.apiSuffix
 
-    val mpkx: String
+    val mpkx : String
         get() = setter.mpkx
-    val mpky: String
+    val mpky : String
         get() = setter.mpky
 
     class ConnectionSetter(
@@ -63,7 +63,7 @@ object ApiRouter {
         val mpky: String
     )
 
-    private fun getConnectionSetter(useDebug: Boolean): ConnectionSetter {
+    fun getConnectionSetter(useDebug: Boolean): ConnectionSetter {
         if (useDebug) {
             return ConnectionSetter(
                 BuildConfig.DEBUG_IP,
