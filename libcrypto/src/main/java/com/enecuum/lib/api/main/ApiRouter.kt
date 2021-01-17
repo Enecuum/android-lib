@@ -4,6 +4,12 @@ import com.enecuum.lib.BuildConfig
 
 object ApiRouter {
 
+    val setter: ConnectionSetter
+
+    init {
+        setter = getConnectionSetter(false)
+    }
+
     enum class Route(private val path: String) {
         DETAILED_BALANCE("balance"),
         BALANCE_ALL("balance_all"),
@@ -52,7 +58,7 @@ object ApiRouter {
         val mpky: String
     )
 
-    fun getConnectionSetter(useDebug: Boolean): ConnectionSetter {
+    private fun getConnectionSetter(useDebug: Boolean): ConnectionSetter {
         if (useDebug) {
             return ConnectionSetter(
                 BuildConfig.DEBUG_IP,
@@ -75,6 +81,4 @@ object ApiRouter {
             )
         }
     }
-
-    lateinit var setter: ConnectionSetter;
 }
