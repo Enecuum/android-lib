@@ -45,7 +45,7 @@ object ApiRouter {
         get() = wsProtocolPrefix + setter.ip + ":" + setter.portWs
 
     val apiURL : String
-        get() = httpProtocolPrefix + setter.domain + ":" + setter.portHttp + setter.apiSuffix
+        get() = setter.httpPrefix + setter.domain + ":" + setter.portHttp + setter.apiSuffix
 
     val mpkx : String
         get() = setter.mpkx
@@ -53,10 +53,11 @@ object ApiRouter {
         get() = setter.mpky
 
     class ConnectionSetter(
-        val ip: String,
-        val domain: String,
-        val portWs: Int,
-        val portHttp: Int,
+        var httpPrefix: String,
+        var ip: String,
+        var domain: String,
+        var portWs: Int,
+        var portHttp: Int,
         val apiSuffix: String,
         val mpkx: String,
         val mpky: String
@@ -65,6 +66,7 @@ object ApiRouter {
     fun getConnectionSetter(useDebug: Boolean): ConnectionSetter {
         if (useDebug) {
             return ConnectionSetter(
+                httpProtocolPrefix,
                 BuildConfig.DEBUG_IP,
                 BuildConfig.DEBUG_DOMAIN,
                 BuildConfig.WS_PROTOCOL_PORT,
@@ -75,6 +77,7 @@ object ApiRouter {
             )
         } else {
             return ConnectionSetter(
+                httpProtocolPrefix,
                 BuildConfig.PROD_IP,
                 BuildConfig.PROD_DOMAIN,
                 BuildConfig.WS_PROTOCOL_PORT,
