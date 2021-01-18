@@ -38,9 +38,8 @@ object ApiRouter {
             get() = "$apiURL$path"
     }
 
-    //TODO SSL/TLS please
-    val httpProtocolPrefix = "https://"
-    val wsProtocolPrefix = "ws://"
+    private const val httpProtocolPrefix = "https://"
+    private const val wsProtocolPrefix = "ws://"
 
     val wsURL : String
         get() = wsProtocolPrefix + setter.ip + ":" + setter.portWs
@@ -69,7 +68,7 @@ object ApiRouter {
                 BuildConfig.DEBUG_IP,
                 BuildConfig.DEBUG_DOMAIN,
                 BuildConfig.WS_PROTOCOL_PORT,
-                BuildConfig.HTTP_PROTOCOL_PORT,
+                BuildConfig.HTTPS_PROTOCOL_PORT,
                 BuildConfig.API_SUFFIX,
                 BuildConfig.debug_mpkx,
                 BuildConfig.debug_mpky
@@ -79,7 +78,7 @@ object ApiRouter {
                 BuildConfig.PROD_IP,
                 BuildConfig.PROD_DOMAIN,
                 BuildConfig.WS_PROTOCOL_PORT,
-                BuildConfig.HTTP_PROTOCOL_PORT,
+                BuildConfig.HTTPS_PROTOCOL_PORT,
                 BuildConfig.API_SUFFIX,
                 BuildConfig.prod_mpkx,
                 BuildConfig.prod_mpky
