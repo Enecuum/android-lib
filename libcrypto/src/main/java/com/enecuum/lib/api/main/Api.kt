@@ -122,5 +122,5 @@ interface Api {
     fun getTokensPriceReserveAsync(@Url url: String, @Query("market_ids") market_ids: String): Deferred<Probit>
 
     @GET
-    fun getTokensInfoAsyncAsync(@Url url: String): Deferred<TokensInfo>
+    fun getTokensInfoAsync(@Url url: String): Deferred<TokensDaraArray>
 }
