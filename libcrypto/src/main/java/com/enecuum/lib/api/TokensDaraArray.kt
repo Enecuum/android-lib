@@ -1,9 +1,5 @@
 package com.enecuum.lib.api
 
-data class TokensDaraArray(
-    val data: Array<TokensDara>
-)
-
 data class TokensDara(
     val token_id: String,
     val website: String,
