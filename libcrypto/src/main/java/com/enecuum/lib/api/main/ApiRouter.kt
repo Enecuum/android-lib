@@ -47,10 +47,10 @@ object ApiRouter {
     val apiURL : String
         get() = setter.httpPrefix + setter.domain + ":" + setter.portHttp + setter.apiSuffix
 
-    val mpkx : String
-        get() = setter.mpkx
-    val mpky : String
-        get() = setter.mpky
+//    val mpkx : String
+//        get() = setter.mpkx
+//    val mpky : String
+//        get() = setter.mpky
 
     class ConnectionSetter(
         var httpPrefix: String,

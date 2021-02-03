@@ -1,11 +1,12 @@
 package com.enecuum.lib.api
 
-data class Coingecko(
-    val `enq-enecuum`: CoingeckoData,
-    val `nayuta-coin`: CoingeckoData
-)
+//data class Coingecko(
+//    val `enq-enecuum`: CoingeckoData,
+//    val `nayuta-coin`: CoingeckoData,
+//    val `bitcoin`: CoingeckoData,
+//)
 
-data class CoingeckoData(
+data class CoingeckoUSD(
     val usd: String
 )
 
