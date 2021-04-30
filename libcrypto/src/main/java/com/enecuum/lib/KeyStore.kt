@@ -88,7 +88,7 @@ object KeyStore {
         return secretKey
     }
 
-    private const val KEY_LENGTH = 64
+    const val KEY_LENGTH = 64
     private const val KEY_PREFIX = "00"
     private const val XOR_STRING =
         "750D7F2B34CA3DF1D6B7878DEBC8CF9A56BCB51A58435B5BCFB7E82EE09FA8BE75"
