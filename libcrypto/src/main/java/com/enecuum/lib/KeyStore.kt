@@ -2,8 +2,6 @@ package com.enecuum.lib
 
 import android.content.Context
 import android.util.Log
-import com.enecuum.lib.xor
-import com.enecuum.lib.SageSign
 import com.pixplicity.easyprefs.library.Prefs
 
 object KeyStore {
@@ -30,20 +28,20 @@ object KeyStore {
 
     fun validateSecretKey(secretKey: String): Boolean {
         if (secretKey.isEmpty()) return false
-        return secretKey.length == KEY_LENGTH || (secretKey.length >= KEY_LENGTH && secretKey.startsWith(
+        return secretKey.length == SECRET_KEY_LENGTH || (secretKey.length >= SECRET_KEY_LENGTH && secretKey.startsWith(
             KEY_PREFIX
         ))
     }
 
     fun saveKeys(context: Context, data: SageSign.GeneratedData) {
-        SecurePrefs.setValue(context, SECRET_KEY, normalizeKey(data.secretKey))
+        SecurePrefs.setValue(context, SECRET_KEY, normalizeSecretKey(data.secretKey))
         SecurePrefs.setValue(context, SIGN_KEY, data.signKey)
         SecurePrefs.setValue(context, PUBLIC_KEY, data.publicKey)
         SecurePrefs.setValue(context, USER_REFERRAL, publicKeyToUserReferral(data.publicKey))
     }
 
     fun saveKeys(context: Context, secretKey: String) {
-        SecurePrefs.setValue(context, SECRET_KEY, normalizeKey(secretKey))
+        SecurePrefs.setValue(context, SECRET_KEY, normalizeSecretKey(secretKey))
         val data = SageSign.retrievePublicKey(secretKey)
         SecurePrefs.setValue(context, SIGN_KEY, data.signKey)
         SecurePrefs.setValue(context, PUBLIC_KEY, data.publicKey)
@@ -81,14 +79,14 @@ object KeyStore {
         Prefs.putString(UPLOAD_KEY, STUB)
     }
 
-    private fun normalizeKey(secretKey: String): String {
-        if (secretKey.length >= (KEY_LENGTH + KEY_PREFIX.length) && secretKey.startsWith(KEY_PREFIX)) {
+    private fun normalizeSecretKey(secretKey: String): String {
+        if (secretKey.length >= (SECRET_KEY_LENGTH + KEY_PREFIX.length) && secretKey.startsWith(KEY_PREFIX)) {
             return secretKey.drop(KEY_PREFIX.length)
         }
         return secretKey
     }
 
-    const val KEY_LENGTH = 64
+    const val SECRET_KEY_LENGTH = 64
     private const val KEY_PREFIX = "00"
     private const val XOR_STRING =
         "750D7F2B34CA3DF1D6B7878DEBC8CF9A56BCB51A58435B5BCFB7E82EE09FA8BE75"
